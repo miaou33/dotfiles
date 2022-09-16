@@ -1,0 +1,26 @@
+/**
+ * @name transparent_discord
+ * @author MonsterDev
+ * @version 1.5
+ * @description Phoenix Theme Bundle: Transparent, fully customizable theme with multiple addons.
+ * @invite TeRQEPb
+ * @authorId 402272736665272320
+ * @source https://github.com/monstrousdev/themes/theme-files/Reborn.theme.css
+*/
+
+@import url('https://monstrousdev.github.io/themes/phoenix-bundle/reborn.css');
+
+:root {
+  --background-image: url('https://s-media-cache-ak0.pinimg.com/originals/60/c4/bb/60c4bb55215c989b15b0fe144c73cf82.jpg');
+  --popup-background: url('https://s-media-cache-ak0.pinimg.com/originals/60/c4/bb/60c4bb55215c989b15b0fe144c73cf82.jpg');
+  --background-blur: 0px;
+  --background-darkness: 0.75;
+  --main-color: #007dbd;
+  --hover-color: #03679b;
+  --roundness: 50px;
+  --shadow: rgba(0,0,0,.4);
+}
+
+/* Any custom CSS below here */
+
+
