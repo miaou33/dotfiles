@@ -1,0 +1,5 @@
+xrandr # list available outputs and modes
+cvt 3840 2160 60 # calculate mode line (for 3840x2160)
+xrandr --newmode <modeline> # create new mode
+xrandr --addmode <output> 3840x2160_60.00 # associate mode with output
+xrandr --output <output> --mode 3840x2160_60.00 # set output use mode
