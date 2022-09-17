@@ -1,5 +1,4 @@
-###############################################################################
-#               	 install arch linux base meta-packages                    #
+               	 install arch linux base meta-packages                    #
 ###############################################################################
 
 #meta-package = a package that installs other packages (through the dependencies that he defines)
