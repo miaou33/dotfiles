@@ -1,1 +1,6 @@
 mkdir -p ~/.vim ~/.vim/autoload ~/.vim/backup ~/.vim/colors ~/.vim/plugged
+
+ls /usr/share/vim/vim82/colors | grep .vim
+
+mkdir -p ~/.vim/pack/vendor/start
+git clone --depth 1 https://github.com/preservim/nerdtree.git ~/.vim/pack/vendor/start/nerdtree
