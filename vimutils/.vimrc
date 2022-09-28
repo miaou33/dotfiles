@@ -31,8 +31,10 @@ set autoindent
 set smartindent
 set cindent
 
-" Syntax colours
-syntax on
+" Keep current color settings
+syntax enable
+" to override with default
+"syntax on
 
 "color shemes : DARK- macvim256 (neon purple and dark other colours) photon (grey purple) neverland
 "darker (colorful yellow/dark) ir_black (black + soft but not too much blue/purple/green ...nut not enough rough maybe) adaryn (blue asfck) herokudock-gvim (yellow/grey/black) reloaded (fluo green matrix )
@@ -94,4 +96,11 @@ set hlsearch
 " Set the commands to save in history default number is 20.
 set history=1000
 
-
+" The cterm color numbers refer to XTerm colors in 256 color mode.
+" Map from cterm colors to #RGB using <URL:https://gist.github.com/719710>.
+" To turn off bold, italic, use cterm=NONE and gui=NONE.
+"
+" Normal must be set before colors "fg" and "bg" can be used.
+highlight Normal ctermfg=189
+highlight Comment ctermfg=DarkGrey
+"highlight 
