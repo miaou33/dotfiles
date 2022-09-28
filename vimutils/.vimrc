@@ -1,6 +1,12 @@
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
 
+call plug#begin()
+
+Plug 'sheerun/vim-polyglot'
+
+call plug#end()
+
 " Enable type file detection. Vim will be able to try to detect the type of file in use.
 filetype on
 
