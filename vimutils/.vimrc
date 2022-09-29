@@ -36,18 +36,6 @@ syntax enable
 " to override with default
 "syntax on
 
-"color shemes : DARK- macvim256 (neon purple and dark other colours) photon (grey purple) neverland
-"darker (colorful yellow/dark) ir_black (black + soft but not too much blue/purple/green ...nut not enough rough maybe) adaryn (blue asfck) herokudock-gvim (yellow/grey/black) reloaded (fluo green matrix )
-"LIGHT- home (minimalist) soft-era (fucked up) minimal (grey white black)
-"eva01 (but terne) darkest-space (purple and shit) horseradish256 (grey and
-"kinda yellow/neon green) aquamarine (black & grey, neon blue, fade others <3)
-"dracula (dracula) aura (cool purple - shades of pink - soft tuquoise with
-"very black bckgd) )
-"alabaster (white pink black<3) ayumi (cool) damnpaul (windows96 alike)
-"toothpik (cool colors, grey bckgrnd) soso (same) cake (cool cute)
-"OTHERS - sweets (illisible pink th<3) sweet-lolita (omg pinky) hotdog (abuse)
-"tomato soup (lolll)
-
 " set line number
 set number
 
@@ -92,31 +80,50 @@ set hlsearch
 set history=1000
 
 " The cterm color numbers refer to XTerm colors in 256 color mode.
-" Map from cterm colors to #RGB using <URL:https://gist.github.com/719710>.
-" To turn off bold, italic, use cterm=NONE and gui=NONE.
+" see <:help syntax> for group names
 "
 " Normal must be set before colors "fg" and "bg" can be used.
 highlight Normal ctermfg=189
 
 highlight Comment ctermfg=DarkGrey
 
-" Highlight constant / char, str, number,  boolean, float, ...
+" *Constant / char, str, number,  boolean, float, ...
 highlight Constant ctermfg=147
+highlight String ctermfg=104
+"highlight Character ctermfg=
 highlight Number ctermfg=141
+highlight Boolean ctermfg=141
+highlight Float ctermfg=141
 
-"Highlight identifiers / function
+" *Identifier : any variable name
 highlight Identifier ctermfg=207
 highlight Function ctermfg=135 "cterm=bold
 
-"Highlight statements
-highlight Statement ctermfg=207
-highlight cConditional ctermfg=46		"if else switch
-highlight cRepeat ctermfg=46			"while for do
-highlight cStatement ctermfg=46			"goto break return continue asm
+" *Statements
+highlight Statement ctermfg=46
+highlight cStatement ctermfg=46
+highlight Conditional ctermfg=46		"if else switch
+highlight Repeat ctermfg=46				"while for do
+highlight Operator ctermfg=220			"?
+highlight cOperator ctermfg=220			"sizeof
+highlight Exception ctermfg=46			"try, catch, throw
+"highlight Keyword ctermfg=				"any other keyword
 
-highlight cType ctermfg=220
-highlight cOperator ctermfg=221
-highlight Operator ctermfg=221
+" *Preproc
+highlight Preproc ctermfg=
+
+" *Type
+highlight Type ctermfg=207
+highlight cType ctermfg=207				"int8_t, etc
+highlight StorageClass ctermfg=207		"static, register, volatile, etc
+highlight cStorageClass ctermfg=207
+highlight Structure ctermfg=207
+highlight cStructure ctermfg=207
+highlight Typedef ctermfg=207
+
+" *Special
+highlight Special ctermfg=221
+highlight NonText ctermfg=221
 "highlight cSpecial ctermfg=221	"escaped chars (with \ in front)
 
 
@@ -126,11 +133,15 @@ match ExtraWhitespace /\s\+$/
 "---------COLORS----------
 "46  fluo green
 "99	 slate blue 1 (purple)
+"104 medium purple
 "135 medium purple 2
+"141 medium purple 1
 "147 light steel blue
 "189 light steel blue 1
 "207 medium orchid (fushia pink)
 "214 orange 1 
 "220 gold 1
+"221 light golden rod 2
 
-"to set bold --> add cterm=bold (same for italic, underline,...)
+"to set bold-> add cterm=bold (same for italic, underline,...)
+"
