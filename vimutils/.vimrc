@@ -62,10 +62,6 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 
-"@DaiClement whitespace trick
-highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
-
 "Help file related settings
 " search down into subfolders with :find just use wildcard operator !!
 set path+=**
@@ -110,11 +106,31 @@ highlight Number ctermfg=141
 
 "Highlight identifiers / function
 highlight Identifier ctermfg=207
-highlight Function ctermfg=135
+highlight Function ctermfg=135 "cterm=bold
 
 "Highlight statements
+highlight Statement ctermfg=207
 highlight cConditional ctermfg=46		"if else switch
 highlight cRepeat ctermfg=46			"while for do
 highlight cStatement ctermfg=46			"goto break return continue asm
 
-highlight cType ctermfg=214
+highlight cType ctermfg=220
+highlight cOperator ctermfg=221
+highlight Operator ctermfg=221
+"highlight cSpecial ctermfg=221	"escaped chars (with \ in front)
+
+
+highlight ExtraWhitespace ctermbg=DarkGrey
+match ExtraWhitespace /\s\+$/
+
+"---------COLORS----------
+"46  fluo green
+"99	 slate blue 1 (purple)
+"135 medium purple 2
+"147 light steel blue
+"189 light steel blue 1
+"207 medium orchid (fushia pink)
+"214 orange 1 
+"220 gold 1
+
+"to set bold --> add cterm=bold (same for italic, underline,...)
