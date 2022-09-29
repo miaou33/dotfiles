@@ -11,7 +11,7 @@ filetype plugin on
 filetype indent on
 
 " Highlight cursor line underneath the cursor horizontally.
-set cursorline
+"set cursorline
 "set cursorcolumn
 
 " your mouse will work
@@ -83,7 +83,6 @@ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
 " Show partial command you type in the last line of the screen.
 set showcmd
-
 " Show the mode you are on the last line.
 set showmode
 
@@ -102,5 +101,8 @@ set history=1000
 "
 " Normal must be set before colors "fg" and "bg" can be used.
 highlight Normal ctermfg=189
+
 highlight Comment ctermfg=DarkGrey
-"highlight 
+"highlight  ctermfg=46 "fluo green
+highlight Number ctermfg=141
+highlight 
