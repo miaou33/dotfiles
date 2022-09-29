@@ -103,6 +103,18 @@ set history=1000
 highlight Normal ctermfg=189
 
 highlight Comment ctermfg=DarkGrey
-"highlight  ctermfg=46 "fluo green
+
+" Highlight constant / char, str, number,  boolean, float, ...
+highlight Constant ctermfg=147
 highlight Number ctermfg=141
-highlight 
+
+"Highlight identifiers / function
+highlight Identifier ctermfg=207
+highlight Function ctermfg=135
+
+"Highlight statements
+highlight cConditional ctermfg=46		"if else switch
+highlight cRepeat ctermfg=46			"while for do
+highlight cStatement ctermfg=46			"goto break return continue asm
+
+highlight cType ctermfg=214
