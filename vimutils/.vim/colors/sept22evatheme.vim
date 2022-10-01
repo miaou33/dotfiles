@@ -41,7 +41,7 @@ hi Constant	term=underline ctermfg=141
 "hi cOperator ctermfg=171		        	      "sizeof
 
 hi Identifier ctermfg=99
-hi Function ctermfg=99 cterm=bold
+hi Function ctermfg=99 "cterm=bold
 
 hi Statement term=bold ctermfg=154
 "hi cStatement ctermfg=46
@@ -78,6 +78,9 @@ hi parens ctermfg=221
 "syn match NonAlnumSpec [&&] [- ]
 hi NonAlnum ctermfg=171
 syn match NonAlnum "[+!<=>|]"
+
+hi Brackets ctermfg=221
+syn match Brackets "[()]"
 
 hi LineNr ctermfg=DarkGrey
 
