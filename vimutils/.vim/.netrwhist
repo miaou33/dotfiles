@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/noe/projects/gnlGithub'
+let g:netrw_dirhist_2='/home/noe/.oh-my-zsh'
+let g:netrw_dirhist_1='/home/noe/.ssh'
