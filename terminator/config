@@ -14,7 +14,7 @@
     background_darkness = 0.82
     background_type = transparent
     cursor_color = "#aaaaaa"
-    font = Ubuntu Mono derivative Powerline 10
+    font = Anonymous Pro for Powerline 10
     palette = "#000000:#f7bb2a:#f7bb2a:#f7bb2a:#5e5c64:#5e5c64:#5e5c64:#9a9996:#5e5c64:#f8e45c:#f6d32d:#f6d32d:#77767b:#77767b:#77767b:#fdf6e3"
     use_custom_command = True
     custom_command = zsh
