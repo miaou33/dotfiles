@@ -1,13 +1,4 @@
-set mouse=a
-set number
-
-" Disable compatibility with vi which can cause unexpected issues.
-set nocompatible
-
-"===========SYNTAX===========
-" Enable type file detection. Vim will be able to try to detect the type of file in use.
-filetype on
-" Enable plugins and load plugin for the detected file type.
+set mouse=a set number " Disable compatibility with vi which can cause unexpected issues.  set nocompatible ===========SYNTAX=========== Enable type file detection. Vim will be able to try to detect the type of file in use.  filetype on Enable plugins and load plugin for the detected file type.
 filetype plugin on
 " Load an indent file for the detected file type.
 filetype indent on
@@ -21,10 +12,6 @@ set shiftwidth=4
 set softtabstop=4
 " Do not wrap lines. Allow long lines to extend as far as the line goes.
 set nowrap
-" colors
-syntax enable
-colorscheme sept22evatheme
-"autocmd BufRead,BufNewFile * syn match parens /[(){}]/
 
 "===========CMD===========
 "Help file related settings
@@ -52,7 +39,10 @@ set history=1000
 
 let mapleader = " "
 nnoremap <leader>e :bufdo e!<CR>
-
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 "===========NERDTree=========
 " Start NERDTree and put the cursor back in the other window.
 autocmd VimEnter * NERDTree | wincmd p
@@ -63,3 +53,8 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 " Exit Vim if NERDTree is the only window remaining in the only tab.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+" colors
+syntax enable
+colorscheme sept22evatheme
+"autocmd BufRead,BufNewFile * syn match parens /[(){}]/
+
