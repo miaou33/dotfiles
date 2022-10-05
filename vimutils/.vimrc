@@ -51,4 +51,13 @@ set ignorecase
 set history=1000
 
 let mapleader = " "
-nmap <leader>e :bufdo e!<CR>
+nnoremap <leader>e :bufdo e!<CR>
+
+"===========NERDTree=========
+" Start NERDTree and put the cursor back in the other window.
+autocmd VimEnter * NERDTree | wincmd p
+" Set keybindings
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
