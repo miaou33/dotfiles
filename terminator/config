@@ -14,12 +14,11 @@
     background_darkness = 0.82
     background_type = transparent
     cursor_color = "#aaaaaa"
-    font = Anonymous Pro for Powerline 10
-    palette = "#000000:#f7bb2a:#f7bb2a:#f7bb2a:#5e5c64:#5e5c64:#5e5c64:#9a9996:#5e5c64:#f8e45c:#f6d32d:#f6d32d:#77767b:#77767b:#77767b:#fdf6e3"
+    font = Ubuntu Light 10
+    show_titlebar = False
+    palette = "#000000:#bf3fbf:#7452d4:#7452d4:#5e5c64:#5e5c64:#aefd01:#9a9996:#5e5c64:#d363eb:#7452d4:#9d9dfe:#77767b:#77767b:#afff00:#fdf6e3"
     use_custom_command = True
     custom_command = zsh
-    use_system_font = False
-    use_theme_colors = True
     bold_is_bright = True
   [[dracula]]
     cursor_color = "#aaaaaa"
