@@ -44,6 +44,9 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+nnoremap <leader>c :colo sept22evatheme<CR>
+
 "===========NERDTree=========
 " Start NERDTree and put the cursor back in the other window.
 autocmd VimEnter * NERDTree | wincmd p
@@ -54,8 +57,12 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 " Exit Vim if NERDTree is the only window remaining in the only tab.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
-" colors
+
+
+"==========COLORS============
 syntax enable
+if (&t_Co != 256)
+  set t_Co=256
+endif
 colorscheme sept22evatheme
 "autocmd BufRead,BufNewFile * syn match parens /[(){}]/
-

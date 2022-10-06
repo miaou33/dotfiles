@@ -37,19 +37,19 @@ hi Constant	term=underline ctermfg=189
 "hi cOperator ctermfg=171		        	      "sizeof
 
 hi Identifier ctermfg=93
-hi Function ctermfg=141 cterm=bold "147  "111  147
+hi Function ctermfg=87 "cterm=bold "147  "111  147
 
 hi Statement ctermfg=154                "while, if, etc
-"hi cStatement ctermfg=213
+"hi cStatement ctermfg=99
 
 hi PreProc	term=underline	ctermfg=154
 hi Macro ctermfg=135
 "hi cDefine ctermfg=
 
 "ADD TYPE t_* g_*
-hi Type	term=underline ctermfg=213 "213
+hi Type	term=underline ctermfg=99
 "hi cType ctermfg=171                             "int8_t, etc
-hi StorageClass	cterm=italic  ctermfg=213                    "static, register, volatile, etc
+hi StorageClass	cterm=italic  ctermfg=99                    "static, register, volatile, etc
 "hi Structure ctermfg=171
 "hi Typedef ctermfg=171
 
