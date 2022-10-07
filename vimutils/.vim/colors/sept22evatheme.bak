@@ -30,38 +30,34 @@ hi cComment ctermfg=248
 
 "===CONSTANT===
 hi Constant	term=underline ctermfg=189
+hi negNumber ctermfg=189
   syn match negNumber /\(-[0-9]\)/
-  hi link negNumber Constant
-  "hi cOperator ctermfg=171		        	      "sizeof
-  syn match NonAlnumChar /\(\\$\|"\|'\|,\|+\|<\|=\|>\|- \|!\|* \ze\)/
+"hi cOperator ctermfg=171		        	      "sizeof
 hi NonAlnumChar ctermfg=213 cterm=bold 
+  syn match NonAlnumChar /\(\\$\|"\|'\|,\|+\|<\|=\|>\|- \|!\|* \ze\)/
+hi SpecialNonAlnum ctermfg=154
+  syn match SpecialNonAlnum /\(&&\|||\ze\)/
+hi BracketsParen ctermfg=93 cterm=bold "147
   syn match BracketsParen /{\|}\|(\|)\|\[\|\]/ 
-hi BracketsParen ctermfg=93 cterm=bold
+hi SemiColum ctermfg=154
+syn match SemiColum "[;]"
 
 "===IDENTIFIER===
 hi Identifier ctermfg=93
 hi Function ctermfg=141 
 
 "===STATEMENT====
-"while, if, else, etc
+"while, if, else, etc | storageclass = static, register, volatile, etc
 hi Statement ctermfg=154
-  syn match OrAndOperators /\(&&\|||\ze\)/
-  hi link OrAndOperators Statement
-  syn match SemiColum "[;]"
-  hi link SemiColum Statement
 
 "===PREPROC===
 hi PreProc	term=underline	ctermfg=154
 hi Macro ctermfg=135
-  "hi cDefine ctermfg=
+"hi cDefine ctermfg=
 
 "===TYPE===
 hi Type	term=underline ctermfg=171
-  syn match defType /t_[a-zA-Z0-9]\+/
-  hi link defType Type
-  syn match globalType /g_[a-zA-Z0-9]\+/
-  hi link globalType Type
-hi StorageClass ctermfg=220
+hi StorageClass ctermfg=226
 
 "===SPECIAL===
 " ? | cspecial = escaped chars
@@ -73,7 +69,7 @@ hi Ignore ctermfg=black
 hi Error cterm=reverse ctermbg=Red ctermfg=White
 hi Todo	term=standout ctermbg=46 ctermfg=Black
 hi LineNr ctermfg=248
-hi ExtraWhitespace ctermbg=248
+hi ExtraWhitespace ctermbg=234
   syn match ExtraWhitespace /\s\+$/
 hi colorcolumn ctermbg=none ctermfg=154 cterm=bold
 hi VertSplit ctermfg=247

@@ -13,6 +13,7 @@ set shiftwidth=4
 set softtabstop=4
 " Do not wrap lines. Allow long lines to extend as far as the line goes.
 set nowrap
+set colorcolumn=81
 
 "===========CMD===========
 "Help file related settings
