@@ -65,7 +65,7 @@ hi NonText ctermfg=221
 
 hi LineNr ctermfg=248
 
-hi ExtraWhitespace ctermbg=248
+hi ExtraWhitespace ctermbg=234
 syn match ExtraWhitespace /\s\+$/
 
 "syn match NonAlnum
