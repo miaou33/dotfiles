@@ -31,15 +31,17 @@ hi Constant	term=underline ctermfg=189
 "hi Character ctermfg=
 "hi String ctermfg=
 "hi Number ctermfg=194
+hi negNumber ctermfg=189
+syn match negNumber /\(-[0-9]\)/
 "hi Boolean ctermfg=141
 "hi Float ctermfg=141
 "hi Operator ctermfg=171
 "hi cOperator ctermfg=171		        	      "sizeof
 
 hi Identifier ctermfg=93
-hi Function ctermfg=141 cterm=bold "147  "111  147
+hi Function ctermfg=141 "cterm=bold "147  "111  147
 
-hi Statement ctermfg=154                "while, if, etc
+hi Statement ctermfg=154                          "while, if, etc
 "hi cStatement ctermfg=213
 
 hi PreProc	term=underline	ctermfg=154
@@ -47,9 +49,9 @@ hi Macro ctermfg=135
 "hi cDefine ctermfg=
 
 "ADD TYPE t_* g_*
-hi Type	term=underline ctermfg=213 "213
+hi Type	term=underline ctermfg=165 "213
 "hi cType ctermfg=171                             "int8_t, etc
-hi StorageClass	cterm=italic  ctermfg=213                    "static, register, volatile, etc
+hi StorageClass	cterm=italic  ctermfg=165         "static, register, volatile, etc
 "hi Structure ctermfg=171
 "hi Typedef ctermfg=171
 
@@ -57,9 +59,10 @@ hi Ignore ctermfg=black
 hi Error cterm=reverse ctermbg=Red ctermfg=White
 hi Todo	term=standout ctermbg=46 ctermfg=Black
 
-hi Special	term=bold ctermfg=189
-hi NonText ctermfg=221
-"hi cSpecial ctermfg=221	"escaped chars (with \ in front)
+hi Special ctermfg=93
+"hi NonText ctermfg=221
+hi cSpecial ctermfg=189                       	"escaped chars (with \ in front)
+"hi cSpecialCharacter ctermfg=213
 "hi MatchParen ctermfg=221
 "hi parens ctermfg=221
 
@@ -70,7 +73,7 @@ syn match ExtraWhitespace /\s\+$/
 
 "syn match NonAlnum
 hi NonAlnumChar ctermfg=213 cterm=bold "171 "183
-syn match NonAlnumChar /\(,\|+\|<\|=\|>\|-\|!\)/
+syn match NonAlnumChar /\(\\$\|"\|'\|,\|+\|<\|=\|>\|- \|!\|* \ze\)/
 
 hi SpecialNonAlnum ctermfg=154
 syn match SpecialNonAlnum /\(&&\|||\ze\)/
@@ -78,11 +81,8 @@ syn match SpecialNonAlnum /\(&&\|||\ze\)/
 hi SemiColum ctermfg=154
 syn match SemiColum "[;]"
 
-"hi BracketsParen ctermfg=214
-"syn match BracketsParen "[\{\}]"
-
-hi Paren ctermfg=93 cterm=bold "147
-syn match Paren "[\{\}\(\)\[\]]"
+hi BracketsParen ctermfg=93 cterm=bold "147
+syn match BracketsParen /{\|}\|(\|)\|\[\|\]/ 
 
 "columns separating vim windows
 hi VertSplit ctermfg=247
