@@ -16,7 +16,7 @@
     cursor_color = "#aaaaaa"
     font = Ubuntu Light 10
     show_titlebar = False
-    palette = "#000000:#bf3fbf:#7452d4:#7452d4:#5e5c64:#5e5c64:#aefd01:#9a9996:#5e5c64:#d363eb:#7452d4:#9d9dfe:#77767b:#77767b:#afff00:#fdf6e3"
+    palette = "#000000:#ff87ff:#af87ff:#af87ff:#5e5c64:#5e5c64:#aefd01:#9a9996:#5e5c64:#ff87ff:#8700ff:#8700ff:#af87ff:#77767b:#afff00:#fdf6e3"
     use_custom_command = True
     custom_command = zsh
     bold_is_bright = True
