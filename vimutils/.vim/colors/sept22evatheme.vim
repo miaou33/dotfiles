@@ -49,9 +49,9 @@ hi Macro ctermfg=135
 "hi cDefine ctermfg=
 
 "ADD TYPE t_* g_*
-hi Type	term=underline ctermfg=165 "213
+hi Type	term=underline ctermfg=171 "51 
 "hi cType ctermfg=171                             "int8_t, etc
-hi StorageClass	cterm=italic  ctermfg=165         "static, register, volatile, etc
+hi StorageClass	  ctermfg=214 "87        "static, register, volatile, etc
 "hi Structure ctermfg=171
 "hi Typedef ctermfg=171
 
