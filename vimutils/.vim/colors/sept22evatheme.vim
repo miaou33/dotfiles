@@ -33,7 +33,7 @@ hi Constant	term=underline ctermfg=189
   syn match negNumber /\(-[0-9]\)/
   hi link negNumber Constant
   "hi cOperator ctermfg=171		        	      "sizeof
-  syn match NonAlnumChar /\(\\$\|"\|'\|,\|+\|<\|=\|>\|- \|!\|* \ze\)/
+  syn match NonAlnumChar /\(\\$\|"\|'\|,\|+\|<\|=\|>\|- \|->\|!\|* \ze\)/
 hi NonAlnumChar ctermfg=213 cterm=bold 
   syn match BracketsParen /{\|}\|(\|)\|\[\|\]/ 
 hi BracketsParen ctermfg=93 cterm=bold
@@ -57,11 +57,11 @@ hi Macro ctermfg=135
 
 "===TYPE===
 hi Type	term=underline ctermfg=171
-  syn match defType /t_[a-zA-Z0-9]\+/
+  syn match defType /t_[a-zA-Z0-9_]\+/
   hi link defType Type
-  syn match globalType /g_[a-zA-Z0-9]\+/
+  syn match globalType /g_[a-zA-Z0-9_]\+/
   hi link globalType Type
-hi StorageClass ctermfg=220
+hi StorageClass ctermfg=154 cterm=italic
 
 "===SPECIAL===
 " ? | cspecial = escaped chars
@@ -77,7 +77,8 @@ hi ExtraWhitespace ctermbg=248
   syn match ExtraWhitespace /\s\+$/
 hi colorcolumn ctermbg=none ctermfg=154 cterm=bold
 hi VertSplit ctermfg=247
-hi ToolbarLine ctermfg=247
+hi StatusLine ctermfg=247
+hi StatusLineNC ctermfg=247
 
 "   \ze matches at any position, and sets the end of the match there,
 "   \s whitespace character,
