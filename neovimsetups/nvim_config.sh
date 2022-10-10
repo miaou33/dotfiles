@@ -1,9 +1,18 @@
 #!/bin/bash
 
-git clone https://github.com/neovim/neovim
-rm -r build/  # clear the CMake cache
-make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$HOME/neovim"
-make install
+# cd ~
+# git clone https://github.com/neovim/neovim
+# cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo 
+# sudo make install
+
+if [ ! -d "~/.config/nvim" ] ;
+then
+	mkdir -p ~/.config/nvim && mkdir -p ~/.config/nvim/syntax
+fi
+
+cp init.vim ~/.config/nvim/
+cp syntax/*.vim ~/.config/nvim/syntax/
+
 export PATH="$HOME/neovim/bin:$PATH"
 
 # uninstall
