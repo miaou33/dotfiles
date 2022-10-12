@@ -10,10 +10,8 @@ reset=$'\033[0m'
 
 if [ ! -d "~/.vim" ];
 then
-	mkdir -p -v ~/.vim ~/.vim/autoload ~/.vim/backup ~/.vim/colors ~/.vim/plugged
-	mkdir -p ~/.vim/pack/vendor/start
-else
-    echo "/!\ NERDTree needs to be installed. Please decomment line 28 - 29"
+	mkdir -p -v ~/.vim ~/.vim/colors
+    echo "/!\ Plugins needs to be installed. see commented lines in script"
 fi
 
 if [ "./eva.vim" -ef "~/.vim/colors/eva.vim" ];
@@ -25,10 +23,14 @@ then
 fi
     cp ./eva.vim ~/.vim/colors/
     
-# echo "Cloning NERDTree repo"
+# mkdir -p ~/.vim/autoload ~/.vim/backup ~/.vim/plugged ~/.vim/bundle
+# mkdir -p ~/.vim/pack/vendor/start
 # git clone https://github.com/preservim/nerdtree.git ~/.vim/pack/vendor/start/nerdtree
+# curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+# cd ~/.vim/bundle && git clone --depth=1 https://github.com/vim-syntastic/syntastic.git
+# THEN RESTART VIM
 
-# SETUP VIMRC
+#===SETUP VIMRC===
 
 if [ ".vimrc" -ef "~/.vimrc" ];
 then
