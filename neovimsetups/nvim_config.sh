@@ -7,13 +7,11 @@
 
 if [ ! -d "~/.config/nvim" ] ;
 then
-	mkdir -p ~/.config/nvim && mkdir -p ~/.config/nvim/syntax
+	mkdir -p ~/.config/nvim ~/.config/nvim/syntax ~/.config/nvim/pack 
 fi
 
-cp init.vim ~/.config/nvim/
-cp syntax/*.vim ~/.config/nvim/syntax/
-
-export PATH="$HOME/neovim/bin:$PATH"
+cp -R init.vim ~/.config/nvim/
+cp -R syntax/*.vim ~/.config/nvim/syntax/
 
 # uninstall
 # sudo cmake --build build/ --target uninstall
