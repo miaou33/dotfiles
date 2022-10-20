@@ -33,7 +33,7 @@ hi Constant	term=underline ctermfg=189
   syn match negNumber /\(-[0-9]\)/
   hi link negNumber Constant
   "hi cOperator ctermfg=171		        	      "sizeof
-  syn match NonAlnumChar /\(\\$\|"\|'\|,\|+\|<\|=\|>\|- \|->\|!\|"[\ \*\ ]"\)/
+  syn match NonAlnumChar /\(\\$\|,\|+\|<\|=\|>\|- \|->\|!\|"[\ \*\ ]"\)/
 hi NonAlnumChar ctermfg=213 cterm=bold 
   syn match BracketsParen /{\|}\|(\|)\|\[\|\]/ 
 hi BracketsParen ctermfg=93 cterm=bold
@@ -45,7 +45,7 @@ hi Function ctermfg=141
 "===STATEMENT====
 "while, if, else, etc
 hi Statement ctermfg=82
-  syn match OrAndOperators /\(&&\|||\ze\)/
+  syn match OrAndOperators /\(&&\|||\)/
   hi link OrAndOperators Statement
   syn match SemiColum "[;]"
   hi link SemiColum Statement
@@ -57,22 +57,23 @@ hi Macro ctermfg=135
 
 "===TYPE===
 hi Type	term=underline ctermfg=117
-hi cType ctermfg=117
-  syn match defType /t_[a-zA-Z0-9_]\+/
+hi cType ctermfg=207
+  syn match defType /\<t_[a-zA-Z0-9_]\+\>/
   hi link defType cType
-  syn match globalType /g_[a-zA-Z0-9_]\+/
+  syn match globalType /\<g_[a-zA-Z0-9_]\+\>/
   hi link globalType cType
 hi link StorageClass cType "ctermfg=221 cterm=italic
 
 "===SPECIAL===
-" ? | cspecial = escaped chars
 hi Special ctermfg=93
 hi cSpecial ctermfg=189
+hi cString ctermfg=117
+hi link cCharacter cString
 
 "===ERROR&INFOS===
 hi Ignore ctermfg=black
 hi Error cterm=reverse ctermbg=Red ctermfg=White
-hi Todo	term=standout ctermbg=46 ctermfg=Black
+hi Todo	term=standout "ctermbg=46 ctermfg=Black
 hi LineNr ctermfg=248
 hi ExtraWhitespace ctermbg=248
   syn match ExtraWhitespace /\s\+$/
@@ -80,6 +81,9 @@ hi colorcolumn ctermbg=none ctermfg=82 cterm=bold
 hi VertSplit ctermfg=247
 hi StatusLine ctermfg=247
 hi StatusLineNC ctermfg=247
+hi StatusLineTerm ctermfg=247
+
+hi link cOctalError Number
 
 "   \ze matches at any position, and sets the end of the match there,
 "   \s whitespace character,
