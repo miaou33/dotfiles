@@ -22,12 +22,10 @@ then
     echo "Backed to current dir"
 fi
     cp ./eva.vim ~/.vim/colors/
-    
-# mkdir -p ~/.vim/autoload ~/.vim/backup ~/.vim/plugged ~/.vim/bundle
-# mkdir -p ~/.vim/pack/vendor/start
-# git clone https://github.com/preservim/nerdtree.git ~/.vim/pack/vendor/start/nerdtree
-# curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-# cd ~/.vim/bundle && git clone --depth=1 https://github.com/vim-syntastic/syntastic.git
+
+mkdir -p ~/.vim/autoload ~/.vim/backup ~/.vim/plugged ~/.vim/bundle
+mkdir -p ~/.vim/pack/vendor/start
+git clone https://github.com/preservim/nerdtree.git ~/.vim/pack/vendor/start/nerdtree
 # THEN RESTART VIM
 
 #===SETUP VIMRC===
