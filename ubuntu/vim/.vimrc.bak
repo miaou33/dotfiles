@@ -1,16 +1,10 @@
-set runtimepath^=~/.vim runtimepath+=~/.vim/after
-let &packpath = &runtimepath
-
-set number
-
-" ===========SYNTAX=========== 
-" Enable type file detection. Vim will be able to try to detect the type of file in use.  
-filetype on 
-" Enable plugins and load plugin for the detected file type.
+set mouse=a
+set number " Disable compatibility with vi which can cause unexpected issues.  set nocompatible ===========SYNTAX=========== Enable type file detection. Vim will be able to try to detect the type of file in use.  filetype on Enable plugins and load plugin for the detected file type.
 filetype plugin on
 " Load an indent file for the detected file type.
 filetype indent on
 " help w/ tabs
+set autoindent
 set smartindent
 set cindent
 "set tab to match ecole42
@@ -25,29 +19,50 @@ set colorcolumn=81
 "Help file related settings
 " search down into subfolders with :find just use wildcard operator !!
 set path+=**
+" display all matching files when tab complete
+set wildmenu
 " make wildmenu behave like similar to Bash completion.
 set wildmode=list:longest
 " ignore files which cant be modified by vim
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
+" show partial command you type in the last line of the screen
+set showcmd
 " Show the mode you are on the last line.
 set showmode
 " Show matching words during a search.
 set showmatch
+" Use highlighting when doing a search.
+set hlsearch
+set incsearch
 " ignorecase when searching
 set ignorecase
+" Set the commands to save in history default number is 20.
+set history=1000
 
 let mapleader = " "
 nnoremap <leader>e :bufdo e!<CR>
-noremap <C-h> <C-w>h
-noremap <C-j> <C-w>j
-noremap <C-k> <C-w>k
-noremap <C-l> <C-w>l
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+"nnoremap <Esc> <Esc> <Esc> :nohl<CR>
+nnoremap <leader>c :colo eva<CR>
 
-nnoremap <leader>c :colo sept22evatheme<CR>
+"==========Syntaxic========
+"execute pathogen#infect()
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+"
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
 
-"===========NERDTree=========
+
+"==========NERDTree=========
 " Start NERDTree and put the cursor back in the other window.
-autocmd VimEnter * NERDTree | wincmd p
+"autocmd VimEnter * NERDTree | wincmd p
 " Set keybindings
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <leader>n :NERDTreeFocus<CR>
@@ -56,10 +71,15 @@ nnoremap <C-f> :NERDTreeFind<CR>
 " Exit Vim if NERDTree is the only window remaining in the only tab.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
+"==========TIDAL=============
+"call plug#begin('~/.vim/plugged')
+"Plug 'tidalcycles/vim-tidal'
+"call plug#end()
 
 "==========COLORS============
-if (&t_Co != 256)
-  set t_Co=256
-endif
-colorscheme sept22evatheme
+syntax enable
+"if (&t_Co != 256)
+"  set t_Co=256
+"endif
+colorscheme koehler
 "autocmd BufRead,BufNewFile * syn match parens /[(){}]/

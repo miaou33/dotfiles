@@ -62,7 +62,7 @@ nnoremap <leader>c :colo eva<CR>
 
 "==========NERDTree=========
 " Start NERDTree and put the cursor back in the other window.
-autocmd VimEnter * NERDTree | wincmd p
+"autocmd VimEnter * NERDTree | wincmd p
 " Set keybindings
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <leader>n :NERDTreeFocus<CR>
@@ -72,14 +72,14 @@ nnoremap <C-f> :NERDTreeFind<CR>
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
 "==========TIDAL=============
-call plug#begin('~/.vim/plugged')
-Plug 'tidalcycles/vim-tidal'
-call plug#end()
+"call plug#begin('~/.vim/plugged')
+"Plug 'tidalcycles/vim-tidal'
+"call plug#end()
 
 "==========COLORS============
 syntax enable
-if (&t_Co != 256)
-  set t_Co=256
-endif
-colorscheme eva
+"if (&t_Co != 256)
+"  set t_Co=256
+"endif
+colorscheme koehler
 "autocmd BufRead,BufNewFile * syn match parens /[(){}]/
