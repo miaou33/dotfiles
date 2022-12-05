@@ -35,7 +35,7 @@ fi
 if [ "~/.vim/colors/eva.vim" ];
 then
     echo "${boldlightgreen}Backing current eva.vim to replace it by the new one$reset"
-    mv ~/.vim/colors/eva.vim ./eva.bak
+    mv ~/.vim/colors/eva.vim ./.eva.bak
     cp ./eva.vim ~/.vim/colors/
     echo "${purple}Backed to current dir$reset"
 fi

@@ -17,7 +17,7 @@ echo "${boldlightgreen}setting terminator $reset"
 if [ "~/.config/terminator" ]
 then
 	echo "${blue}terminator already set. backing previous settings... $reset"
-	cp -R ~/.config/terminator/config ~/.config/terminator/config.bak
+	cp -R ~/.config/terminator/config ~/.config/terminator/.config.bak
 else
 	mkdir -p ~/.config/terminator
 fi
