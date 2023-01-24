@@ -41,3 +41,11 @@ fi
 #put the dock again
 #cd /usr/share/gnome-shell/extensions/
 #sudo mv ubuntu-dock@ubuntu.com{.bak,}
+
+##########################################
+#       DISABLE TOUCHSCREEN              #
+##########################################
+
+#sudo vim /usr/share/X11/xorg.conf.d/40-libinput.conf
+#-> MatchIsTouchScreen "on" --> "off"
+#save and reboot
