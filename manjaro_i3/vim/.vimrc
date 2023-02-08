@@ -48,12 +48,16 @@ set ignorecase
 set history=1000
 
 let mapleader = " "
+noremap j h
+noremap k j
+noremap l k
+noremap ; l
 nnoremap <leader>e :bufdo e!<CR>
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
-nnoremap <leader>c :colo eva<CR>
+noremap <C-j> <C-w>h
+noremap <C-k> <C-w>j
+noremap <C-l> <C-w>k
+noremap <C-;> <C-w>l
+"nnoremap <leader>c :colo eva<CR>
 
 "==========NERDTree=========
 " Start NERDTree and put the cursor back in the other window.

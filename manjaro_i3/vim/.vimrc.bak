@@ -48,12 +48,16 @@ set ignorecase
 set history=1000
 
 let mapleader = " "
+nnoremap j h
+nnoremap k j
+nnoremap l k
+nnoremap ; l
 nnoremap <leader>e :bufdo e!<CR>
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
-nnoremap <leader>c :colo eva<CR>
+nnoremap <C-j> <C-w>h
+nnoremap <C-k> <C-w>j
+nnoremap <C-l> <C-w>k
+nnoremap <C-;> <C-w>l
+"nnoremap <leader>c :colo eva<CR>
 
 "==========NERDTree=========
 " Start NERDTree and put the cursor back in the other window.
@@ -78,4 +82,4 @@ syntax enable
 "endif
 colorscheme default 
 "autocmd BufRead,BufNewFile * syn match parens /[(){}]/
-hi LineNr ctermfg=248
+hi LineNr ctermfg=248 cterm=italic

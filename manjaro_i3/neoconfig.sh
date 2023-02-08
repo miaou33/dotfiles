@@ -12,32 +12,49 @@ boldwhite=$'\033[1;37m'
 boldlightgrey=$'\033[1;39m'
 reset=$'\033[0m'
 
-echo "aci color palette:
-${comment}comment
-${red}red
-${green}green
-${orange}orange
-${blue}blue
-${purple}purple
-${boldlightgreen}boldlightgreen
-${boldwhite}boldwhite
+#echo "aci color palette:
+#${comment}comment
+#${red}red
+#${green}green
+#${orange}orange
+#${blue}blue
+#${purple}purple
+#${boldlightgreen}boldlightgreen
+#${boldwhite}boldwhite
 #${eight}eight
-${boldlightgrey}boldlightgrey
-${reset}reset"
+#${boldlightgrey}boldlightgrey
+#${reset}reset"
 
-sudo pacman-mirrors --country France && pacman -Syyu
-sudo pacman -Syu zsh zsh-completions zsh-autosuggestions zsh-history-substring-search
-sudo pacman -Syu firefox discord alacritty
+#UNCOMMENT LINES !!!!!!!!!!!!!!!!!!!!!!!!!! commented to test others while writing it
 
-echo "\n${boldlightgreen}REMOVE BEEP${boldlightgrey}\n
-Blacklisting the pcspkr and snd_pcsp modules will prevent udev from loading them at boot.
-create the file: /etc/modprobe.d/nobeep.conf and edit :
-blacklist pcspkr
-blacklist snd_pcsp${reset}\n
+echo "${boldlightgreen}SETTING MIRRORS TO FRANCE${boldlightgrey}"
+#sudo pacman-mirrors --country France && pacman -Syyu
 
-\n${boldlightgreen}NATURAL SCROLLING & DISABLE TOUCHSCREEN${boldlightgrey}\n
-Edit /usr/share/X11/xorg.conf.d/40-libinput.conf
---> Add to mouse Option "NaturalScrolling" "True"${reset}\n
---> Add to touchscreen Option "Ignore" "on"${reset}\n
+#ENABLE TRIM to take care of SSD
+echo "${boldlightgreen}ENABLING TRIM${boldlightgrey}"
+#sudo systemctl enable fstrim.timer
+#sudo systemctl start fstrim.timer
 
-"
+#ENABLE FIREWALL
+echo "${boldlightgreen}INSTALLING UFW (FIREWALL)${boldlightgrey}"
+#sudo systemctl enable ufw
+#sudo systemctl start ufw
+
+#####natural scrolling and disable touchscreen#####
+echo "${boldlightgreen}SETTING NATURAL SCROLLING & DISABLING TOUCHSCREEN${boldlightgrey}"
+#sudo cp /usr/share/X11/xorg.conf.d/40-libinput.conf /usr/share/X11/xorg.conf.d/40-libinput.conf.bak
+#sudo cp -R 40-libinput.conf /usr/share/X11/xorg.conf.d/ 
+
+#Blacklisting the pcspkr and snd_pcsp modules (beep modules) will prevent udev from loading them at boot.
+echo "${boldlightgreen}REMOVING BEEP${boldlightgrey}"
+#sudo cp nobeep.conf /etc/modprobe.d/
+
+echo "${boldlightgreen}INSTALLING PACKAGES${boldlightgrey}"
+#sudo pacman -Syu yay
+
+sudo yay -Syu	zsh zsh-completions zsh-autosuggestions zsh-history-substring-search \
+				firefox \
+				discord \
+				alacritty \
+				emacs
+
