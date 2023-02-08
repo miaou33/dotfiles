@@ -27,7 +27,7 @@ ${reset}reset"
 
 sudo pacman-mirrors --country France && pacman -Syyu
 sudo pacman -Syu zsh zsh-completions zsh-autosuggestions zsh-history-substring-search
-sudo pacman -Syu firefox
+sudo pacman -Syu firefox discord alacritty
 
 echo "\n${boldlightgreen}REMOVE BEEP${boldlightgrey}\n
 Blacklisting the pcspkr and snd_pcsp modules will prevent udev from loading them at boot.
