@@ -58,3 +58,5 @@ sudo yay -Syu	zsh zsh-completions zsh-autosuggestions zsh-history-substring-sear
 				alacritty \
 				emacs
 
+#So, say you connected VGA1 and want to use it as an additional screen:
+#xrandr --output VGA1 --auto --left-of LVDS1 

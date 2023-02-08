@@ -48,15 +48,15 @@ set ignorecase
 set history=1000
 
 let mapleader = " "
-noremap j h
-noremap k j
-noremap l k
-noremap ; l
+noremap j <left>
+noremap k <down>
+noremap l <up>
+noremap semicolon <right>
 nnoremap <leader>e :bufdo e!<CR>
 noremap <C-j> <C-w>h
 noremap <C-k> <C-w>j
-noremap <C-l> <C-w>k
-noremap <C-;> <C-w>l
+"noremap <C-semicolon> <C-w>k
+"noremap <C-l>l <C-w>l
 "nnoremap <leader>c :colo eva<CR>
 
 "==========NERDTree=========
