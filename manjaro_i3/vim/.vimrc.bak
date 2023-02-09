@@ -55,7 +55,7 @@ noremap semicolon <right>
 nnoremap <leader>e :bufdo e!<CR>
 noremap <C-j> <C-w>h
 noremap <C-k> <C-w>j
-noremap <C-semicolon> <C-w>k
+"noremap <C-semicolon> <C-w>k
 "noremap <C-l>l <C-w>l
 "nnoremap <leader>c :colo eva<CR>
 

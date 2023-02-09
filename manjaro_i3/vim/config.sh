@@ -18,16 +18,16 @@ if [ -d "~/.vim" ];
 then
 	if [ "~/.vim/pack/vendor/start/nerdtree" ];
 		then
-			echo "${orange}NerdTree already installed !$reset"
+			echo "NerdTree already installed !$reset"
 		else
-			echo "${boldlightgreen}installing nerdtree...$reset"
+			echo "installing nerdtree...$reset"
 			mkdir -p ~/.vim/autoload ~/.vim/backup ~/.vim/plugged ~/.vim/bundle
 			mkdir -p ~/.vim/pack/vendor/start
 			git clone https://github.com/preservim/nerdtree.git ~/.vim/pack/vendor/start/nerdtree
 	fi
 else
 	mkdir -p -v ~/.vim ~/.vim/colors ~/.vim/autoload ~/.vim/backup ~/.vim/plugged ~/.vim/bundle
-    echo "${boldlightgreen}installing nerdtree...$reset"
+    echo "installing nerdtree...$reset"
 	mkdir -p ~/.vim/pack/vendor/start
 	git clone https://github.com/preservim/nerdtree.git ~/.vim/pack/vendor/start/nerdtree
 fi
@@ -47,13 +47,13 @@ fi
 
 if [ "~/.vimrc" ];
 then
-	echo "${boldlightgreen}Backing up current vimrc config to replace it by the new one$reset"
+	echo "Backing up current vimrc config to replace it by the new one$reset"
 	mv ~/.vimrc ~/CONFiiG/manjaro_i3/vim/.vimrc.bak
-	echo "${purple}Backed to current directory$reset"
+	echo "Backed to current directory$reset"
 fi
     cp .vimrc ~/.vimrc
 
-echo "${boldbeige}VIM SETUPS UPDATED$reset"
+echo "VIM SETUPS UPDATED$reset"
 
 
 #ls /usr/share/vim/vim82/colors | grep .vim
