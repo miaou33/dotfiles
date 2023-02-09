@@ -12,19 +12,6 @@ boldwhite=$'\033[1;37m'
 boldlightgrey=$'\033[1;39m'
 reset=$'\033[0m'
 
-#echo "aci color palette:
-#${comment}comment
-#${red}red
-#${green}green
-#${orange}orange
-#${blue}blue
-#${purple}purple
-#${boldlightgreen}boldlightgreen
-#${boldwhite}boldwhite
-#${eight}eight
-#${boldlightgrey}boldlightgrey
-#${reset}reset"
-
 echo "${boldlightgreen}CREATING BACKUP FROM PREVIOUS CONFIG...${boldlightgrey}"
 echo "cp -R ~/.i3/config ./.i3/config.bak"
 cp -R ~/.i3/config ./.i3/config.bak

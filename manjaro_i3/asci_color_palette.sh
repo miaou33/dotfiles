@@ -12,13 +12,15 @@ boldwhite=$'\033[1;37m'
 boldlightgrey=$'\033[1;39m'
 reset=$'\033[0m'
 
-#add vi mode fonctionality
-echo "'bind key -v' >> ~/.zshrc"
-#echo "bind key -v" >> ~/.zshrc
-
-echo "alias gcl='git clone' >> ~/.zshrc"
-#echo "alias gcl='git clone'" >> ~/.zshrc
-
-echo "alias ls='ls -l' >> ~/.zshrc"
-#echo "alias ls='ls -l'" >> ~/.zshrc
-
+echo "aci color palette:
+${comment}comment
+${red}red
+${green}green
+${orange}orange
+${blue}blue
+${purple}purple
+${boldlightgreen}boldlightgreen
+${boldwhite}boldwhite
+${eight}eight
+${boldlightgrey}boldlightgrey
+${reset}reset"

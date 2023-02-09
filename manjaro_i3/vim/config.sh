@@ -14,7 +14,7 @@ reset=$'\033[0m'
 
 # SETUP .VIM - NERDTREE - COLORS
 
-if [ "~/.vim" ];
+if [ -d "~/.vim" ];
 then
 	if [ "~/.vim/pack/vendor/start/nerdtree" ];
 		then

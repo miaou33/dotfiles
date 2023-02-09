@@ -12,19 +12,6 @@ boldwhite=$'\033[1;37m'
 boldlightgrey=$'\033[1;39m'
 reset=$'\033[0m'
 
-#echo "aci color palette:
-#${comment}comment
-#${red}red
-#${green}green
-#${orange}orange
-#${blue}blue
-#${purple}purple
-#${boldlightgreen}boldlightgreen
-#${boldwhite}boldwhite
-#${eight}eight
-#${boldlightgrey}boldlightgrey
-#${reset}reset"
-
 echo "
 "
 
@@ -81,7 +68,8 @@ echo "${boldlightgreen}INSTALLING PACKAGES${boldlightgrey}"
 #					firefox \
 #					discord \
 #					alacritty \
-#					emacs
+#					emacs \
+#					bat
 
 #yay	visual-studio-code-bin
 
@@ -119,4 +107,4 @@ echo "sed 's/nano/vim/g' ~/.profile"
 echo "
 "
 
-echo "${boldlightgreen}FINISH!${reset}"
+echo "${boldlightgreen}FINISH! u may go to subdirectories to exec their script${reset}"
