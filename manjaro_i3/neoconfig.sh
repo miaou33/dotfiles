@@ -50,13 +50,15 @@ echo "${boldlightgreen}REMOVING BEEP${boldlightgrey}"
 #sudo cp nobeep.conf /etc/modprobe.d/
 
 echo "${boldlightgreen}INSTALLING PACKAGES${boldlightgrey}"
-#sudo pacman -Syu yay
+#sudo pacman -Syu	yay \
+#					zsh zsh-completions zsh-autosuggestions zsh-history-substring-search \
+#					firefox \
+#					discord \
+#					alacritty \
+#					emacs
 
-sudo yay -Syu	zsh zsh-completions zsh-autosuggestions zsh-history-substring-search \
-				firefox \
-				discord \
-				alacritty \
-				emacs
+#yay	visual-studio-code-bin
 
+echo "${boldlightgreeen}CONNECTING MONITOR${boldlightgrey} !!!!!!!!!!!!!!!! CHANGE BEFORE UNCOMMENT (SEE NAME OF MONITOR DOING xrandr COMMAND"
 #So, say you connected VGA1 and want to use it as an additional screen:
 #xrandr --output VGA1 --auto --left-of LVDS1 
