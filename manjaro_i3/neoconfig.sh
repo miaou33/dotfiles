@@ -62,3 +62,5 @@ echo "${boldlightgreen}INSTALLING PACKAGES${boldlightgrey}"
 echo "${boldlightgreeen}CONNECTING MONITOR${boldlightgrey} !!!!!!!!!!!!!!!! CHANGE BEFORE UNCOMMENT (SEE NAME OF MONITOR DOING xrandr COMMAND"
 #So, say you connected VGA1 and want to use it as an additional screen:
 #xrandr --output VGA1 --auto --left-of LVDS1 
+
+echo "${boldlightgreen}FINISH!${reset}"
