@@ -25,5 +25,9 @@ reset=$'\033[0m'
 #${boldlightgrey}boldlightgrey
 #${reset}reset"
 
-echo "${boldlightgreen}ADDING VI COMMAND TO ZSHRC${boldlightgrey}"
-echo "bindkey -v" >> ~/.zshrc
+#add vi mode fonctionality
+#echo "'bind key -v' >> ~/.zshrc"
+#echo "bind key -v" >> ~/.zshrc
+
+echo "alias gcl='git clone' >> ~/.zshrc"
+echo "alias gcl='git clone'" >> ~/.zshrc
