@@ -13,9 +13,9 @@ boldlightgrey=$'\033[1;39m'
 reset=$'\033[0m'
 
 echo "${boldlightgreen}CREATING BACKUP FROM PREVIOUS CONFIG...${boldlightgrey}"
-echo "cp -R ~/.i3/config ./.i3/config.bak"
-cp -R ~/.i3/config ./.i3/config.bak
+echo "cp ~/.i3/config ./config.bak"
+cp ~/.i3/config ./config.bak
 
 echo "${boldlightgreen}REPLACING CONFIG${boldlightgrey}"
 echo "cp -R config ~/.i3/config"
-cp -R ./.i3/config ~/.i3/config
+cp -R ./config ~/.i3/config
