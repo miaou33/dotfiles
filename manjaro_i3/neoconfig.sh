@@ -48,8 +48,8 @@ echo "
 echo "${boldlightgreen}SETTING NATURAL SCROLLING & DISABLING TOUCHSCREEN${boldlightgrey}"
 echo "sudo cp /usr/share/X11/xorg.conf.d/40-libinput.conf /usr/share/X11/xorg.conf.d/40-libinput.conf.bak"
 echo "sudo cp -R 40-libinput.conf /usr/share/X11/xorg.conf.d/"
-#sudo cp /usr/share/X11/xorg.conf.d/40-libinput.conf /usr/share/X11/xorg.conf.d/40-libinput.conf.bak
-#sudo cp -R 40-libinput.conf /usr/share/X11/xorg.conf.d/ 
+sudo cp /usr/share/X11/xorg.conf.d/40-libinput.conf /usr/share/X11/xorg.conf.d/40-libinput.conf.bak
+sudo cp -R 40-libinput.conf /usr/share/X11/xorg.conf.d/ 
 
 echo "
 "
@@ -57,19 +57,19 @@ echo "
 #Blacklisting the pcspkr and snd_pcsp modules (beep modules) will prevent udev from loading them at boot.
 echo "${boldlightgreen}REMOVING BEEP${boldlightgrey}"
 echo "sudo cp nobeep.conf /etc/modprobe.d/"
-#sudo cp nobeep.conf /etc/modprobe.d/
+sudo cp nobeep.conf /etc/modprobe.d/
 
 echo "
 "
 
 echo "${boldlightgreen}INSTALLING PACKAGES${boldlightgrey}"
-#sudo pacman -Syu	yay \
-#					zsh zsh-completions zsh-autosuggestions zsh-history-substring-search \
-#					firefox \
-#					discord \
-#					alacritty \
-#					emacs \
-#					bat
+sudo pacman -Syu	yay \
+					zsh zsh-completions zsh-autosuggestions zsh-history-substring-search \
+					firefox \
+					discord \
+					alacritty \
+					emacs \
+					bat
 
 #yay	visual-studio-code-bin
 

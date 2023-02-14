@@ -14,11 +14,11 @@ reset=$'\033[0m'
 
 #add vi mode fonctionality
 echo "'bind key -v' >> ~/.zshrc"
-#echo "bind key -v" >> ~/.zshrc
+echo "bind key -v" >> ~/.zshrc
 
 echo "alias gcl='git clone' >> ~/.zshrc"
-#echo "alias gcl='git clone'" >> ~/.zshrc
+echo "alias gcl='git clone'" >> ~/.zshrc
 
 echo "alias ls='ls -l' >> ~/.zshrc"
-#echo "alias ls='ls -l'" >> ~/.zshrc
+echo "alias ls='ls -l'" >> ~/.zshrc
 
