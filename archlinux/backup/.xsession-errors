@@ -1,0 +1,148 @@
+/bin/sh: line 1: xss-lock: command not found
+/bin/sh: line 1: dex: command not found
+polybar|notice:  Parsing config file: /home/meow/.config/polybar/config.ini
+polybar|notice:  Listening for IPC messages (PID: 760)
+polybar|notice:  Loading module 'xworkspaces' of type 'internal/xworkspaces'
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loading module 'filesystem' of type 'internal/fs'
+polybar|notice:  Loading module 'pulseaudio' of type 'internal/pulseaudio'
+polybar|notice:  pulseaudio: using default sink 
+polybar|notice:  Loading module 'xkeyboard' of type 'internal/xkeyboard'
+polybar|notice:  Loading module 'memory' of type 'internal/memory'
+polybar|notice:  Loading module 'cpu' of type 'internal/cpu'
+polybar|notice:  Loading module 'wlan' of type 'internal/network'
+polybar|notice:  module/wlan: Discovered wireless interface wlan0
+polybar|notice:  Loading module 'eth' of type 'internal/network'
+polybar|error: Disabling module "eth" (reason: No interface found for type 'wired')
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loaded 9 modules
+polybar|notice:  Loaded font "monospace" (name=FreeMono, offset=2, file=/usr/share/fonts/gnu-free/FreeMono.otf)
+polybar|notice:  pulseaudio: using default sink alsa_output.pci-0000_05_00.6.analog-stereo
+polybar|notice:  pulseaudio: using default sink alsa_output.pci-0000_05_00.6.analog-stereo
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+polybar|notice:  randr_screen_change_notify (4480x1600)... reloading
+polybar|notice:  Termination signal received, shutting down...
+polybar|notice:  Parsing config file: /home/meow/.config/polybar/config.ini
+polybar|notice:  Listening for IPC messages (PID: 760)
+polybar|notice:  Loading module 'xworkspaces' of type 'internal/xworkspaces'
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loading module 'filesystem' of type 'internal/fs'
+polybar|notice:  Loading module 'pulseaudio' of type 'internal/pulseaudio'
+polybar|notice:  pulseaudio: using default sink alsa_output.pci-0000_05_00.6.analog-stereo
+polybar|notice:  Loading module 'xkeyboard' of type 'internal/xkeyboard'
+polybar|notice:  Loading module 'memory' of type 'internal/memory'
+polybar|notice:  Loading module 'cpu' of type 'internal/cpu'
+polybar|notice:  Loading module 'wlan' of type 'internal/network'
+polybar|notice:  module/wlan: Discovered wireless interface wlan0
+polybar|notice:  Loading module 'eth' of type 'internal/network'
+polybar|error: Disabling module "eth" (reason: No interface found for type 'wired')
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loaded 9 modules
+polybar|notice:  Loaded font "monospace" (name=FreeMono, offset=2, file=/usr/share/fonts/gnu-free/FreeMono.otf)
+polybar|notice:  Received signal(15): Terminated
+polybar|notice:  Termination signal received, shutting down...
+polybar|notice:  Parsing config file: /home/meow/.config/polybar/config.ini
+polybar|notice:  Listening for IPC messages (PID: 2887)
+polybar|notice:  Loading module 'xworkspaces' of type 'internal/xworkspaces'
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loading module 'filesystem' of type 'internal/fs'
+polybar|notice:  Loading module 'pulseaudio' of type 'internal/pulseaudio'
+polybar|notice:  pulseaudio: using default sink alsa_output.pci-0000_05_00.6.analog-stereo
+polybar|notice:  Loading module 'xkeyboard' of type 'internal/xkeyboard'
+polybar|notice:  Loading module 'memory' of type 'internal/memory'
+polybar|notice:  Loading module 'cpu' of type 'internal/cpu'
+polybar|notice:  Loading module 'wlan' of type 'internal/network'
+polybar|notice:  module/wlan: Discovered wireless interface wlan0
+polybar|notice:  Loading module 'eth' of type 'internal/network'
+polybar|error: Disabling module "eth" (reason: No interface found for type 'wired')
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loaded 9 modules
+polybar|notice:  Loaded font "monospace" (name=FreeMono, offset=2, file=/usr/share/fonts/gnu-free/FreeMono.otf)
+polybar|notice:  Received signal(15): Terminated
+polybar|notice:  Termination signal received, shutting down...
+polybar|notice:  Parsing config file: /home/meow/.config/polybar/config.ini
+polybar|notice:  Listening for IPC messages (PID: 2913)
+polybar|notice:  Loading module 'xworkspaces' of type 'internal/xworkspaces'
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loading module 'filesystem' of type 'internal/fs'
+polybar|notice:  Loading module 'pulseaudio' of type 'internal/pulseaudio'
+polybar|notice:  pulseaudio: using default sink alsa_output.pci-0000_05_00.6.analog-stereo
+polybar|notice:  Loading module 'xkeyboard' of type 'internal/xkeyboard'
+polybar|notice:  Loading module 'memory' of type 'internal/memory'
+polybar|notice:  Loading module 'cpu' of type 'internal/cpu'
+polybar|notice:  Loading module 'wlan' of type 'internal/network'
+polybar|notice:  module/wlan: Discovered wireless interface wlan0
+polybar|notice:  Loading module 'eth' of type 'internal/network'
+polybar|error: Disabling module "eth" (reason: No interface found for type 'wired')
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loaded 9 modules
+polybar|notice:  Loaded font "monospace" (name=FreeMono, offset=2, file=/usr/share/fonts/gnu-free/FreeMono.otf)
+polybar|warn:  Dropping unmatched character ❤ (U+2764) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|warn:  Dropping unmatched character ️ (U+fe0f) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|warn:  Dropping unmatched character ❤ (U+2764) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|warn:  Dropping unmatched character ️ (U+fe0f) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|warn:  Dropping unmatched character ❤ (U+2764) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|warn:  Dropping unmatched character ️ (U+fe0f) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|warn:  Dropping unmatched character ❤ (U+2764) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|warn:  Dropping unmatched character ️ (U+fe0f) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|warn:  Dropping unmatched character ❤ (U+2764) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|warn:  Dropping unmatched character ️ (U+fe0f) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|warn:  Dropping unmatched character ❤ (U+2764) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|warn:  Dropping unmatched character ️ (U+fe0f) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|warn:  Dropping unmatched character ❤ (U+2764) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|warn:  Dropping unmatched character ️ (U+fe0f) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|warn:  Dropping unmatched character ❤ (U+2764) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|warn:  Dropping unmatched character ️ (U+fe0f) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|warn:  Dropping unmatched character ❤ (U+2764) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|warn:  Dropping unmatched character ️ (U+fe0f) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|warn:  Dropping unmatched character ❤ (U+2764) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|warn:  Dropping unmatched character ️ (U+fe0f) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|warn:  Dropping unmatched character ❤ (U+2764) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|warn:  Dropping unmatched character ️ (U+fe0f) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|warn:  Dropping unmatched character ❤ (U+2764) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|warn:  Dropping unmatched character ️ (U+fe0f) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|warn:  Dropping unmatched character ❤ (U+2764) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|warn:  Dropping unmatched character ️ (U+fe0f) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|warn:  Dropping unmatched character ❤ (U+2764) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|warn:  Dropping unmatched character ️ (U+fe0f) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|warn:  Dropping unmatched character ❤ (U+2764) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|warn:  Dropping unmatched character ️ (U+fe0f) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|warn:  Dropping unmatched character ❤ (U+2764) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|warn:  Dropping unmatched character ️ (U+fe0f) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|warn:  Dropping unmatched character ❤ (U+2764) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|warn:  Dropping unmatched character ️ (U+fe0f) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|warn:  Dropping unmatched character ❤ (U+2764) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|warn:  Dropping unmatched character ️ (U+fe0f) in ' (15) [i3-gaps] Linux + Science = ❤️ : unixporn — Mozilla Fir...'
+polybar|notice:  Received signal(15): Terminated
+polybar|notice:  Termination signal received, shutting down...
+polybar|notice:  Parsing config file: /home/meow/.config/polybar/config.ini
+polybar|notice:  Listening for IPC messages (PID: 4948)
+polybar|notice:  Loading module 'xworkspaces' of type 'internal/xworkspaces'
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loading module 'filesystem' of type 'internal/fs'
+polybar|notice:  Loading module 'pulseaudio' of type 'internal/pulseaudio'
+polybar|notice:  pulseaudio: using default sink alsa_output.pci-0000_05_00.6.analog-stereo
+polybar|notice:  Loading module 'xkeyboard' of type 'internal/xkeyboard'
+polybar|notice:  Loading module 'memory' of type 'internal/memory'
+polybar|notice:  Loading module 'cpu' of type 'internal/cpu'
+polybar|notice:  Loading module 'wlan' of type 'internal/network'
+polybar|notice:  module/wlan: Discovered wireless interface wlan0
+polybar|notice:  Loading module 'eth' of type 'internal/network'
+polybar|error: Disabling module "eth" (reason: No interface found for type 'wired')
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loaded 9 modules
+polybar|notice:  Loaded font "monospace" (name=FreeMono, offset=2, file=/usr/share/fonts/gnu-free/FreeMono.otf)
+[2023-02-15T21:25:28Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-02-15T21:25:29Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-02-15T21:25:29Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2023-02-15T21:25:29Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[Parent 935, Main Thread] WARNING: Failed to connect to proxy: 'glib warning', file /build/firefox/src/firefox-110.0/toolkit/xre/nsSigHandlers.cpp:167
+
+(firefox:935): libnotify-WARNING **: 22:40:55.342: Failed to connect to proxy

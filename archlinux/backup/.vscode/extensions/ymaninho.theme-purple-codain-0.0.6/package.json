@@ -1,0 +1,42 @@
+{
+	"name": "theme-purple-codain",
+	"displayName": "Purple-Codain",
+	"description": "The only theme on my street",
+	"version": "0.0.6",
+	"engines": {
+		"vscode": "^1.62.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Purple-Codain",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Purple-Codain.json"
+			}
+		]
+	},
+	"galleryBanner": {
+		"color": "#A744F4",
+		"theme": "dark"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ymaninho54/Theme-Vscode-Purple"
+	},
+	"publisher": "ymaninho",
+	"icon": "logo.png",
+	"__metadata": {
+		"id": "73577261-fdff-4c8f-ae0c-e2dfafbaaa32",
+		"publisherId": "809e51b8-b240-455d-898e-cf0d39e5d81c",
+		"publisherDisplayName": "ymaninho",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1676378899218,
+		"preRelease": false
+	}
+}

@@ -1,0 +1,95 @@
+{
+    "name": "core-theme",
+    "displayName": "Core Theme",
+    "description": "Minimal environment aesthetics for maximum focus.",
+    "keywords": [
+        "vscode",
+        "theme",
+        "minimal",
+        "focus"
+    ],
+    "version": "0.5.0",
+    "author": "Michael Huynh",
+    "publisher": "miqh",
+    "license": "MIT",
+    "homepage": "https://marketplace.visualstudio.com/items?itemName=miqh.core-theme",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/miqh/vscode-core-theme.git"
+    },
+    "bugs": {
+        "url": "https://github.com/miqh/vscode-core-theme/issues"
+    },
+    "engines": {
+        "vscode": "^1.12.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "commands": [
+            {
+                "command": "core-theme.create",
+                "title": "Create Template",
+                "category": "Core Theme"
+            },
+            {
+                "command": "core-theme.edit",
+                "title": "Edit Template",
+                "category": "Core Theme"
+            },
+            {
+                "command": "core-theme.generate",
+                "title": "Generate Themes",
+                "category": "Core Theme"
+            },
+            {
+                "command": "core-theme.remove",
+                "title": "Remove Template",
+                "category": "Core Theme"
+            }
+        ],
+        "themes": [
+            {
+                "label": "Core (Dark)",
+                "uiTheme": "vs-dark",
+                "path": "themes/dark.json"
+            },
+            {
+                "label": "Core (Light)",
+                "uiTheme": "vs",
+                "path": "themes/light.json"
+            }
+        ]
+    },
+    "activationEvents": [
+        "*"
+    ],
+    "main": "./dist/extension",
+    "icon": "images/extension-icon.png",
+    "qna": false,
+    "scripts": {
+        "build": "./node_modules/.bin/tsc -p .",
+        "check": "./node_modules/.bin/tslint -p .",
+        "watch": "./node_modules/.bin/tsc -watch -p .",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "vscode:prepublish": "npm run check && npm run build"
+    },
+    "devDependencies": {
+        "@types/node": "^10.14.6",
+        "tslint": "^5.16.0",
+        "typescript": "^3.4.5",
+        "vscode": "^1.1.33"
+    },
+    "__metadata": {
+        "id": "6d787923-dba5-4883-988e-ffdeed8e0b73",
+        "publisherId": "a538cab4-3dfe-429e-a738-f218d9f7f34c",
+        "publisherDisplayName": "miqh",
+        "targetPlatform": "undefined",
+        "isApplicationScoped": false,
+        "updated": false,
+        "isPreReleaseVersion": false,
+        "installedTimestamp": 1676378874438,
+        "preRelease": false
+    }
+}

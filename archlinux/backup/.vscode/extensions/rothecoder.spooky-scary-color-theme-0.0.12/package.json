@@ -1,0 +1,38 @@
+{
+	"publisher": "rothecoder",
+	"name": "spooky-scary-color-theme",
+	"displayName": "Spooky Scary Color Theme",
+	"description": "Lovers of Halloween and all things spooky, UNITE!",
+	"icon": "ssctLogoG.jpeg",
+	"version": "0.0.12",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/rojhanpaydar/spooky-scary-color-theme"
+	},
+	"engines": {
+		"vscode": "^1.60.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Spooky Scary Color Theme",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Spooky Scary Color Theme-color-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "6320dc09-7a91-4555-8483-ecdfd998a1ba",
+		"publisherId": "decdb746-fd6e-4d35-9730-b558c989a384",
+		"publisherDisplayName": "Rojhan Paydar",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1676378916438,
+		"preRelease": false
+	}
+}

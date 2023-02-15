@@ -1,0 +1,38 @@
+{
+	"name": "mecha-01",
+	"displayName": "MECHA.01",
+	"description": "Theme inspired by Neon Genesis Evangelion EVA 01",
+	"version": "0.12.0",
+	"engines": {
+		"vscode": "^1.64.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"icon": "images/mecha-01-logo.png",
+	"contributes": {
+		"themes": [
+			{
+				"label": "MECHA.01",
+				"uiTheme": "vs-dark",
+				"path": "./themes/MECHA.01-color-theme.json"
+			}
+		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/gianmazzoran/mecha-01"
+	},
+	"publisher": "bytemore",
+	"__metadata": {
+		"id": "981cdce3-b84d-4dfc-affb-19a7c261df2c",
+		"publisherId": "2c9c0729-59b0-46ac-89c2-6e0efd03a4d8",
+		"publisherDisplayName": "Bytemore",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1676378957654,
+		"preRelease": false
+	}
+}

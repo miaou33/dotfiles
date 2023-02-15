@@ -1,0 +1,10 @@
+2023-02-14 19:11:06.172 [info] Using settings sync service https://vscode-sync.trafficmanager.net/
+2023-02-14 19:11:06.172 [info] Auto Sync is enabled.
+2023-02-14 19:11:06.172 [info] Auto Sync: Suspended until auth token is available.
+2023-02-14 19:11:06.258 [info] Deleting non existing profile from backup /home/meow/.config/Code/User/sync/extensions
+2023-02-14 19:11:06.262 [info] Deleting non existing profile from backup /home/meow/.config/Code/User/sync/globalState
+2023-02-14 19:11:06.264 [info] Deleting non existing profile from backup /home/meow/.config/Code/User/sync/keybindings
+2023-02-14 19:11:06.266 [info] Deleting non existing profile from backup /home/meow/.config/Code/User/sync/profiles
+2023-02-14 19:11:06.268 [info] Deleting non existing profile from backup /home/meow/.config/Code/User/sync/settings
+2023-02-14 19:11:06.270 [info] Deleting non existing profile from backup /home/meow/.config/Code/User/sync/snippets
+2023-02-14 19:11:06.272 [info] Deleting non existing profile from backup /home/meow/.config/Code/User/sync/tasks

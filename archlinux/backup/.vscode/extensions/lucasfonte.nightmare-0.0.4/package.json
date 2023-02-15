@@ -1,0 +1,48 @@
+{
+	"name": "nightmare",
+	"displayName": "Nightmare",
+	"description": "This is your Nightmare theme, inspired by the movie \"Nightmare Before Christmas\"",
+	"icon": "images/nightmare-icon.png",
+	"publisher": "LucasFonte",
+	"version": "0.0.4",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Lucas-Fonte/nightmare-vscode-theme"
+	},
+	"bugs": {
+		"url": "https://github.com/Lucas-Fonte/nightmare-vscode-theme"
+	},
+	"homepage": "https://github.com/Lucas-Fonte/nightmare-vscode-theme",
+	"engines": {
+		"vscode": "^1.48.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"Nightmare",
+		"Before",
+		"Christmas",
+		"Halloween"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Nightmare",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Nightmare-color-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "4f3f095a-4085-4f63-8804-6e5715a2a2e0",
+		"publisherId": "3892b690-a496-443c-b370-18b383824498",
+		"publisherDisplayName": "Lucas Fonte",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1676378866370,
+		"preRelease": false
+	}
+}

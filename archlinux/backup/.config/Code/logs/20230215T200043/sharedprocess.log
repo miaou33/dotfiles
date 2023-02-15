@@ -1,0 +1,9 @@
+2023-02-15 20:00:47.417 [info] Starting worker process with pid 2307 (type: fileWatcher, window: 1).
+2023-02-15 20:00:51.480 [info] Getting Manifest... ms-vscode.cpptools
+2023-02-15 20:00:52.097 [info] Installing extension: ms-vscode.cpptools
+2023-02-15 20:00:58.151 [warning] Extension signature verification: ms-vscode.cpptools. Verification status: UnknownError.
+2023-02-15 20:00:59.879 [info] Extracted extension to /home/meow/.vscode/extensions/.35c91756-1dfb-46ca-8ac1-e0ffe655e5ae: ms-vscode.cpptools
+2023-02-15 20:00:59.895 [info] Renamed to /home/meow/.vscode/extensions/ms-vscode.cpptools-1.14.3-linux-x64
+2023-02-15 20:00:59.901 [info] Extracting completed. ms-vscode.cpptools
+2023-02-15 20:00:59.915 [info] Extension installed successfully: ms-vscode.cpptools
+2023-02-15 20:00:59.931 [info] Marked extension as uninstalled ms-vscode.cpptools-1.13.9-linux-x64
