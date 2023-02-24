@@ -1,0 +1,8 @@
+font:
+    size: 7
+
+colors:
+  primary:
+    background: "#000000"
+    foreground: "#ffffff" #  background: "#000000"
+
