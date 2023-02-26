@@ -17,3 +17,4 @@ cp -v ~/.vimrc ~/CONFiiG/archlinux/dotfiles/.vimrc
 cp -v ~/.fehbg ~/CONFiiG/archlinux/dotfiles/.fehbg
 cp -v ~/.p10k.zsh ~/CONFiiG/archlinux/dotfiles/.p10k.zsh
 
+
