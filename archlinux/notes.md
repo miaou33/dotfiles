@@ -1,8 +1,21 @@
 # TO DO
 
 ## BAR
-- change font
-- bumblebee status
+- change colors
+- luminosity
+- date
+  
+## DISPLAY MANAGER
+- arch logo instead of manjaro
+
+## BOOT
+- enlever logo yoga
+
+## NOTIFICATIONS 
+- battery low
+- screenshot taken
+- sound +/-
+- luminosity +/-
 
 # DONE
 

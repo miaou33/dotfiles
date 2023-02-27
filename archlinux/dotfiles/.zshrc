@@ -27,7 +27,5 @@ bindkey -v
 alias ls='exa -aG --sort=type'
 alias ll='exa -aglhHS -s type --icons'
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:~/.emacs.d/bin
-
-
 export NNN_COLORS='#a744b322' NNN_FCOLORS='dfdfdf6c0000df42bbbaba5f'
 export XDG_CONFIG_HOME="$HOME/.config"
