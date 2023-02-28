@@ -1,9 +1,13 @@
 # TO DO
 
+## MUSIC
+- bluetooth
+- avancer / reculer / pause 
+
 ## BAR
 - change colors
-- luminosity
-- date
+- display luminosity/brightness range
+- bluetooth on/off
   
 ## DISPLAY MANAGER
 - arch logo instead of manjaro
@@ -16,6 +20,10 @@
 - screenshot taken
 - sound +/-
 - luminosity +/-
+  
+## THEME
+- xrdb .Xresources (general define of colors)
+
 
 # DONE
 

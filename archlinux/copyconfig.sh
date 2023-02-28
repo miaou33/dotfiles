@@ -12,6 +12,8 @@ cp $DOT_PATH/.config/picom/picom.conf $DOT_PATH/.config/picom/picom.conf.bak
 cp -v ~/.config/picom/picom.conf $DOT_PATH/.config/picom/picom.conf
 
 # Alacritty
+cp $DOT_PATH/.config/alacritty/launch.sh $DOT_PATH/.config/alacritty/launch.sh.bak
+cp -v ~/.config/alacritty/launch.sh $DOT_PATH/.config/alacritty/launch.sh
 cp $DOT_PATH/.config/alacritty/alacritty.yml $DOT_PATH/.config/alacritty/alacritty.yml.bak
 cp -v ~/.config/alacritty/alacritty.yml $DOT_PATH/.config/alacritty/alacritty.yml
 
