@@ -8,6 +8,7 @@
 - change colors
 - display luminosity/brightness range
 - bluetooth on/off
+- develop files in main/modules/etc
   
 ## DISPLAY MANAGER
 - arch logo instead of manjaro
@@ -23,6 +24,9 @@
   
 ## THEME
 - xrdb .Xresources (general define of colors)
+
+## SYSTEM
+- problem with i3lock ("failed")
 
 
 # DONE
