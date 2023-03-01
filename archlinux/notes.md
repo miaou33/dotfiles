@@ -2,29 +2,30 @@
 
 ## MUSIC
 - ✅ bluetooth
-- avancer / reculer / pause 
+- ✅ avancer / reculer / pause 
 
 ## BAR
-- change colors
-- display luminosity/brightness range
-- bluetooth on/off
-- develop files in main/modules/etc
+- 🟪 change colors
+- ✅ display luminosity/brightness range
+- ✅ bluetooth on/off
+- 🟪 develop files in main/modules/etc
   
 ## BOOT
-- enlever logo yoga
-- display manager : arch logo instead of manjaro
+- 🟪 enlever logo yoga
+- 🟪 display manager : arch logo instead of i3 
 
 ## NOTIFICATIONS 
-- battery low
-- screenshot taken
-- sound +/-
-- luminosity +/-
+- 🟪 battery low
+- 🟪 screenshot taken
+- 🟪 sound +/-
+- 🟪 luminosity +/-
   
 ## THEME
-- xrdb .Xresources (general define of colors)
+- 🟪 xrdb .Xresources (general define of colors)
+- 🟪 infos on background // manjaro ?
 
 ## SYSTEM
-- problem with i3lock ("failed")
+- 🟪 problem with i3lock ("failed")
 
 ## APPS
 - ✅ emojis 
