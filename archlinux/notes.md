@@ -1,7 +1,7 @@
 # TO DO
 
 ## MUSIC
-- bluetooth
+- ✅ bluetooth
 - avancer / reculer / pause 
 
 ## BAR
@@ -10,11 +10,9 @@
 - bluetooth on/off
 - develop files in main/modules/etc
   
-## DISPLAY MANAGER
-- arch logo instead of manjaro
-
 ## BOOT
 - enlever logo yoga
+- display manager : arch logo instead of manjaro
 
 ## NOTIFICATIONS 
 - battery low
@@ -28,6 +26,8 @@
 ## SYSTEM
 - problem with i3lock ("failed")
 
+## APPS
+- ✅ emojis 
 
 # DONE
 
