@@ -16,12 +16,12 @@ cp -v ~/.config/i3/config $DOT_PATH/.config/i3/config
 #cp -v ~/.config/alacritty/alacritty.yml $DOT_PATH/.config/alacritty/alacritty.yml
 
 # Dunst
-rsync -avH $DOT_PATH/.config/dunst/dunstrc $BAKUPS_PATH/.config/dunst/dunstrc.bak
-rsync ~/.config/dunst/dunstrc $DOT_PATH/.config/dunst/dunstrc
+#rsync -avH $DOT_PATH/.config/dunst/dunstrc $BAKUPS_PATH/.config/dunst/dunstrc.bak
+#rsync ~/.config/dunst/dunstrc $DOT_PATH/.config/dunst/dunstrc
 
 # Polybar
-rsync -avH $DOT_PATH/.config/polybar/* $BAKUPS_PATH/.config/polybar/"$(date +'%Y-%m-%d_%H-%M').bak"
-rsync -r ~/.config/polybar/* $DOT_PATH/.config/polybar/
+#rsync -avH $DOT_PATH/.config/polybar/* $BAKUPS_PATH/.config/polybar/"$(date +'%Y-%m-%d_%H-%M').bak"
+#rsync -r ~/.config/polybar/* $DOT_PATH/.config/polybar/
 
 # Zsh
 #rsync -avH $DOT_PATH/.zshrc $BAKUPS_PATH/".zshrc_$(date +'%Y-%m-%d_%H-%M').bak"

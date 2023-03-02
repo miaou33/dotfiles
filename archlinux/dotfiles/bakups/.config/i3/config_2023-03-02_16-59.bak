@@ -25,7 +25,6 @@ gaps outer 3
 #~~~~~~~~~~~~~~~~~~~~#
 exec --no-startup-id dex --autostart --environment i3
 # Lock and auto lock
-exec --no-startup-id xset s activate
 exec --no-startup-id xss-lock --transfer-sleep-lock --i3lock --nofork
 exec --no-startup-id xautolock -time 10 -locker blurlock 
 # Network
@@ -50,12 +49,8 @@ bindsym $mod+a exec "rofi -modi drun,run -show drun"
 bindsym $mod+e exec "rofimoji"
 # Term
 bindsym $mod+Return exec --no-startup-id alacritty 
-# Calculator 
-bindsym $mod+equal exec --no-startup-id =
 # Editor
-bindsym $mod+c exec --no-startup-id rofi-code
-# Files
-bindsym $mod+f exec --no-startup-id ~/.local/bin/rofi-files &
+bindsym $mod+c exec --no-startup-id code
 # Browser
 bindsym $mod+w exec --no-startup-id firefox
 # Messagerie
@@ -106,7 +101,7 @@ bindsym $mod+Shift+l move right
 # split / fullscreen
 bindsym $mod+o split h
 bindsym $mod+v split v
-bindsym $mod+Up fullscreen toggle
+bindsym $mod+f fullscreen toggle
 bindsym $mod+Escape focus parent
 #bindsym $mod+d focus child
 
