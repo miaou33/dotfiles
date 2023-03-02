@@ -15,13 +15,13 @@ cp -v ~/.config/i3/config $DOT_PATH/.config/i3/config
 #rsync -avH $DOT_PATH/.config/alacritty/alacritty.yml $BAKUPS_PATH/.config/alacritty/"alacritty.yml_$(date +'%Y-%m-%d_%H-%M').bak"
 #cp -v ~/.config/alacritty/alacritty.yml $DOT_PATH/.config/alacritty/alacritty.yml
 
+# Dunst
+rsync -avH $DOT_PATH/.config/dunst/dunstrc $BAKUPS_PATH/.config/dunst/dunstrc.bak
+rsync ~/.config/dunst/dunstrc $DOT_PATH/.config/dunst/dunstrc
+
 # Polybar
 rsync -avH $DOT_PATH/.config/polybar/* $BAKUPS_PATH/.config/polybar/"$(date +'%Y-%m-%d_%H-%M').bak"
-rsync -r ~/.config/polybar/* archlinux/dotfiles/.config/polybar/
-#rsync -avH $DOT_PATH/.config/polybar/launch.sh $BAKUPS_PATH/.config/polybar/"launch.sh_$(date +'%Y-%m-%d_%H-%M').bak"
-#cp -v ~/.config/polybar/launch.sh $DOT_PATH/.config/polybar/launch.sh
-#rsync -avH $DOT_PATH/.config/polybar/config.ini $BAKUPS_PATH/.config/polybar/"config.ini_$(date +'%Y-%m-%d_%H-%M').bak"
-#cp -v ~/.config/polybar/config.ini $DOT_PATH/.config/polybar/config.ini
+rsync -r ~/.config/polybar/* $DOT_PATH/.config/polybar/
 
 # Zsh
 #rsync -avH $DOT_PATH/.zshrc $BAKUPS_PATH/".zshrc_$(date +'%Y-%m-%d_%H-%M').bak"

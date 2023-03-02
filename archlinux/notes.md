@@ -8,13 +8,13 @@
 - 🟪 change colors
 - ✅ display luminosity/brightness range
 - ✅ bluetooth on/off
-- 🟪 develop files in main/modules/etc
+- ✅ develop files in main/modules/etc
   
 ## BOOT
 - 🟪 enlever logo yoga
-- 🟪 display manager : arch logo instead of i3 
 
 ## NOTIFICATIONS 
+_dunst / dwmn (notification daemons) + libnotify_
 - 🟪 battery low
 - 🟪 screenshot taken
 - 🟪 sound +/-

@@ -5,8 +5,8 @@ font pango:Terminus 11px
 
 #default_border pixel 2
 for_window [class=".*"] border pixel 1
-gaps inner 3 
-gaps outer 3 
+gaps inner 2 
+gaps outer 2 
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
@@ -25,8 +25,8 @@ gaps outer 3
 #~~~~~~~~~~~~~~~~~~~~#
 exec --no-startup-id dex --autostart --environment i3
 # Lock and auto lock
-exec --no-startup-id xss-lock --transfer-sleep-lock --i3lock --nofork
-exec --no-startup-id xautolock -time 10 -locker blurlock 
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xautolock -time 10 -locker blurlock
 # Network
 exec --no-startup-id nm-applet
 # Display
@@ -109,8 +109,6 @@ bindsym $mod+Escape focus parent
 #~~~~~~~~~~~~~~~~~~~~#
 #	 WORKSPACES		 #
 #~~~~~~~~~~~~~~~~~~~~#
-
-focus_follows_mouse no
 
 set $ws1 "1"
 set $ws2 "2"
