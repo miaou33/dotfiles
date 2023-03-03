@@ -1,5 +1,9 @@
 # TO DO
 
+## DISCOVER
+- nvim
+- doom emacs
+
 ## MUSIC
 - ✅ bluetooth
 - ✅ avancer / reculer / pause 

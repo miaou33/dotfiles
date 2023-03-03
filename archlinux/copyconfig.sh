@@ -8,8 +8,8 @@ rsync -avH $DOT_PATH/.config/i3/config $BAKUPS_PATH/.config/i3/"config_$(date +'
 cp -v ~/.config/i3/config $DOT_PATH/.config/i3/config
 
 # Picom
-#rsync -avH $DOT_PATH/.config/picom/picom.conf $BAKUPS_PATH/.config/picom/"picom.conf_$(date +'%Y-%m-%d_%H-%M').bak"
-#cp -v ~/.config/picom/picom.conf $DOT_PATH/.config/picom/picom.conf
+rsync -avH $DOT_PATH/.config/picom/picom.conf $BAKUPS_PATH/.config/picom/"picom.conf_$(date +'%Y-%m-%d_%H-%M').bak"
+cp -v ~/.config/picom/picom.conf $DOT_PATH/.config/picom/picom.conf
 
 # Alacritty
 #rsync -avH $DOT_PATH/.config/alacritty/alacritty.yml $BAKUPS_PATH/.config/alacritty/"alacritty.yml_$(date +'%Y-%m-%d_%H-%M').bak"
@@ -24,8 +24,8 @@ cp -v ~/.config/i3/config $DOT_PATH/.config/i3/config
 #rsync -r ~/.config/polybar/* $DOT_PATH/.config/polybar/
 
 # Zsh
-#rsync -avH $DOT_PATH/.zshrc $BAKUPS_PATH/".zshrc_$(date +'%Y-%m-%d_%H-%M').bak"
-#cp ~/.zshrc $DOT_PATH/.zshrc
+rsync -avH $DOT_PATH/.zshrc $BAKUPS_PATH/".zshrc_$(date +'%Y-%m-%d_%H-%M').bak"
+cp ~/.zshrc $DOT_PATH/.zshrc
 #rsync -avH $DOT_PATH/.p10k.zsh $BAKUPS_PATH/".p10k.zsh_$(date +'%Y-%m-%d_%H-%M').bak"
 #cp -v ~/.p10k.zsh $DOT_PATH/.p10k.zsh
 

@@ -26,7 +26,7 @@ gaps outer 3
 exec --no-startup-id dex --autostart --environment i3
 # Lock and auto lock
 exec --no-startup-id xset s activate
-exec --no-startup-id xss-lock --transfer-sleep-lock --blurlock --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock --i3lock --nofork
 exec --no-startup-id xautolock -time 10 -locker blurlock 
 # Network
 exec --no-startup-id nm-applet
