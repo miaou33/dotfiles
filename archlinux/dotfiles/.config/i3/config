@@ -29,7 +29,7 @@ exec_always --no-startup-id ~/.fehbg &
 
 # Lock and auto lock
 exec_always --no-startup-id xset s activate
-exec_always --no-startup-id xss-lock --transfer-sleep-lock blurlock --nofork
+exec_always --no-startup-id xss-lock --transfer-sleep-lock blurlock
 exec_always --no-startup-id xautolock -time 10 -locker blurlock 
 
 # Network
@@ -57,6 +57,7 @@ bindsym $mod+n exec --no-startup-id nautilus
 bindsym $mod+w exec --no-startup-id firefox
 bindsym $mod+d exec --no-startup-id discord
 bindsym $mod+t exec --no-startup-id "polybar-msg cmd toggle"
+bindsym $mod+p exec --no-startup-id pix
 
 
 # Screenshot
@@ -121,10 +122,10 @@ workspace 2 output eDP-1
 workspace 3 output eDP-1
 workspace 4 output eDP-1
 workspace 5 output eDP-1
-workspace 6 output HDMI-1
-workspace 7 output HDMI-1
-workspace 8 output HDMI-1
-workspace 9 output HDMI-1
+workspace 6 output HDMI-1 eDP-1
+workspace 7 output HDMI-1 eDP-1
+workspace 8 output HDMI-1 eDP-1
+workspace 9 output HDMI-1 eDP-1
 
 # switch to workspace
 bindsym $mod+Tab workspace next
