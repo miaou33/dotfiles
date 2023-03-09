@@ -23,7 +23,7 @@ gaps outer 3
 #~~~~~~~~~~~~~~~~~~~~#
 #		AUTOSTART	 #
 #~~~~~~~~~~~~~~~~~~~~#
-exec --no-startup-id dex --autostart --environment i3
+#exec --no-startup-id dex --autostart --environment i3
 # Lock and auto lock
 exec --no-startup-id xset s activate
 exec --no-startup-id xss-lock --transfer-sleep-lock blurlock --nofork
@@ -36,7 +36,7 @@ exec --no-startup-id ~/.fehbg &
 # Bar
 exec_always --no-startup-id ~/.config/polybar/launch.sh -r &
 
-exec_always --no-startup-id ~/monitor_dispolay.sh &
+exec_always --no-startup-id xrandr --output HDMI-1 --auto --right-of eDP-1
 #--mode 1920x1080
 
 
@@ -54,9 +54,9 @@ bindsym $mod+Return exec --no-startup-id alacritty
 # Calculator 
 bindsym $mod+equal exec --no-startup-id =
 # Editor
-bindsym $mod+c exec --no-startup-id ~/.local/bin/rofi-files &
+bindsym $mod+c exec --no-startup-id rofi-code
 # Files
-bindsym $mod+f exec --no-startup-id nautilus
+bindsym $mod+f exec --no-startup-id ~/.local/bin/rofi-files &
 # Browser
 bindsym $mod+w exec --no-startup-id firefox
 # Messagerie
@@ -64,7 +64,7 @@ bindsym $mod+d exec --no-startup-id discord
 # Polybar
 bindsym $mod+t exec --no-startup-id "polybar-msg cmd toggle"
 # Screenshot
-bindsym --release Print exec scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/Screenshots && mv $f ~/Pictures/Screenshots' 
+bindsym --release Print exec scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/Screenshots && mv $f ~/Pictures/Screenshots'
 # Area selection screenshots
 bindsym --release Shift+Print exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/Screenshots && mv $f ~/Pictures/Screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/Screenshots/`ls -1 -t ~/Pictures/Screenshots | head -1`'
 
