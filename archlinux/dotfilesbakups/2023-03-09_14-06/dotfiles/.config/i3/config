@@ -23,21 +23,20 @@ gaps outer 3
 #~~~~~~~~~~~~~~~~~~~~#
 #		AUTOSTART	 #
 #~~~~~~~~~~~~~~~~~~~~#
-#exec --no-startup-id dex --autostart --environment i3
+exec --no-startup-id dex --autostart --environment i3
 # Lock and auto lock
 exec --no-startup-id xset s activate
-exec --no-startup-id xss-lock --transfer-sleep-lock blurlock --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock --blurlock --nofork
 exec --no-startup-id xautolock -time 10 -locker blurlock 
 # Network
 exec --no-startup-id nm-applet
 # Display
-exec --no-startup-id picom &
+exec --no-startup-id picom
 exec --no-startup-id ~/.fehbg &
 # Bar
 exec_always --no-startup-id ~/.config/polybar/launch.sh -r &
 
-exec_always --no-startup-id xrandr --output HDMI-1 --auto --right-of eDP-1
-#--mode 1920x1080
+#exec_always --no-startup-id xrandr --ouput HDMI-1 --auto --right-of eDP-1
 
 
 #~~~~~~~~~~~~~~~~~~~~#
@@ -133,10 +132,10 @@ workspace 2 output eDP-1
 workspace 3 output eDP-1
 workspace 4 output eDP-1
 workspace 5 output eDP-1
-workspace 6 output HDMI-1
-workspace 7 output HDMI-1
-workspace 8 output HDMI-1
-workspace 9 output HDMI-1
+workspace 6 output HDMI-1 eDP-1
+workspace 7 output HDMI-1 eDP-1
+workspace 8 output HDMI-1 eDP-1
+workspace 9 output HDMI-1 eDP-1
 
 # switch to workspace
 bindsym $mod+Tab workspace next
