@@ -16,7 +16,6 @@ mon_count=$(xrandr -q | grep -w 'connected' | wc -l)
 
 # Configure the monitors via xRandR
 config_monitors() {
-    xrandr --output $MON_INTERNAL --primary
     if [[ "$#" -eq "2" ]]; then
         xrandr --output $MON1 --auto --right-of $MON_INTERNAL
     fi

@@ -1,42 +1,43 @@
 set $mod Mod4
 set $alt Mod1
-set $left h
-set $down j
-set $up k
-set $right l
 
-#it probably doesnt work, but it then disable window titles so its cool
 font pango:Terminus 11px
 
 #default_border pixel 2
-default_border pixel 0
-gaps inner 10
+for_window [class=".*"] border pixel 1
+gaps inner 3 
 gaps outer 3 
 
-for_window [class="org.gnome.Nautilus"] floating enable
-for_window [class="Pix"] floating enable
-for_window [class="pix"] floating enable
+# Theme colors
+# class                   border  backgr. text    indic.   child_border
+  client.focused          #556064 #556064 #80FFF9 #FDF6E3
+  client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
+  client.unfocused        #2F3D44 #2F3D44 #1ABC9C #454948
+  client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
+  client.placeholder      #000000 #0c0c0c #ffffff #000000 
+
+  client.background       #2B2C2B
+#
 
 
 #~~~~~~~~~~~~~~~~~~~~#
 #		AUTOSTART	 #
 #~~~~~~~~~~~~~~~~~~~~#
-# Display
-exec_always --no-startup-id ~/monitor_display.sh &
-exec_always --no-startup-id picom &
-exec_always --no-startup-id ~/.fehbg &
-#exec --no-startup-id dex --autostart --environment i3
-
+exec --no-startup-id dex --autostart --environment i3
 # Lock and auto lock
-exec_always --no-startup-id xset s activate
-exec_always --no-startup-id xss-lock --transfer-sleep-lock blurlock --nofork
-exec_always --no-startup-id xautolock -time 10 -locker blurlock 
-
+exec --no-startup-id xset s activate
+exec --no-startup-id xss-lock --transfer-sleep-lock blurlock --nofork
+exec --no-startup-id xautolock -time 10 -locker blurlock 
 # Network
-exec_always --no-startup-id nm-applet
-
+exec --no-startup-id nm-applet
+# Display
+exec --no-startup-id picom &
+exec --no-startup-id ~/.fehbg &
 # Bar
 exec_always --no-startup-id ~/.config/polybar/launch.sh -r &
+
+exec_always --no-startup-id ~/monitor_dispolay.sh &
+#--mode 1920x1080
 
 
 #~~~~~~~~~~~~~~~~~~~~#
@@ -45,26 +46,32 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh -r &
 # i3config
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
-
-# App launchers
+# App launcher
 bindsym $mod+a exec "rofi -modi drun,run -show drun"
 bindsym $mod+e exec "rofimoji"
+# Term
 bindsym $mod+Return exec --no-startup-id alacritty 
+# Calculator 
 bindsym $mod+equal exec --no-startup-id =
-#bindsym $mod+c exec --no-startup-id ~/.local/bin/rofi-files &
-bindsym $mod+c exec --no-startup-id rofi-code
-bindsym $mod+n exec --no-startup-id nautilus
+# Editor
+bindsym $mod+c exec --no-startup-id ~/.local/bin/rofi-files &
+# Files
+bindsym $mod+f exec --no-startup-id nautilus
+# Browser
 bindsym $mod+w exec --no-startup-id firefox
+# Messagerie
 bindsym $mod+d exec --no-startup-id discord
+# Polybar
 bindsym $mod+t exec --no-startup-id "polybar-msg cmd toggle"
-
-
 # Screenshot
 bindsym --release Print exec scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/Screenshots && mv $f ~/Pictures/Screenshots' 
+# Area selection screenshots
 bindsym --release Shift+Print exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/Screenshots && mv $f ~/Pictures/Screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/Screenshots/`ls -1 -t ~/Pictures/Screenshots | head -1`'
+
 # Luminosity
 bindsym XF86MonBrightnessUp exec brillo -A 5
 bindsym XF86MonBrightnessDown exec brillo -U 5
+
 # Sound
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +2%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -2%
@@ -76,6 +83,9 @@ bindsym XF86AudioStop exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
+# Bluetooth
+bindsym $mod+b exec --no-startup-id rofi-bluetooth
+
 
 #~~~~~~~~~~~~~~~~~~~~#
 #		WINDOWS		 #
@@ -83,21 +93,23 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym $mod+Shift+q kill
 
 # change focus
-bindsym $mod+$left focus left
-bindsym $mod+$down focus down
-bindsym $mod+$up focus up
-bindsym $mod+$right focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 
 # move focused window
-bindsym $mod+Shift+$left move left
-bindsym $mod+Shift+$down move down
-bindsym $mod+Shift+$up move up
-bindsym $mod+Shift+$right move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 # split / fullscreen
 bindsym $mod+o split h
 bindsym $mod+v split v
-bindsym $mod+f fullscreen toggle
+bindsym $mod+Up fullscreen toggle
+bindsym $mod+Escape focus parent
+#bindsym $mod+d focus child
 
 
 #~~~~~~~~~~~~~~~~~~~~#
@@ -106,15 +118,15 @@ bindsym $mod+f fullscreen toggle
 
 focus_follows_mouse no
 
-set $ws1 "1" 
+set $ws1 "1"
 set $ws2 "2"
 set $ws3 "3"
 set $ws4 "4"
 set $ws5 "5"
-set $ws6 "6" 
+set $ws6 "6"
 set $ws7 "7"
-set $ws8 "8" 
-set $ws9 "9" 
+set $ws8 "8"
+set $ws9 "9"
 
 workspace 1 output eDP-1
 workspace 2 output eDP-1
@@ -153,10 +165,10 @@ bindsym $mod+Shift+9 move container to workspace $ws9; workspace $ws9
 bindsym $mod+r mode "resize"
 mode "resize" {
 
-        bindsym $right resize shrink width 5 px or 5 ppt
-        bindsym $up resize grow height 5 px or 5 ppt
-        bindsym $down resize shrink height 5 px or 5 ppt
-        bindsym $left resize grow width 5 px or 5 ppt
+        bindsym l resize shrink width 10 px or 10 ppt
+        bindsym k resize grow height 10 px or 10 ppt
+        bindsym l resize shrink height 10 px or 10 ppt
+        bindsym h resize grow width 10 px or 10 ppt
 
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
@@ -170,18 +182,19 @@ mode "resize" {
 # assign [class="Pcmanfm"] 3
 # assign [class="Skype"] 5
 
+
 #~~~~~~~~~~~~~~~~~~~~#
 #	 SYSTEM MODE	 #
 #~~~~~~~~~~~~~~~~~~~~#
 bindsym $mod+0 mode "mode_system"
-#set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, ($left)ibernate, (r)eboot, (Shift+s)hutdown
+#set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
 mode "mode_system" {
 
     bindsym l exec --no-startup-id i3exit lock, mode "default"
     bindsym s exec --no-startup-id i3exit suspend, mode "default"
     bindsym u exec --no-startup-id i3exit switch_user, mode "default"
     bindsym e exec --no-startup-id i3exit logout, mode "default"
-   # bindsym h exec --no-startup-id i3exit hibernate, mode "default"
+    bindsym h exec --no-startup-id i3exit hibernate, mode "default"
     bindsym r exec --no-startup-id i3exit reboot, mode "default"
     bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
 
@@ -217,7 +230,7 @@ mode "save" {
   bindsym $mod+s mode "default"
 }
 
-bindsym $mod+$alt+s mode "save"
+bindsym $mod+s mode "save"
 
 # Restore workspace mode.
 mode "restore" {
@@ -239,7 +252,7 @@ mode "restore" {
   bindsym $mod+n mode "default"
 }
 
-bindsym $mod+$alt+r mode "restore"
+bindsym $mod+n mode "restore"
 
 
 #~~~~~~~~~~~~~~~~~~~~#
@@ -249,7 +262,7 @@ bindsym $mod+$alt+r mode "restore"
 #bar {
 #
 #	status_command /usr/bin/bumblebee-status 	-m sensors2 cpu memory disk date time pasink pasource battery \
-#												-p time.format="%h:%M CW %V" date.format="%a, %b %d %Y" \
+#												-p time.format="%H:%M CW %V" date.format="%a, %b %d %Y" \
 #												#-t onedark-powerline
 #
 #	position top
