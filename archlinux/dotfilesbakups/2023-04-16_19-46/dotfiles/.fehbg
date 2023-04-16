@@ -1,0 +1,4 @@
+#!/bin/sh
+#feh --no-fehbg --bg-fill '/home/meow/repos/MINE/CONFiiG/wallpapers/Dark_City-cyber_city-futuristic-1723545672.jpg' 
+#feh --no-fehbg --bg-fill '/home/meow/repos/MINE/CONFiiG/wallpapers/cyber-city-wallpaper.jpg'
+feh --no-fehbg --bg-fill '/home/meow/repos/MINE/CONFiiG/wallpapers/wallpapercity.png'

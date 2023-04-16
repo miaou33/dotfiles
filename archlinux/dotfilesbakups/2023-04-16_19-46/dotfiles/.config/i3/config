@@ -11,7 +11,7 @@ font pango:Terminus 11px
 #default_border pixel 2
 default_border pixel 0
 gaps inner 10
-gaps outer 3
+gaps outer 3 
 
 for_window [class="org.gnome.Nautilus"] floating enable
 for_window [class="Pix"] floating enable
@@ -22,16 +22,15 @@ for_window [class="pix"] floating enable
 #		AUTOSTART	 #
 #~~~~~~~~~~~~~~~~~~~~#
 # Display
-exec_always --no-startup-id libinput-gestures-setup start
 exec_always --no-startup-id ~/monitor_display.sh &
 exec_always --no-startup-id picom &
 exec_always --no-startup-id ~/.fehbg &
 #exec --no-startup-id dex --autostart --environment i3
 
 # Lock and auto lock
-exec --no-startup-id xset s activate
-exec xss-lock --transfer-sleep-lock blurlock
-exec xautolock -time 10 -locker blurlock 
+exec_always --no-startup-id xset s activate
+exec_always --no-startup-id xss-lock --transfer-sleep-lock blurlock
+exec_always --no-startup-id xautolock -time 10 -locker blurlock 
 
 # Network
 exec_always --no-startup-id nm-applet
@@ -59,7 +58,6 @@ bindsym $mod+w exec --no-startup-id firefox
 bindsym $mod+d exec --no-startup-id discord
 bindsym $mod+t exec --no-startup-id "polybar-msg cmd toggle"
 bindsym $mod+p exec --no-startup-id pix
-bindsym $mod+x exec --no-startup-id "AppImageLauncher Applications/pcsx2-v1.7.4380-linux-AppImage-64bit-Qt_dd519d5d146404904828ff33cd6b8a10.AppImage"
 
 
 # Screenshot
