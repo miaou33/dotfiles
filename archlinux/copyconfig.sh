@@ -12,7 +12,7 @@ BAKUPS_PATH=/home/meow/repos/MINE/CONFiiG/archlinux/dotfilesbakups
 cp -v ~/.config/i3/config $DOT_PATH/.config/i3/config
 
 ### APPS ###
-cp -v ~/.config/picom/picom.conf $DOT_PATH/.config/picom/
+#cp -v ~/.config/picom/picom.conf $DOT_PATH/.config/picom/
 #cp -v ~/.config/alacritty/alacritty.yml $DOT_PATH/.config/alacritty/
 #cp -v ~/.config/dunst/dunstrc $DOT_PATH/.config/dunst/
 #cp -rv ~/.config/polybar/* $DOT_PATH/.config/polybar/
