@@ -20,12 +20,18 @@ use {
     }
 }
 
--- TELESCOPE : FILE NAVIGATOR
+-- STATUS LINE
 use {
-	  'nvim-telescope/telescope.nvim', tag = '0.1.1',
-	  -- or                            , branch = '0.1.x',
-	  requires = { {'nvim-lua/plenary.nvim'} }
-  }
+  'nvim-lualine/lualine.nvim',
+  requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+}
+
+-- TELESCOPE : FILE NAVIGATOR
+-- use {
+-- 	  'nvim-telescope/telescope.nvim', tag = '0.1.1',
+-- 	  -- or                            , branch = '0.1.x',
+-- 	  requires = { {'nvim-lua/plenary.nvim'} }
+-- }
 
 -- SYNTAX HIGHLIGHTING
 use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})

@@ -1,6 +1,4 @@
-require ("core.packer")
-require ("core.remap")
-require ("core.set")
-
-
-vim.cmd.colorscheme "kanagawa-dragon"
+require ("meow.colorscheme")
+require ("meow.keymaps")
+require ("meow.options")
+require ("meow.plugins")
