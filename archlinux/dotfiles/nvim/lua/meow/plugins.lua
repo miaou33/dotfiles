@@ -63,7 +63,7 @@ use { 'nvim-lualine/lualine.nvim', requires = {
 	  'nvim-tree/nvim-web-devicons', opt = true } }
 
 -- TELESCOPE : FILE NAVIGATOR
--- use { 'nvim-telescope/telescope.nvim', tag = '0.1.1', branch = '0.1.x', requires = { {'nvim-lua/plenary.nvim'} } }
+use { 'nvim-telescope/telescope.nvim', tag = '0.1.1', branch = '0.1.x', requires = { {'nvim-lua/plenary.nvim'} } }
 
 -- SYNTAX HIGHLIGHTING
 use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
@@ -78,16 +78,28 @@ use ('mbbill/undotree')
 -- GIT FACILITIES
 use ('tpope/vim-fugitive')
 
-use { 'VonHeikemen/lsp-zero.nvim', branch = 'v2.x', requires = {
-		-- LSP Support
-		{'neovim/nvim-lspconfig'},             -- Required
-		{ 'williamboman/mason.nvim', run = function() pcall(vim.cmd, 'MasonUpdate') end, },
-		{'williamboman/mason-lspconfig.nvim'}, -- Optional
+-- AUTOCOMPLETION
 
-		-- Autocompletion
-		{'hrsh7th/nvim-cmp'},
-		{'hrsh7th/cmp-nvim-lsp'},
-		{'L3MON4D3/LuaSnip'},} }
+use { "hrsh7th/nvim-cmp"} -- The completion plugin
+use { "hrsh7th/cmp-buffer"} -- buffer completions
+use { "hrsh7th/cmp-path"} -- path completions
+use { "saadparwaiz1/cmp_luasnip"} -- snippet completions
+use { "hrsh7th/cmp-nvim-lsp"}
+use { "hrsh7th/cmp-nvim-lua"}
+
+use { "L3MON4D3/LuaSnip"} --snippet engine
+use { "rafamadriz/friendly-snippets"} -- a bunch of snippets to use
+
+-- use { 'VonHeikemen/lsp-zero.nvim', branch = 'v2.x', requires = {
+-- 		-- LSP Support
+-- 		{'neovim/nvim-lspconfig'},             -- Required
+-- 		{ 'williamboman/mason.nvim', run = function() pcall(vim.cmd, 'MasonUpdate') end, },
+-- 		{'williamboman/mason-lspconfig.nvim'}, -- Optional
+-- 
+-- 		-- Autocompletion
+-- 		{'hrsh7th/nvim-cmp'},
+-- 		{'hrsh7th/cmp-nvim-lsp'},
+-- 		{'L3MON4D3/LuaSnip'},} }
 
  -- THEMES
  use {'AlexvZyl/nordic.nvim'}

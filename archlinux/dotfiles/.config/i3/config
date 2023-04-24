@@ -5,13 +5,28 @@ set $down j
 set $up k
 set $right l
 
+
+#~~~~~~~~~~~~~~~~~~~~#
+#	   AESTHETIC	 #
+#~~~~~~~~~~~~~~~~~~~~#
 #it probably doesnt work, but it then disable window titles so its cool
 font pango:Terminus 11px
 
-#default_border pixel 2
 default_border pixel 0
+default_floating_border pixel 0
+#default_border pixel 0
 gaps inner 10
 gaps outer 3
+
+#bindsym $mod+b layout toggle splitv tabbed
+
+# Window borders		border   bckgrd  text	indicator child_border 
+client.focused          #e5f4f8 #5a91ff #e5f4f8 #abb2bf   #9ea4a2
+client.focused_inactive #e5f4f8 #ac1f2c #e5f4f8 #e5f4f8   #afbbc300
+client.unfocused        #e5f4f8 #14141f #edfcff #e5f4f8	  #00000000
+client.urgent           #ff6987 #f7617f #e5f4f8 #f7617f   #f7617f
+client.placeholder      #000000 #0c0c0c #e5f4f8 #000000   #0c0c0c
+client.background       #e5f4f8
 
 for_window [class="org.gnome.Nautilus"] floating enable
 for_window [class="Pix"] floating enable
@@ -22,10 +37,12 @@ for_window [class="pix"] floating enable
 #		AUTOSTART	 #
 #~~~~~~~~~~~~~~~~~~~~#
 # Display
-exec_always --no-startup-id libinput-gestures-setup start
+exec i3 --force-xinerama -V >>~/.i3/i3log 2>&1
+#exec_always --no-startup-id libinput-gestures-setup start
 exec_always --no-startup-id ~/monitor_display.sh &
 exec_always --no-startup-id picom &
 exec_always --no-startup-id ~/.fehbg &
+exec --no-startup-id dex-autostart --autostart --environment i3
 #exec --no-startup-id dex --autostart --environment i3
 
 # Lock and auto lock
@@ -50,7 +67,8 @@ bindsym $mod+Shift+r restart
 # App launchers
 bindsym $mod+a exec "rofi -modi drun,run -show drun"
 bindsym $mod+e exec "rofimoji"
-bindsym $mod+Return exec --no-startup-id alacritty 
+bindsym $mod+Return exec --no-startup-id alacritty
+
 bindsym $mod+equal exec --no-startup-id =
 #bindsym $mod+c exec --no-startup-id ~/.local/bin/rofi-files &
 bindsym $mod+c exec --no-startup-id rofi-code
@@ -109,25 +127,28 @@ bindsym $mod+f fullscreen toggle
 
 focus_follows_mouse no
 
-set $ws1 "1" 
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
-set $ws5 "5"
-set $ws6 "6" 
-set $ws7 "7"
-set $ws8 "8" 
-set $ws9 "9" 
+set $ws1 "1:web" 
+set $ws2 "2:term"
+set $ws3 "3:code"
+set $ws4 "4:i3"
+set $ws5 "5:nvim"
+set $ws6 "6:bar" 
+set $ws7 "7:CONFiiG"
+set $ws8 "8:music" 
+set $ws9 "9:discord" 
 
-workspace 1 output eDP-1
-workspace 2 output eDP-1
-workspace 3 output eDP-1
-workspace 4 output eDP-1
-workspace 5 output eDP-1
-workspace 6 output HDMI-1 eDP-1
-workspace 7 output HDMI-1 eDP-1
-workspace 8 output HDMI-1 eDP-1
-workspace 9 output HDMI-1 eDP-1
+workspace $ws1 output eDP-1
+workspace $ws2 output eDP-1
+workspace $ws3 output eDP-1
+workspace $ws4 output eDP-1
+workspace $ws5 output eDP-1
+workspace $ws6 output HDMI-1 eDP-1
+workspace $ws7 output HDMI-1 eDP-1
+workspace $ws8 output HDMI-1 eDP-1
+workspace $ws9 output HDMI-1 eDP-1
+
+# assign [class="discord"] $ws9
+# for_window [class="discord"] move to workspace $ws9
 
 # switch to workspace
 bindsym $mod+Tab workspace next
@@ -166,12 +187,6 @@ mode "resize" {
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
 }
-
-# Open applications on specific workspaces
-# for_window [class="Discord"] move to workspace $ws9
-# assign [class="Pale moon"] 2
-# assign [class="Pcmanfm"] 3
-# assign [class="Skype"] 5
 
 #~~~~~~~~~~~~~~~~~~~~#
 #	 SYSTEM MODE	 #

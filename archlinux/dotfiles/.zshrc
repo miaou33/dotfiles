@@ -94,7 +94,7 @@ eval "$(dircolors -b)"
 alias ls='ls $LS_OPTIONS'
 
 export XDG_CONFIG_HOME="$HOME/.config"
-export PATH='/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/home/meow/.config/emacs/bin'
+export PATH='/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/home/meow/.local/bin'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
