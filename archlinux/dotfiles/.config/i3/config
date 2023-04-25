@@ -137,11 +137,11 @@ focus_follows_mouse no
 set $ws1 "1:web" 
 set $ws2 "2:term"
 set $ws3 "3:code"
-set $ws4 "4:i3"
-set $ws5 "5:nvim"
-set $ws6 "6:bar" 
+set $ws4 "4:music"
+set $ws5 "5:vlc"
+set $ws6 "6:torrent"
 set $ws7 "7:CONFiiG"
-set $ws8 "8:music" 
+set $ws8 "8:pcsx2" 
 set $ws9 "9:discord" 
 
 workspace $ws1 output eDP-1

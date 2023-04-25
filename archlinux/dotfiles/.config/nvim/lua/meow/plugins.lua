@@ -78,8 +78,17 @@ use ('mbbill/undotree')
 -- GIT FACILITIES
 use ('tpope/vim-fugitive')
 
--- AUTOCOMPLETION
+-- REMEMBER SESSION
+use({
+  "folke/persistence.nvim",
+  event = "BufReadPre", -- this will only start session saving when an actual file was opened
+  module = "persistence",
+  config = function()
+    require("persistence").setup()
+  end,
+})
 
+-- AUTOCOMPLETION
 use { "hrsh7th/nvim-cmp"} -- The completion plugin
 use { "hrsh7th/cmp-buffer"} -- buffer completions
 use { "hrsh7th/cmp-path"} -- path completions
