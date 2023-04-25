@@ -1,5 +1,5 @@
 set mouse=a
-set number 
+set number
 
 "Disable compatibility with vi which can cause unexpected issues.  
 set nocompatible

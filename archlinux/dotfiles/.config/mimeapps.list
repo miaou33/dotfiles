@@ -1,0 +1,5 @@
+[Added Associations]
+text/html=google-chrome.desktop;
+
+[Default Applications]
+text/html=google-chrome.desktop

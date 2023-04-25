@@ -1,17 +1,17 @@
 ## DONT FORGET TO SETUP / DISCOVER
-- nvim
 - lazygit
-- expressvpn
-- rtorrent
+- LIENS DIRECTS CONFIG - GIT
 
 ## BOOT
 - enlever logo yoga
   
+## POLYBAR
+- couleurs
+
 ## THEME
 - script for changing themes
 	> alacritty
 	> gtk
-	> vscode
 	> bar
 	> bg
 	> picom
@@ -20,7 +20,6 @@
 - infos on background // manjaro ?
 
 ## SYSTEM
-- default file manager for firefox notamment
 - problem with i3lock ("failed")
 - notifications (personnaliser couleurs : existe une commande pour tester, dunstify 'blabla' ?)
 	> battery low

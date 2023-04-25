@@ -1,3 +1,5 @@
+window:
+  opacity: 0.8
 font:
   normal:
     family: 'TerminessTTF NF'
@@ -8,33 +10,33 @@ font:
   italic:
     family: 'TerminessTTF NF'
     type: italic
-  size: 7
+  size: 8
 
 colors:
-  name: Gotham
-  author: whatyouhide
+  # Default colors
   primary:
-    background: "#0a0f14"
-    foreground: "#98d1ce"
-  cursor:
-    text: "#0a0f14"
-    cursor: "#98d1ce"
+    background: '#161821'
+    foreground: '#d2d4de'
+
+  # Normal colors
   normal:
-    black: "#0a0f14"
-    red: "#c33027"
-    green: "#26a98b"
-    yellow: "#edb54b"
-    blue: "#195465"
-    magenta: "#4e5165"
-    cyan: "#33859d"
-    white: "#98d1ce"
+    black: '#161821'
+    red: '#e27878'
+    green: '#b4be82'
+    yellow: '#e2a478'
+    blue: '#84a0c6'
+    magenta: '#a093c7'
+    cyan: '#89b8c2'
+    white: '#c6c8d1'
+
+  # Bright colors
   bright:
-    black: "#10151b"
-    red: "#d26939"
-    green: "#081f2d"
-    yellow: "#245361"
-    blue: "#093748"
-    magenta: "#888ba5"
-    cyan: "#599caa"
-    white: "#d3ebe9"
-theme: Gotham
+    black: '#6b7089'
+    red: '#e98989'
+    green: '#c0ca8e'
+    yellow: '#e9b189'
+    blue: '#91acd1'
+    magenta: '#ada0d3'
+    cyan: '#95c4ce'
+    white: '#d2d4de'
+theme: Iceberg-Dark
