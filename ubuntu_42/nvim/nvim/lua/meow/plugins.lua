@@ -78,20 +78,8 @@ use ('mbbill/undotree')
 -- GIT FACILITIES
 use ('tpope/vim-fugitive')
 
--- REMEMBER SESSION
-use({
-  "folke/persistence.nvim",
-  event = "BufReadPre", -- this will only start session saving when an actual file was opened
-  module = "persistence",
-  config = function()
-    require("persistence").setup()
-  end,
-})
-
--- MARKDOWN PREVIEW
-use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
-
 -- AUTOCOMPLETION
+
 use { "hrsh7th/nvim-cmp"} -- The completion plugin
 use { "hrsh7th/cmp-buffer"} -- buffer completions
 use { "hrsh7th/cmp-path"} -- path completions

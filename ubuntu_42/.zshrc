@@ -34,7 +34,9 @@ alias ls='exa -lHS -s type --icons'
 alias ll='exa -laHS -s type --icons'
 alias cp='cp -iv'
 alias gita='git add --all && git commit && git push'
+alias vi=vim
 alias nvim='~/Applications/nvim.appimage'
+alias vim=nvim
 #
 # File and Dir colors for ls and other outputs
 export LS_OPTIONS='--color=auto'
