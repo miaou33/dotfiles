@@ -16,5 +16,3 @@ end
 
 ColorTB()
 
-vim.keymap.set('n', '<leader>cn', ':colo nordic<CR>')
-vim.keymap.set('n', '<leader>cb', ':colo boo<CR>')
