@@ -134,14 +134,14 @@ bindsym $mod+f fullscreen toggle
 
 focus_follows_mouse no
 
-set $ws1 "1:web" 
+set $ws1 "1:internet" 
 set $ws2 "2:term"
 set $ws3 "3:code"
 set $ws4 "4:music"
 set $ws5 "5:vlc"
 set $ws6 "6:torrent"
 set $ws7 "7:CONFiiG"
-set $ws8 "8:pcsx2" 
+set $ws8 "8:game" 
 set $ws9 "9:discord" 
 
 workspace $ws1 output eDP-1
@@ -199,7 +199,7 @@ mode "resize" {
 #	 SYSTEM MODE	 #
 #~~~~~~~~~~~~~~~~~~~~#
 bindsym $mod+0 mode "mode_system"
-#set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, ($left)ibernate, (r)eboot, (Shift+s)hutdown
+#set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
 mode "mode_system" {
 
     bindsym l exec --no-startup-id i3exit lock, mode "default"

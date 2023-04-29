@@ -99,16 +99,10 @@ use { "hrsh7th/cmp-nvim-lua"}
 use { "L3MON4D3/LuaSnip"} --snippet engine
 use { "rafamadriz/friendly-snippets"} -- a bunch of snippets to use
 
--- use { 'VonHeikemen/lsp-zero.nvim', branch = 'v2.x', requires = {
--- 		-- LSP Support
--- 		{'neovim/nvim-lspconfig'},             -- Required
--- 		{ 'williamboman/mason.nvim', run = function() pcall(vim.cmd, 'MasonUpdate') end, },
--- 		{'williamboman/mason-lspconfig.nvim'}, -- Optional
--- 
--- 		-- Autocompletion
--- 		{'hrsh7th/nvim-cmp'},
--- 		{'hrsh7th/cmp-nvim-lsp'},
--- 		{'L3MON4D3/LuaSnip'},} }
+use { 'VonHeikemen/lsp-zero.nvim', branch = 'v2.x', requires = {
+ 		{'neovim/nvim-lspconfig'},
+ 		{ 'williamboman/mason.nvim', run = function() pcall(vim.cmd, 'MasonUpdate') end},
+ 		{'williamboman/mason-lspconfig.nvim'}}}
 
  -- THEMES
  use {'AlexvZyl/nordic.nvim'}

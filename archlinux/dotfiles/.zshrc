@@ -47,9 +47,8 @@ alias df='df -h'                                                # Human-readable
 alias free='free -m'                                            # Show sizes in MB
 alias gita='git add . && git commit && git push'
 alias gcl='git clone'
-alias nvim='~/Applications/nvim.appimage'
-alias vim='nvim'
 alias vi='vim'
+alias vim='nvim'
 alias ls='exa -aG --sort=type'
 alias ll='exa -aglhHS -s type --icons'
 
@@ -99,4 +98,4 @@ export PATH='/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/home/meow/.local/bin'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export TERMINAL=alacritty
-export EDITOR=vim
+export EDITOR=nvim
