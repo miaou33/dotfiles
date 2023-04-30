@@ -23,6 +23,7 @@ vim.g.maplocalleader = ' '
 --------------------------------------------------
 vim.keymap.set('n', '<leader>cn', ':colo nordic<CR>')
 vim.keymap.set('n', '<leader>cb', ':colo boo<CR>')
+vim.keymap.set('n', '<leader>cmt', ':lua require("material.functions").find_style()<CR>')
 
 --------------------------------------------------
 --					EXPLORERS					--

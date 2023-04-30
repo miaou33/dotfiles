@@ -133,26 +133,31 @@ use { 'VonHeikemen/lsp-zero.nvim', branch = 'v2.x', requires = {
  		{ 'williamboman/mason.nvim', run = function() pcall(vim.cmd, 'MasonUpdate') end, },
  		{'williamboman/mason-lspconfig.nvim'},} }
 
+-- INDENT GUIDES
+use "lukas-reineke/indent-blankline.nvim"
+
 -- MARKDOWN PREVIEW
 use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
 
 --------------------------------------------------
 --				 THEMES							-- 
 --------------------------------------------------
- use {'AlexvZyl/nordic.nvim'}
- use {'folke/tokyonight.nvim'}
- use {"catppuccin/nvim", as = "catppuccin" }
- use {"rebelot/kanagawa.nvim"}
- use {'nyoom-engineering/oxocarbon.nvim'}
- use {"bluz71/vim-nightfly-colors", as = "nightfly" }
- use {"bluz71/vim-moonfly-colors", as = "moonfly" }
- use {"EdenEast/nightfox.nvim"}
- use {'olivercederborg/poimandres.nvim', config = function() require('poimandres').setup {} end }
- use {'rockerBOO/boo-colorscheme-nvim'}
- use {"lunarvim/Onedarker.nvim"}
- use {'gbprod/nord.nvim'}
- use { "neanias/everforest-nvim", config = function() require("everforest").setup() end, }
- use {"lunarvim/templeos.nvim"}
- use {'voidekh/kyotonight.vim'}
+use {'AlexvZyl/nordic.nvim'}
+use {'folke/tokyonight.nvim'}
+use {"catppuccin/nvim", as = "catppuccin" }
+use {"rebelot/kanagawa.nvim"}
+use {'nyoom-engineering/oxocarbon.nvim'}
+use {"bluz71/vim-nightfly-colors", as = "nightfly" }
+use {"bluz71/vim-moonfly-colors", as = "moonfly" }
+use {"EdenEast/nightfox.nvim"}
+use {'olivercederborg/poimandres.nvim', config = function() require('poimandres').setup {} end }
+use {'rockerBOO/boo-colorscheme-nvim'}
+use {"lunarvim/Onedarker.nvim"}
+use {'gbprod/nord.nvim'}
+use { "neanias/everforest-nvim", config = function() require("everforest").setup() end, }
+use {"lunarvim/templeos.nvim"}
+use {'voidekh/kyotonight.vim'}
+use {'kdheepak/monochrome.nvim', config = function() end}
+use 'marko-cerovac/material.nvim'
 
 end)

@@ -33,6 +33,7 @@
     > themes
 
 
+____________________________________________
 # NVIM
 ____________________________________________
 
@@ -55,4 +56,10 @@ ____________________________________________
 - dont go through lines when navigating with w, b etc
 
 - trouver comment replace all selected with visual mode 
+- highlight yank
+
+- c pour supprimer mot !!!!! C pour supprimer toute la ligne a partir du curseur !!!
+- [] pour trouver premiere paranthese ou accolade non fermee/ouverte
+- () debut paragraphe precedent/suivant
+- {} fin paragraphe precedent/suivant
 

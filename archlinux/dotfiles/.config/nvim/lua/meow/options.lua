@@ -53,6 +53,16 @@ o.wrap = false
 -- set number column width to 2 {default 4}
 o.numberwidth = 4
 
+--o.list = false
+--o.listchars:append "space:⋅"
+--o.listchars:append "eol↴"
+--
+--require("indent_blankline").setup {
+--    space_char_blankline = " ",
+--    show_current_context = true,
+--    show_current_context_start = true,
+--}
+
 --------------------------------------------------
 --				  NAVIGATION					--
 --------------------------------------------------
