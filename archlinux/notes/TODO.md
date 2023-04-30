@@ -1,6 +1,4 @@
 ## DONT FORGET TO SETUP / DISCOVER
-- lazygit
-- LIENS DIRECTS CONFIG - GIT
 
 ## BOOT
 - enlever logo yoga
@@ -28,3 +26,33 @@
 
 ## WORKSPACES
 - 1 ws for the 2 screens if availables
+
+## TERM
+- terminator setup
+    > icons size
+    > themes
+
+
+# NVIM
+____________________________________________
+
+## GIT
+- apprendre a add & commit current file quand je le save
+
+## NEOTREE
+- auto opens at launch
+- auto show hiden files
+
+## LSP
+- setup LSP
+- highlight rouge j aime pas
+
+## AUTOCOMPLETION
+- enter for ok / C-Enter for enter
+- snippet std::std::
+
+## OPTS
+- dont go through lines when navigating with w, b etc
+
+- trouver comment replace all selected with visual mode 
+

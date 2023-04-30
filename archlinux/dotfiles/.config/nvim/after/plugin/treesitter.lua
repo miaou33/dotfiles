@@ -28,7 +28,3 @@ require'nvim-treesitter.configs'.setup {
     additional_vim_regex_highlighting = false,
   },
 }
-
---local ft_to_parser = require'nvim-treesitter'.language.register
---ft_to_parser.tpp = "cpp"
-

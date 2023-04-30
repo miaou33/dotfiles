@@ -1,7 +1,7 @@
 --------------------------------------------------
---					  INDEX						--
+--				INDEX & DEFINES					--
 --------------------------------------------------
---defines
+--colorscheme
 --explorers
 --git
 --lines modifications
@@ -9,15 +9,20 @@
 --search
 --yank/past
 --windows
---------------------------------------------------
---					 DEFINES					--
---------------------------------------------------
+
 local opts = { noremap = true, silent = true }
 local keymap = vim.api.nvim_set_keymap
 
 -- leader
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
+
+
+--------------------------------------------------
+--					COLORSCHEME					--
+--------------------------------------------------
+vim.keymap.set('n', '<leader>cn', ':colo nordic<CR>')
+vim.keymap.set('n', '<leader>cb', ':colo boo<CR>')
 
 --------------------------------------------------
 --					EXPLORERS					--
@@ -31,7 +36,7 @@ vim.keymap.set('n', '<leader>t', vim.cmd.Neotree)
 --					 GIT						--
 --------------------------------------------------
 vim.keymap.set('n', '<leader>gs', vim.cmd.Git)
-vim.keymap.set('n', '<space>gp', ':!git push<CR>')
+vim.keymap.set('n', '<space>gp', ':Git push<CR>')
 
 --------------------------------------------------
 --					LINES MOD					--
@@ -59,6 +64,9 @@ vim.keymap.set('n', '<C-u>', '<C-u>zz')
 --------------------------------------------------
 --					 SEARCH						--
 --------------------------------------------------
+-- toggle undotree
+vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
+
 -- erase highlight
 vim.keymap.set('n', '<leader>he', ':nohlsearch<CR>')
 -- vim.keymap.set('n', '<C-r>', '"y:%s/<C-r>"/g<left><left><left>')

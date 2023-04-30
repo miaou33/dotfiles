@@ -1,4 +1,14 @@
 --------------------------------------------------
+--					  INDEX						--
+--------------------------------------------------
+-- CONFIG 
+-- FILES
+-- GIT
+-- SESSION
+-- SYNTAX
+-- THEMES
+
+--------------------------------------------------
 --					  CONFIG					--
 --------------------------------------------------
 local fn = vim.fn
@@ -43,50 +53,68 @@ packer.init({
 
 return require('packer').startup(function(use)
 
-
---------------------------------------------------
---					  PLUGINS					--
---------------------------------------------------
--- Packer can manage itself
 use 'wbthomason/packer.nvim'
 
--- NTREE
--- Unless you are still migrating, remove the deprecated commands from v1.x
+--------------------------------------------------
+--					FILES						--
+--------------------------------------------------
+-- TREE DISPLAYER
 vim.cmd([[ let g:neo_tree_remove_legacy_commands = 1 ]])
 use { "nvim-neo-tree/neo-tree.nvim", branch = "v2.x", requires = {
 	  "nvim-lua/plenary.nvim",
 	  "nvim-tree/nvim-web-devicons",
 	  "MunifTanjim/nui.nvim", } }
 
--- STATUS LINE
-use { 'nvim-lualine/lualine.nvim', requires = {
-	  'nvim-tree/nvim-web-devicons', opt = true } }
+-- FILE FINDER
+use { 'nvim-telescope/telescope.nvim', tag = '0.1.1', branch = '0.1.x', requires = {
+	{'nvim-lua/plenary.nvim'} } }
 
--- TELESCOPE : FILE NAVIGATOR
-use { 'nvim-telescope/telescope.nvim', tag = '0.1.1', branch = '0.1.x', requires = { {'nvim-lua/plenary.nvim'} } }
-
--- SYNTAX HIGHLIGHTING
-use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-use ('nvim-treesitter/playground')
-
--- MARK FILES AND NAVIGATE THROUGH THEM
+-- QUICK NAVIGATION
 use ('ThePrimeagen/harpoon')
 
--- UNDO HISTORY VISUALIZER
-use ('mbbill/undotree')
-
--- GIT FACILITIES
+--------------------------------------------------
+--					  GIT						--
+--------------------------------------------------
 use ('tpope/vim-fugitive')
 
--- REMEMBER SESSION
+--------------------------------------------------
+--					SESSION						--
+--------------------------------------------------
+-- DASHBOARD
+--use {
+--    'goolord/alpha-nvim',
+--    config = function ()
+--        require'alpha'.setup(require'alpha.themes.dashboard'.config)
+--    end
+--}
+
+-- PREVIOUS SESSION
 use({
-  "folke/persistence.nvim",
-  event = "BufReadPre", -- this will only start session saving when an actual file was opened
-  module = "persistence",
-  config = function()
-    require("persistence").setup()
-  end,
+	"folke/persistence.nvim",
+	event = "BufReadPre", -- this will only start session saving when an actual file was opened
+	module = "persistence",
+	config = function()
+		require("persistence").setup()
+	end,
 })
+
+-- UNDOTREE
+use ('mbbill/undotree')
+
+-- STATUS LINE
+use { 'nvim-lualine/lualine.nvim', requires = {
+	'nvim-tree/nvim-web-devicons', opt = true } }
+
+-- SPEED UP
+use 'lewis6991/impatient.nvim'
+
+
+--------------------------------------------------
+--				     SYNTAX						--
+--------------------------------------------------
+-- HIGHLIGHT
+use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+use ('nvim-treesitter/playground')
 
 -- AUTOCOMPLETION
 use { "hrsh7th/nvim-cmp"} -- The completion plugin
@@ -100,11 +128,17 @@ use { "L3MON4D3/LuaSnip"} --snippet engine
 use { "rafamadriz/friendly-snippets"} -- a bunch of snippets to use
 
 use { 'VonHeikemen/lsp-zero.nvim', branch = 'v2.x', requires = {
- 		{'neovim/nvim-lspconfig'},
- 		{ 'williamboman/mason.nvim', run = function() pcall(vim.cmd, 'MasonUpdate') end},
- 		{'williamboman/mason-lspconfig.nvim'}}}
+ 		-- LSP Support
+ 		{'neovim/nvim-lspconfig'},             -- Required
+ 		{ 'williamboman/mason.nvim', run = function() pcall(vim.cmd, 'MasonUpdate') end, },
+ 		{'williamboman/mason-lspconfig.nvim'},} }
 
- -- THEMES
+-- MARKDOWN PREVIEW
+use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+
+--------------------------------------------------
+--				 THEMES							-- 
+--------------------------------------------------
  use {'AlexvZyl/nordic.nvim'}
  use {'folke/tokyonight.nvim'}
  use {"catppuccin/nvim", as = "catppuccin" }
