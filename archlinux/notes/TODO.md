@@ -37,29 +37,31 @@ ____________________________________________
 # NVIM
 ____________________________________________
 
-## GIT
-- apprendre a add & commit current file quand je le save
-
 ## NEOTREE
-- auto opens at launch
 - auto show hiden files
 
 ## LSP
 - setup LSP
-- highlight rouge j aime pas
 
 ## AUTOCOMPLETION
-- enter for ok / C-Enter for enter
 - snippet std::std::
 
-## OPTS
-- dont go through lines when navigating with w, b etc
+replace in current buffer only selected part
+```Before block with old and sold.
+First told abc old sold gold.
+Another is old, gold but not cold.
+Last is older, fold not bold.
+After block with fold and older and bold.
+```
+select lines in the middle then esc
+```:%s/\%Vold/NEW/g```
 
-- trouver comment replace all selected with visual mode 
+
+- replace in files
 - highlight yank
 
 - c pour supprimer mot !!!!! C pour supprimer toute la ligne a partir du curseur !!!
 - [] pour trouver premiere paranthese ou accolade non fermee/ouverte
-- () debut paragraphe precedent/suivant
-- {} fin paragraphe precedent/suivant
+- () debut phrase current/precedent ou suivant
+- {} empty line after paragraphe current/precedent ou suivant
 

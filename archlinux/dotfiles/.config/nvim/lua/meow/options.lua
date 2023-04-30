@@ -53,16 +53,6 @@ o.wrap = false
 -- set number column width to 2 {default 4}
 o.numberwidth = 4
 
---o.list = false
---o.listchars:append "space:⋅"
---o.listchars:append "eol↴"
---
---require("indent_blankline").setup {
---    space_char_blankline = " ",
---    show_current_context = true,
---    show_current_context_start = true,
---}
-
 --------------------------------------------------
 --				  NAVIGATION					--
 --------------------------------------------------
@@ -72,7 +62,7 @@ o.sidescrolloff = 8
 --------------------------------------------------
 --					 SEARCH						--
 --------------------------------------------------
-o.hlsearch = true
+o.hlsearch = false 
 o.incsearch = true
 
 --------------------------------------------------
@@ -81,5 +71,3 @@ o.incsearch = true
 -- faster completion (4000ms default)
 o.updatetime = 300
 
--- lunarvim adds
--- pumheight = 10                          -- pop up menu height
