@@ -1,5 +1,3 @@
-window:
-  opacity: 0.9
 font:
   normal:
     family: 'TerminessTTF NF'
@@ -13,30 +11,30 @@ font:
   size: 8
 
 colors:
-  # Default colors
+  name: Ashes (light)
+  author: Chris Kempson
   primary:
-    background: '#161821'
-    foreground: '#d2d4de'
-
-  # Normal colors
+    background: "#f3f4f5"
+    foreground: "#565e65"
+  cursor:
+    text: "#f3f4f5"
+    cursor: "#565e65"
   normal:
-    black: '#161821'
-    red: '#e27878'
-    green: '#b4be82'
-    yellow: '#e2a478'
-    blue: '#84a0c6'
-    magenta: '#a093c7'
-    cyan: '#89b8c2'
-    white: '#c6c8d1'
-
-  # Bright colors
+    black: "#1c2023"
+    red: "#c7ae95"
+    green: "#95c7ae"
+    yellow: "#aec795"
+    blue: "#ae95c7"
+    magenta: "#c795ae"
+    cyan: "#95aec7"
+    white: "#c7ccd1"
   bright:
-    black: '#6b7089'
-    red: '#e98989'
-    green: '#c0ca8e'
-    yellow: '#e9b189'
-    blue: '#91acd1'
-    magenta: '#ada0d3'
-    cyan: '#95c4ce'
-    white: '#d2d4de'
-theme: Iceberg-Dark
+    black: "#747c84"
+    red: "#c7ae95"
+    green: "#95c7ae"
+    yellow: "#aec795"
+    blue: "#ae95c7"
+    magenta: "#c795ae"
+    cyan: "#95aec7"
+    white: "#f3f4f5"
+theme: Ashes.light
