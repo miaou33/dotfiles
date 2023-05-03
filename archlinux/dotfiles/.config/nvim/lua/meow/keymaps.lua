@@ -76,7 +76,7 @@ vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 
 -- erase highlight
 vim.keymap.set('n', '<leader>he', ':nohlsearch<CR>')
--- vim.keymap.set('n', '<C-r>', '"y:%s/<C-r>"/g<left><left><left>')
+vim.keymap.set('n', '<C-r>', '"y:%s/<C-r>"//g<left><left>')
 
 -- same for results of search
 vim.keymap.set('n', 'n', 'nzzzv')

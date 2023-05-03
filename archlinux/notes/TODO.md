@@ -47,14 +47,17 @@ ____________________________________________
 - snippet std::std::
 
 replace in current buffer only selected part
-```Before block with old and sold.
+```
+Before block with old and sold.
 First told abc old sold gold.
 Another is old, gold but not cold.
 Last is older, fold not bold.
 After block with fold and older and bold.
 ```
 select lines in the middle then esc
-```:%s/\%Vold/NEW/g```
+```
+:%s/\%Vold/NEW/g
+```
 
 
 - replace in files
