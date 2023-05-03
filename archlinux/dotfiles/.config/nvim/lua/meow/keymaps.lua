@@ -66,7 +66,18 @@ vim.keymap.set('n', '<C-u>', '<C-u>zz')
 --					 REPLACE					--
 --------------------------------------------------
 vim.keymap.set('v', 'R', '<Esc>:%s/\\%V/g<left><left>')
---vim.keymap.set('v', 'r', '<Esc>:%s/<C-r>0/g<left><left>')
+-- > replace in current buffer only selected part
+--
+--		Before block with old and sold.
+-- 		First told abc old sold gold.
+-- 		Another is old, gold but not cold.
+-- 		Last is older, fold not bold.
+-- 		After block with fold and older and bold.
+--
+-- 		select lines in the middle then <Esc> :%s/\%Vold/NEW/g
+
+vim.keymap.set('n', '<C-r>', '"y:%s/<C-r>"//g<left><left>')
+-- > replace all occurrences of selection in file
 
 --------------------------------------------------
 --					 SEARCH						--
@@ -76,7 +87,6 @@ vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 
 -- erase highlight
 vim.keymap.set('n', '<leader>he', ':nohlsearch<CR>')
-vim.keymap.set('n', '<C-r>', '"y:%s/<C-r>"//g<left><left>')
 
 -- same for results of search
 vim.keymap.set('n', 'n', 'nzzzv')
