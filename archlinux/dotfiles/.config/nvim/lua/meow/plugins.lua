@@ -133,9 +133,6 @@ use { 'VonHeikemen/lsp-zero.nvim', branch = 'v2.x', requires = {
  		{ 'williamboman/mason.nvim', run = function() pcall(vim.cmd, 'MasonUpdate') end, },
  		{'williamboman/mason-lspconfig.nvim'},} }
 
--- INDENT GUIDES
-use "lukas-reineke/indent-blankline.nvim"
-
 -- MARKDOWN PREVIEW
 use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
 
