@@ -83,9 +83,9 @@ k('v', 'R', '<Esc>:%s/\\%V/g<left><left>')
 --
 -- 		select lines in the middle then <Esc> :%s/\%Vold/NEW/g
 
-k('v', '<C-r>', 'y<Esc>:%s/<C-r>"//g<left><left>')
+k('v', 'r', 'y<Esc>:%s/<C-r>"//g<left><left>')
 -- > replace all occurrences of selection in file
-k('n', '<C-r>', '"y:%s/<C-r>"//g<left><left>')
+k('n', 'r', '"y:%s/<C-r>"//g<left><left>')
 -- > replace all occurrences of last yanked in file
 
 --------------------------------------------------
