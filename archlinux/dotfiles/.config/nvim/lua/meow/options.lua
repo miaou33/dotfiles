@@ -33,7 +33,7 @@ o.termguicolors = true
 --					 CURSOR						--
 --------------------------------------------------
 -- doesnt change the insert cursor to thin line
-o.guicursor = ""
+-- o.guicursor = ""
 
 --------------------------------------------------
 --					 INDENT						--
