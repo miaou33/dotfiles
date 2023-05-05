@@ -28,9 +28,9 @@ k('n', '<leader>b', ':b#<CR>')
 --------------------------------------------------
 --					COLORSCHEME					--
 --------------------------------------------------
-k('n', '<leader>cn', ':colo nordic<CR>')
-k('n', '<leader>cb', ':colo boo<CR>')
 k('n', '<leader>cmt', ':lua require("material.functions").find_style()<CR>')
+k('n', '<leader>cb', ':lua ColorTB ()<CR>')
+k('n', '<leader>tb', ':lua ColorTB ()<left>')
 
 --------------------------------------------------
 --					EXPLORERS					--
@@ -85,7 +85,7 @@ k('v', 'R', '<Esc>:%s/\\%V/g<left><left>')
 
 k('v', 'r', 'y<Esc>:%s/<C-r>"//g<left><left>')
 -- > replace all occurrences of selection in file
-k('n', 'r', '"y:%s/<C-r>"//g<left><left>')
+--k('n', 'r', '"y:%s/<C-r>"//g<left><left>')
 -- > replace all occurrences of last yanked in file
 
 --------------------------------------------------

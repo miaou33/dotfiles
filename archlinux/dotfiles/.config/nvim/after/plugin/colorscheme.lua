@@ -1,3 +1,4 @@
+vim.cmd.colorscheme "boo"
 
 require("boo-colorscheme").use({
   italic = true, -- toggle italics
@@ -15,4 +16,3 @@ end
 
 ColorTB()
 
-vim.cmd.colorscheme "monochrome"
