@@ -88,15 +88,15 @@ use ('tpope/vim-fugitive')
 --    end
 --}
 
--- PREVIOUS SESSION
-use({
-	"folke/persistence.nvim",
-	event = "BufReadPre", -- this will only start session saving when an actual file was opened
-	module = "persistence",
-	config = function()
-		require("persistence").setup()
-	end,
-})
+---- PREVIOUS SESSION
+--use({
+--	"folke/persistence.nvim",
+--	event = "BufReadPre", -- this will only start session saving when an actual file was opened
+--	module = "persistence",
+--	config = function()
+--		require("persistence").setup()
+--	end,
+--})
 
 -- UNDOTREE
 use ('mbbill/undotree')

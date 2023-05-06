@@ -35,8 +35,6 @@ k('n', '<leader>tb', ':lua ColorTB ()<left>')
 --------------------------------------------------
 --					EXPLORERS					--
 --------------------------------------------------
--- explorer
-k('n', '<leader>n', vim.cmd.Ex)
 -- neotree 
 k('n', '<leader>t', vim.cmd.Neotree)
 
