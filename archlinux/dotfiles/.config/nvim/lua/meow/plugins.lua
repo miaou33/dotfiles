@@ -127,11 +127,12 @@ use { "hrsh7th/cmp-nvim-lua"}
 use { "L3MON4D3/LuaSnip"} --snippet engine
 use { "rafamadriz/friendly-snippets"} -- a bunch of snippets to use
 
-use { 'VonHeikemen/lsp-zero.nvim', branch = 'v2.x', requires = {
- 		-- LSP Support
- 		{'neovim/nvim-lspconfig'},             -- Required
- 		{ 'williamboman/mason.nvim', run = function() pcall(vim.cmd, 'MasonUpdate') end, },
- 		{'williamboman/mason-lspconfig.nvim'},} }
+-- LSP
+use { "neovim/nvim-lspconfig"}
+use { "williamboman/mason.nvim"}
+use { "williamboman/mason-lspconfig.nvim"}
+use { "jose-elias-alvarez/null-ls.nvim"}
+use { "RRethy/vim-illuminate"}
 
 -- MARKDOWN PREVIEW
 use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })

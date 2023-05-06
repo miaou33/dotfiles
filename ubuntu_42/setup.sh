@@ -14,3 +14,9 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvi
 
 echo "please create a first config dir just to set up packer and then uncomment the line below"
 #ln -s ~/repos/CONFiiG/ubuntu_42/nvim ~/.config/nvim
+
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-5 "['<Super>5']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-6 "['<Super>6']"
+
+rm -rf ~/.config/terminator
+ln -s ~/repos/CONFiiG/ubuntu_42/terminator ~/.config/terminator
