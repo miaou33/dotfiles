@@ -117,22 +117,28 @@ use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 use ('nvim-treesitter/playground')
 
 -- AUTOCOMPLETION
-use { "hrsh7th/nvim-cmp"} -- The completion plugin
-use { "hrsh7th/cmp-buffer"} -- buffer completions
-use { "hrsh7th/cmp-path"} -- path completions
-use { "saadparwaiz1/cmp_luasnip"} -- snippet completions
-use { "hrsh7th/cmp-nvim-lsp"}
-use { "hrsh7th/cmp-nvim-lua"}
+use {
+	  'VonHeikemen/lsp-zero.nvim',
+	  branch = 'v1.x',
+	  requires = {
+		  -- LSP Support
+		  {'neovim/nvim-lspconfig'},
+		  {'williamboman/mason.nvim'},
+		  {'williamboman/mason-lspconfig.nvim'},
 
-use { "L3MON4D3/LuaSnip"} --snippet engine
-use { "rafamadriz/friendly-snippets"} -- a bunch of snippets to use
+		  -- Autocompletion
+		  {'hrsh7th/nvim-cmp'},
+		  {'hrsh7th/cmp-buffer'},
+		  {'hrsh7th/cmp-path'},
+		  {'saadparwaiz1/cmp_luasnip'},
+		  {'hrsh7th/cmp-nvim-lsp'},
+		  {'hrsh7th/cmp-nvim-lua'},
 
--- LSP
-use { "neovim/nvim-lspconfig"}
-use { "williamboman/mason.nvim"}
-use { "williamboman/mason-lspconfig.nvim"}
-use { "jose-elias-alvarez/null-ls.nvim"}
-use { "RRethy/vim-illuminate"}
+		  -- Snippets
+		  {'L3MON4D3/LuaSnip'},
+		  {'rafamadriz/friendly-snippets'},
+	  }
+  }
 
 -- MARKDOWN PREVIEW
 use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })

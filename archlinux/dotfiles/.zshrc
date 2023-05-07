@@ -52,7 +52,6 @@ alias vim='nvim'
 alias ls='exa -aG --sort=type'
 alias ll='exa -aglhHS -s type --icons'
 
-
 # Theming section  
 autoload -U compinit colors zcalc
 compinit -d

@@ -55,7 +55,7 @@ exec --no-startup-id ~/.fehbg &
 # Lock and auto lock
 exec --no-startup-id xset s activate
 exec --no-startup-id xss-lock --transfer-sleep-lock blurlock
-exec --no-startup-id xautolock -time 10 -locker blurlock 
+#exec --no-startup-id xautolock -time 10 -locker blurlock 
 
 # Network
 exec_always --no-startup-id nm-applet

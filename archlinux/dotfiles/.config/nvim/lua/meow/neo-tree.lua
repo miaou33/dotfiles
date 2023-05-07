@@ -3,7 +3,7 @@ require("neo-tree").setup({
     window = {
       mappings = {
         ["<CR>"] = "open",
-        ["<C-s>"] = "open_split",
+        ["s"] = "open_split",
         ["v"] = "open_vsplit",
         ["R"] = "refresh",
       },
