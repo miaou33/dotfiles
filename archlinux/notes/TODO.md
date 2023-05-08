@@ -48,20 +48,6 @@ ____________________________________________
 
 - replace in files
 
-- c pour supprimer mot !!!!! C pour supprimer toute la ligne a partir du curseur !!!
-- [] pour trouver premiere paranthese ou accolade non fermee/ouverte
-- () debut phrase current/precedent ou suivant
-- {} empty line after paragraphe current/precedent ou suivant
-- ia blocks !!!!!!!!
-    > c2a[ suppr [[tout] [ca]]
-    > yi( yank (l interieur de ces parentheses <3)
-    > d2aw supprime le mot dans lequel le curseur est + white space qui le suit + pareil pour mot suivant
-- . repeats last edit (either last sequence in insert mode, either last change eg 'dwi'
-- H/L to go to first / last visible line on screen
-- <pipe> 7| to go to column 7
-- / to search forward ? to search BACKWARD !
-- / or ? <CR> to find last search
-
 ____________________________________________
 # KEEB
 ____________________________________________

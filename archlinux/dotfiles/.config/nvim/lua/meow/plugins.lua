@@ -88,7 +88,16 @@ use ('tpope/vim-fugitive')
 --    end
 --}
 
----- PREVIOUS SESSION
+-- PREVIOUS SESSION
+use {
+  'rmagatti/auto-session',
+  config = function()
+    require("auto-session").setup {
+      log_level = "error",
+      auto_session_suppress_dirs = { "~/", "~/Projects", "~/Downloads", "/"},
+    }
+  end
+}
 --use({
 --	"folke/persistence.nvim",
 --	event = "BufReadPre", -- this will only start session saving when an actual file was opened

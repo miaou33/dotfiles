@@ -20,3 +20,5 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-6 "['<Super>6
 
 rm -rf ~/.config/terminator
 ln -s ~/repos/CONFiiG/ubuntu_42/terminator ~/.config/terminator
+
+cargo install ripgrep

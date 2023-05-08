@@ -25,7 +25,7 @@ source $ZSH/oh-my-zsh.sh
 bindkey -v
 
 # VARIABLES
-export PATH="$PATH:$HOME/repos/exa/bin"
+export PATH="$PATH:$HOME/repos/exa/bin:$HOME/.cargo/bin"
 export EDITOR=vim
 
 # ALIASES
