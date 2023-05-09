@@ -70,7 +70,10 @@ k('n', '<C-u>', '<C-u>zz')
 --------------------------------------------------
 --					 REPLACE					--
 --------------------------------------------------
-k('v', 'R', '<Esc>:%s/\\%V/g<left><left>')
+k ('v', '<leader>ra', ':s/\\(.*\\)/')
+-- then , use \1 to add the selected part within the replace
+
+k('v', '<leader>rh', '<Esc>:%s/\\%V/g<left><left>')
 -- > replace in current buffer only selected part
 --
 --		Before block with old and sold.
@@ -81,7 +84,7 @@ k('v', 'R', '<Esc>:%s/\\%V/g<left><left>')
 --
 -- 		select lines in the middle then <Esc> :%s/\%Vold/NEW/g
 
-k('v', 'r', 'y<Esc>:%s/<C-r>"//g<left><left>')
+k('v', '<leader>rt', 'y<Esc>:%s/<C-r>"//g<left><left>')
 -- > replace all occurrences of selection in file
 --k('n', 'r', '"y:%s/<C-r>"//g<left><left>')
 -- > replace all occurrences of last yanked in file
