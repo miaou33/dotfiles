@@ -26,13 +26,6 @@ vim.g.maplocalleader = ' '
 k('n', '<leader>b', ':b#<CR>')
 
 --------------------------------------------------
---					COLORSCHEME					--
---------------------------------------------------
-k('n', '<leader>cmt', ':lua require("material.functions").find_style()<CR>')
-k('n', '<leader>cb', ':lua ColorTB ()<CR>')
-k('n', '<leader>tb', ':lua ColorTB ()<left>')
-
---------------------------------------------------
 --					EXPLORERS					--
 --------------------------------------------------
 -- neotree 
