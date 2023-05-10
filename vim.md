@@ -19,3 +19,15 @@
 - / or ? <CR> to find last search
 
 - :%s/\<foo\>/bar/g to replace all occurrences of foo but not foobla or vlafoofsd etc
+
+- in visual mode :s/\\(.*\\)/ to create an arg with the selected part and then use it with \1 
+- in visual mode : g<C-a> to incremente all first number of each lines like :
+        0
+        0
+        0
+        0
+        becomes
+        1
+        2 
+        3 
+        4

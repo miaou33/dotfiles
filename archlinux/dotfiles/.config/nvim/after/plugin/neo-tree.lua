@@ -19,3 +19,10 @@ require("neo-tree").setup({
     },
   },
 })
+
+--------------------------------------------------
+--					KEYMAPS						--
+--------------------------------------------------
+local k = vim.keymap.set
+-- neotree 
+k('n', '<leader>t', vim.cmd.Neotree)
