@@ -30,12 +30,6 @@ o.undofile = true
 o.termguicolors = true
 
 --------------------------------------------------
---					 CURSOR						--
---------------------------------------------------
--- doesnt change the insert cursor to thin line
--- o.guicursor = ""
-
---------------------------------------------------
 --					 INDENT						--
 --------------------------------------------------
 o.smartindent = true
@@ -48,11 +42,17 @@ o.showtabline = 2
 --------------------------------------------------
 --					 LINES						--
 --------------------------------------------------
-o.nu = true
-o.relativenumber = true
 o.wrap = false
 -- set number column width to 2 {default 4}
-o.numberwidth = 4
+-- o.numberwidth = 4
+
+--------------------------------------------------
+--			 SIGN & NBR COLUMN					--
+--------------------------------------------------
+o.nu = true
+o.relativenumber = true
+-- always show signcolumn
+o.signcolumn = "yes"
 
 --------------------------------------------------
 --				  NAVIGATION					--
