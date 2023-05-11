@@ -78,8 +78,8 @@ default_bar_height = 6
 }
 
 conky.text = [[
-${alignc}${font TerminessTTF NF:size=64}${color3}${time %R}${font}
-${alignc}${font TerminessTTF NF:size=16}${color3}${execi 300 date +"%x"}${color} ${time %A}${font}
+${alignc}${font Hack:size=64}${color3}${time %R}${font}
+${alignc}${font Hack:size=16}${color3}${execi 300 date +"%x"}${color} ${time %A}${font}
 
 #
 ### WEATHER
