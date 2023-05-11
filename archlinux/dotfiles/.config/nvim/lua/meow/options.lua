@@ -37,7 +37,6 @@ o.tabstop = 4
 o.softtabstop = 4
 o.shiftwidth = 4
 o.expandtab = false
-o.showtabline = 2
 
 --------------------------------------------------
 --					 LINES						--
@@ -63,8 +62,14 @@ o.sidescrolloff = 8
 --------------------------------------------------
 --					 SEARCH						--
 --------------------------------------------------
-o.hlsearch = false
+o.hlsearch = true
 o.incsearch = true
+
+--------------------------------------------------
+--					TABS						--
+--------------------------------------------------
+o.showtabline = 2
+o.statusline = ' win_id2tabwin()'
 
 --------------------------------------------------
 --					TYPING						--

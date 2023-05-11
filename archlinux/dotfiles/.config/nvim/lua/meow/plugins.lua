@@ -147,6 +147,20 @@ use {'rafamadriz/friendly-snippets'}
 use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
 
 --------------------------------------------------
+--					AESTHETICS					--
+--------------------------------------------------
+-- POPUP 
+use {
+  'gelguy/wilder.nvim',
+  config = function()
+    -- config goes here
+  end,
+}
+
+-- BLANKLINES HIGHLIGHT
+use "lukas-reineke/indent-blankline.nvim"
+
+--------------------------------------------------
 --				 THEMES							-- 
 --------------------------------------------------
 use {'AlexvZyl/nordic.nvim'}

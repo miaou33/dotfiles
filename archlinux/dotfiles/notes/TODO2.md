@@ -16,7 +16,9 @@
 	> picom
 	> rofi
 	> p10k if color / monochrome
-- infos on background // manjaro ?
+
+## WINDOWS
+- temp hi of border when change focus
 
 ## SYSTEM
 - problem with i3lock ("failed")
@@ -24,7 +26,6 @@
 	> battery low
 	> screenshot taken
 	> sound & luminosity
-
 
 ## TERM
 - terminator setup
@@ -40,31 +41,31 @@ remove polybar --> reput i3bar
 ____________________________________________
 # SYSTEM MONITOR -- CONKY
 ____________________________________________
-- hour
+- hour with hack font
 - battery
 - wifi
 - bluetooth
 - sound & luminosity (or notif when i change it with bar?)
-- on both screens
-
+- meteo not moscow maybe lol
 ____________________________________________
 # NVIM
 ____________________________________________
 
 ## SHORTCUTS
-- :tabnew
 
 ## NEOTREE
 - auto show hiden files
 
-## LSP
-- setup LSP
-
-## AUTOCOMPLETION
+## LSP / CMP
+- indications on the right
+- little windows for completion propositions with scroll bar
 - snippet std::std::
 
-- replace in files
+## TELESCOPE
 
+## OTHER
+- replace in files
+- just name of file not path on tabs
 
 ____________________________________________
 # KEEB

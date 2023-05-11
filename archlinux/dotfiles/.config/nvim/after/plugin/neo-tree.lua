@@ -25,4 +25,4 @@ require("neo-tree").setup({
 --------------------------------------------------
 local k = vim.keymap.set
 -- neotree 
-k('n', '<leader>t', vim.cmd.Neotree)
+k('n', '<leader>e', vim.cmd.Neotree)

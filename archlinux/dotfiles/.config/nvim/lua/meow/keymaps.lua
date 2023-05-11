@@ -6,10 +6,11 @@
 --explorers
 --git
 --lines modifications
---navigation through text
+--page navigation
 --search
---yank/past
+--tabs
 --windows
+--yank/past
 
 local opts = { noremap = true, silent = true }
 local keymap = vim.api.nvim_set_keymap
@@ -39,7 +40,7 @@ k('v','<', '<gv')
 k('v', '>', '>gv')
 
 --------------------------------------------------
---				  NAVIGATION					--
+--					  PAGE						--
 --------------------------------------------------
 -- moving end of page with recentering
 k('n', 'G', 'Gzz')
@@ -80,6 +81,21 @@ k('n', 'n', 'nzzzv')
 k('n', 'N', 'Nzzzv')
 
 --------------------------------------------------
+--					 TABS						--
+--------------------------------------------------
+k('n', '<leader>t', ':tabnew<CR>')
+
+--------------------------------------------------
+--					 YANK/PAST					--
+--------------------------------------------------
+-- when want to past over a selected portion to replace it, doesnt save the deleted in reg
+k('x', 'p', '"_dP')
+
+-- leader y to yank in system clipboard
+k({'n', 'v'}, '<leader>y', [["+y]])
+k('n', '<leader>Y', [["+Y]])
+
+--------------------------------------------------
 --					WINDOWS						--
 --------------------------------------------------
 -- navigation
@@ -93,14 +109,3 @@ keymap('n', '<C-Up>', ':resize -2<CR>', opts)
 keymap('n', '<C-Down>', ':resize +2<CR>', opts)
 keymap('n', '<C-Left>', ':vertical resize -2<CR>', opts)
 keymap('n', '<C-Right>', ':vertical resize +2<CR>', opts)
-
---------------------------------------------------
---					 YANK/PAST					--
---------------------------------------------------
--- when want to past over a selected portion to replace it, doesnt save the deleted in reg
-k('x', 'p', '"_dP')
-
--- leader y to yank in system clipboard
-k({'n', 'v'}, '<leader>y', [["+y]])
-k('n', '<leader>Y', [["+Y]])
-

@@ -1,3 +1,7 @@
+--------------------------------------------------
+--					KEYMAPS						--
+--------------------------------------------------
+
 local builtin = require('telescope.builtin')
 
 -- help
@@ -18,3 +22,23 @@ vim.keymap.set('n', '<leader>bs', builtin.current_buffer_fuzzy_find, {})
 
 -- registers
 vim.keymap.set('n', '<leader>fr', builtin.registers, {})
+
+--------------------------------------------------
+--					SETTINGS					--
+--------------------------------------------------
+
+-- settings for grep string
+require('telescope').setup{
+	defaults = {
+		vimgrep_arguments = {
+			'rg',
+			'--color=never',
+			'--no-heading',
+			'--with-filename',
+			'--line-number',
+			'--column',
+			'--smart-case',
+			'--hidden',
+		},
+	}
+}
