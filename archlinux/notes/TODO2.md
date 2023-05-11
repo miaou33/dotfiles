@@ -25,8 +25,6 @@
 	> screenshot taken
 	> sound & luminosity
 
-## WORKSPACES
-- 1 ws for the 2 screens if availables
 
 ## TERM
 - terminator setup
@@ -35,8 +33,26 @@
 
 
 ____________________________________________
+# BAR
+____________________________________________
+remove polybar --> reput i3bar
+
+____________________________________________
+# SYSTEM MONITOR -- CONKY
+____________________________________________
+- hour
+- battery
+- wifi
+- bluetooth
+- sound & luminosity (or notif when i change it with bar?)
+- on both screens
+
+____________________________________________
 # NVIM
 ____________________________________________
+
+## SHORTCUTS
+- :tabnew
 
 ## NEOTREE
 - auto show hiden files

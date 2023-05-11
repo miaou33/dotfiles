@@ -48,6 +48,7 @@ exec_always --no-startup-id i3 --force-xinerama -V >>~/.i3/i3log 2>&1
 #exec_always --no-startup-id libinput-gestures-setup start
 exec_always --no-startup-id ~/monitor_display.sh &
 exec_always --no-startup-id picom &
+exec_always --no-startup-id conky -c ~/.config/conky/conky.conkyrc & 
 exec --no-startup-id ~/.fehbg &
 #exec_always --no-startup-id dex-autostart --autostart --environment i3
 #exec --no-startup-id dex --autostart --environment i3
