@@ -76,6 +76,7 @@ use ('ThePrimeagen/harpoon')
 --					  GIT						--
 --------------------------------------------------
 use ('tpope/vim-fugitive')
+use 'lewis6991/gitsigns.nvim'
 
 --------------------------------------------------
 --					SESSION						--
@@ -161,7 +162,12 @@ use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = fun
 use "lukas-reineke/indent-blankline.nvim"
 
 --------------------------------------------------
---				 THEMES							-- 
+--				 TABS							--
+--------------------------------------------------
+use 'nanozuki/tabby.nvim'
+
+--------------------------------------------------
+--				 THEMES							--
 --------------------------------------------------
 use {'AlexvZyl/nordic.nvim'}
 use {'folke/tokyonight.nvim'}
