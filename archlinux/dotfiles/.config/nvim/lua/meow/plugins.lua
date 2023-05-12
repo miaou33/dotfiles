@@ -149,13 +149,13 @@ use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = fun
 --------------------------------------------------
 --					AESTHETICS					--
 --------------------------------------------------
--- POPUP 
-use {
-  'gelguy/wilder.nvim',
-  config = function()
-    -- config goes here
-  end,
-}
+---- POPUP 
+--use {
+--  'gelguy/wilder.nvim',
+--  config = function()
+--    -- config goes here
+--  end,
+--}
 
 -- BLANKLINES HIGHLIGHT
 use "lukas-reineke/indent-blankline.nvim"

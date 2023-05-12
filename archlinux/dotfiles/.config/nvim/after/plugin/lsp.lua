@@ -2,6 +2,7 @@
 ------------------------------------------
 --				BORDERS					--
 ------------------------------------------
+
 vim.cmd [[autocmd! ColorScheme * highlight NormalFloat guibg=#1f2335]]
 vim.cmd [[autocmd! ColorScheme * highlight FloatBorder guifg=white guibg=#1f2335]]
 
@@ -36,42 +37,44 @@ end
 ------------------------------------------
 --         COMPLETION KINDS				--
 ------------------------------------------
-local M = {}
-
-M.icons = {
-	Class = " ",
-	Color = " ",
-	Constant = " ",
-	Constructor = " ",
-	Enum = "了 ",
-	EnumMember = " ",
-	Field = " ",
-	File = " ",
-	Folder = " ",
-	Function = " ",
-	Interface = "ﰮ ",
-	Keyword = " ",
-	Method = "ƒ ",
-	Module = " ",
-	Property = " ",
-	Snippet = "﬌ ",
-	Struct = " ",
-	Text = " ",
-	Unit = " ",
-	Value = " ",
-	Variable = " ",
-}
-
-function M.setup()
-	local kinds = vim.lsp.protocol.CompletionItemKind
-	for i, kind in ipairs(kinds) do
-		kinds[i] = M.icons[kind] or kind
-	end
-end
+--local M = {}
+--
+--M.icons = {
+--	Class = " ",
+--	Color = " ",
+--	Constant = " ",
+--	Constructor = " ",
+--	Enum = "了 ",
+--	EnumMember = " ",
+--	Field = " ",
+--	File = " ",
+--	Folder = " ",
+--	Function = " ",
+--	Interface = "ﰮ ",
+--	Keyword = " ",
+--	Method = "ƒ ",
+--	Module = " ",
+--	Property = " ",
+--	Snippet = "﬌ ",
+--	Struct = " ",
+--	Text = " ",
+--	Unit = " ",
+--	Value = " ",
+--	Variable = " ",
+--}
+--
+--function M.setup()
+--	local kinds = vim.lsp.protocol.CompletionItemKind
+--	for i, kind in ipairs(kinds) do
+--		kinds[i] = M.icons[kind] or kind
+--	end
+--end
 
 ------------------------------------------
 --			DIAGNOSTICS					--
 ------------------------------------------
+local signs = { Error = "E", Warn = "W", Hint = "H", Info = "I" }
+
 vim.diagnostic.config({
 	virtual_text = true,
 	signs = {
@@ -90,7 +93,6 @@ vim.diagnostic.config({
 	},
 })
 
-local signs = { Error = "E", Warn = "W", Hint = "H", Info = "I" }
 
 
 vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
@@ -190,6 +192,8 @@ local function goto_definition(split_cmd)
 ------------------------------------------
 --				KEYMAPS					--
 ------------------------------------------
+
+vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
 
 local function lsp_keymaps(bufnr)
 	local opts = { noremap = true, silent = true }
