@@ -56,7 +56,7 @@ cmp.setup {
     ["<C-J>"] = cmp.mapping.select_next_item(),
     ["<C-Space>"] = cmp.mapping(cmp.mapping.complete(), { "i", "c" }),
     ["<C-y>"] = cmp.config.disable, -- Specify `cmp.config.disable` if you want to remove the default `<C-y>` mapping.
-    ["<C-e>"] = cmp.mapping {
+    ["<C-u>"] = cmp.mapping {
       i = cmp.mapping.abort(),
       c = cmp.mapping.close(),
     },
@@ -136,7 +136,10 @@ cmp.setup {
   },
 }
 
-vim.cmd "highlight! BorderBG guibg=NONE guifg=#00ff00"
+-- if i want a certain color for borders: add in winhighlight "BorderFloat:BorderBG"
+-- and at end of file define BorderBG:
+-- vim.cmd "highlight! BorderBG guibg=NONE guifg=#00ff00"
+-- source: https://github.com/hrsh7th/nvim-cmp/issues/671#issuecomment-1189019119
 
 
 ------------------------------------------------------------------------------------------------------
