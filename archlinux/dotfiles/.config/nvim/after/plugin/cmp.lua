@@ -120,9 +120,10 @@ cmp.setup {
   },
   window = {
     completion = {
+      border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+      winhighlight = "Normal:CmpPmenu,CursorLine:PmenuSel,Search:PmenuSel",
       side_padding = 1,
-      winhighlight = "Normal:CmpPmenu,CursorLine:CmpSel,Search:PmenuSel",
-      scrollbar = false,
+      scrollbar = true,
     },
     documentation = {
       border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
@@ -134,6 +135,8 @@ cmp.setup {
     native_menu = false,
   },
 }
+
+vim.cmd "highlight! BorderBG guibg=NONE guifg=#00ff00"
 
 
 ------------------------------------------------------------------------------------------------------

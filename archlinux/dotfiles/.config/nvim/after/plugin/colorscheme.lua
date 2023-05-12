@@ -10,20 +10,6 @@ vim.cmd.colorscheme "material"
 vim.g.material_style = "oceanic"
 
 --------------------------------------------------
---				  TRANSPARENT					--
---------------------------------------------------
-
---function ColorTB(color)
---	color = color or "material";
---	vim.cmd.colorscheme(color)
---
---	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
---	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
---end
---
---ColorTB()
-
---------------------------------------------------
 --					KEYMAPS						--
 --------------------------------------------------
 local k = vim.keymap.set
@@ -57,13 +43,13 @@ require('material').setup({
     },
 
     plugins = { -- Available plugins: "dap", "dashboard", "gitsigns", "hop", "indent-blankline", "lspsaga", "mini", "neogit", "neorg", "nvim-cmp", "nvim-navic", "nvim-tree", "nvim-web-devicons", "sneak", "telescope", "trouble", "which-key",
-		"indent-blankline",
+		--"indent-blankline",
     },
 
     disable = {
         colored_cursor = false, -- Disable the colored cursor
         borders = false, -- Disable borders between verticaly split windows
-        background = false, -- Prevent the theme from setting the background (NeoVim then uses your terminal background)
+        background = true, -- Prevent the theme from setting the background (NeoVim then uses your terminal background)
         term_colors = false, -- Prevent the theme from setting terminal colors
         eob_lines = false -- Hide the end-of-buffer lines
     },
@@ -81,4 +67,18 @@ require('material').setup({
 
     custom_highlights = {}, -- Overwrite highlights with your own
 })
+
+--------------------------------------------------
+--				  TRANSPARENT					--
+--------------------------------------------------
+
+function ColorTB(color)
+	color = color or "material";
+	vim.cmd.colorscheme(color)
+
+	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+end
+
+ColorTB()
 

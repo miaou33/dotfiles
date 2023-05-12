@@ -9,14 +9,14 @@
 [keybindings]
 [profiles]
   [[default]]
-    background_color = "#1c1e26"
-    background_darkness = 0.9
+    background_color = "#011116"
+    background_darkness = 0.8
     background_type = transparent
-    cursor_color = "#e95379"
+    cursor_color = "#4afcd6"
     font = TerminessTTF Nerd Font Mono Medium 10
-    foreground_color = "#bbbbbb"
+    foreground_color = "#ffffff"
     show_titlebar = False
-    palette = "#e9436f:#f9cbbe:#ffaf87:#27d796:#6c6f93:#fdf0ed:#fadad1:#b877db:#e95379:#fadad1:#fac29a:#09f7a0:#6c6f8a:#ffffff:#eddad1:#b88adb"
+    palette = "#022026:#b2302d:#00a941:#59819c:#459a86:#00599d:#5d7e19:#405555:#384451:#ff4242:#2aea5e:#8ed4fd:#61d5ba:#1298ff:#98d028:#58fbd6"
     login_shell = True
     use_custom_command = True
     custom_command = zsh
