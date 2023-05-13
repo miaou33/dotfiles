@@ -74,7 +74,8 @@ k('v', '<leader>rt', 'y<Esc>:%s/<C-r>"//g<left><left>')
 --					 SEARCH						--
 --------------------------------------------------
 -- erase highlight
-k('n', '<leader>he', ':nohlsearch<CR>')
+k({ "i", "n" }, "<esc>", "<cmd>noh<cr><esc>")
+--k('n', '<leader>he', ':nohlsearch<CR>')
 
 -- same for results of search
 k('n', 'n', 'nzzzv')
@@ -83,7 +84,7 @@ k('n', 'N', 'Nzzzv')
 --------------------------------------------------
 --					 TABS						--
 --------------------------------------------------
-k('n', '<leader>t', ':tabnew<CR>')
+k('n', '<C-t>', ':tabnew<CR>')
 
 --------------------------------------------------
 --					 YANK/PAST					--

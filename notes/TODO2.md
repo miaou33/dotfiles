@@ -52,27 +52,21 @@ ____________________________________________
 ____________________________________________
 
 ## PLUGINS
-- lazygit?
+- lazygit? voir a l'ecole si possible de l'installer
 - toggleterm?
-- multicursor ?
 
 ## SHORTCUTS
 
 ## NEOTREE
-- auto show hiden files
 
 ## LSP / CMP
 - enlever highlight rouge
-- indications on the right
-- little windows for completion propositions with scroll bar
-- snippet std::std::
 
 ## TELESCOPE
 
 ## OTHER
 - multicursor
 - replace in files
-- just name of file not path on tabs
 
 ____________________________________________
 # KEEB

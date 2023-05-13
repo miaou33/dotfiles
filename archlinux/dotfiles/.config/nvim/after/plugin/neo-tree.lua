@@ -226,4 +226,5 @@ commands = {} -- Add a custom command or override a global one using the same fu
 ----------------------------------------------------
 local k = vim.keymap.set
 -- neotree 
-k('n', '<leader>e', ":Neotree toggle<CR>")
+k('n', '<leader>e', vim.cmd.Neotree)
+k('n', '<leader>t', ":Neotree toggle<CR>")
