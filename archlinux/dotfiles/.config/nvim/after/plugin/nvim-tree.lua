@@ -23,7 +23,7 @@
         preserve_window_proportions = false,
         number = false,
         relativenumber = false,
-        signcolumn = "yes",
+        signcolumn = "no",
         mappings = {
           custom_only = false,
           list = {
@@ -154,7 +154,7 @@
         timeout = 400,
       },
       modified = {
-        enable = false,
+        enable = true,
         show_on_dirs = true,
         show_on_open_dirs = true,
       },
