@@ -91,10 +91,10 @@ neotree.setup({
 				["<esc>"] = "revert_preview",
 				["P"] = { "toggle_preview", config = { use_float = true } },
 				["l"] = "focus_preview",
-				["S"] = "open_split",
-				["s"] = "open_vsplit",
-				-- ["S"] = "split_with_window_picker",
-				-- ["s"] = "vsplit_with_window_picker",
+				["s"] = "open_split",
+				["v"] = "open_vsplit",
+				["<C-s>"] = "split_with_window_picker",
+				["C-v"] = "vsplit_with_window_picker",
 				["t"] = "open_tabnew",
 				-- ["<cr>"] = "open_drop",
 				-- ["t"] = "open_tab_drop",
@@ -103,13 +103,13 @@ neotree.setup({
 				["C"] = "close_node",
 				-- ['C'] = 'close_all_subnodes',
 				["z"] = "close_all_nodes",
-				--["Z"] = "expand_all_nodes",
-				["a"] = { 
+				["Z"] = "expand_all_nodes",
+				["a"] = {
 					"add",
 					-- this command supports BASH style brace expansion ("x{a,b,c}" -> xa,xb,xc). see `:h neo-tree-file-actions` for details
 					-- some commands may take optional config options, see `:h neo-tree-mappings` for details
 					config = {
-						show_path = "none" -- "none", "relative", "absolute"
+						show_path = "absolute" -- "none", "relative", "absolute"
 					}
 				},
 				["A"] = "add_directory", -- also accepts the optional config.show_path option like "add". this also supports BASH style brace expansion.
@@ -136,8 +136,8 @@ neotree.setup({
 				nesting_rules = {},
 				filesystem = {
 					filtered_items = {
-						visible = false, -- when true, they will just be displayed differently than normal items
-						hide_dotfiles = true,
+						visible = true, -- when true, they will just be displayed differently than normal items
+						hide_dotfiles = false,
 						hide_gitignored = true,
 						hide_hidden = true, -- only works on Windows for hidden files/directories
 						hide_by_name = {
@@ -184,9 +184,9 @@ neotree.setup({
 		},
 		fuzzy_finder_mappings = { -- define keymaps for filter popup window in fuzzy_finder_mode
 		["<down>"] = "move_cursor_down",
-		["<C-n>"] = "move_cursor_down",
+		["<C-j>"] = "move_cursor_down",
 		["<up>"] = "move_cursor_up",
-		["<C-p>"] = "move_cursor_up",
+		["<C-k>"] = "move_cursor_up",
 	},
 },
 
@@ -221,32 +221,9 @@ commands = {} -- Add a custom command or override a global one using the same fu
 		}
 	})
 
-	vim.cmd([[nnoremap \ :Neotree reveal<cr>]])
---require("neo-tree").setup({
---  filesystem = {
---    window = {
---      mappings = {
---        ["<CR>"] = "open",
---        ["s"] = "open_split",
---        ["v"] = "open_vsplit",
---        ["R"] = "refresh",
---      },
---	  filtered_items = {
---		  visible = true, -- when true, they will just be displayed differently than normal items
---		  hide_dotfiles = false,
---	  },
---    bind_to_cwd = true,
---    before_render = function(_)
---      return
---    end,
---	show_hidden = true,
---    },
---  },
---})
---
 ----------------------------------------------------
 ----					KEYMAPS						--
 ----------------------------------------------------
---local k = vim.keymap.set
----- neotree 
---k('n', '<leader>e', vim.cmd.Neotree)
+local k = vim.keymap.set
+-- neotree 
+k('n', '<leader>e', ":Neotree toggle<CR>")

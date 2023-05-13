@@ -204,6 +204,11 @@ _G.packer_plugins = {
     path = "/home/meow/.local/share/nvim/site/pack/packer/start/moonfly",
     url = "https://github.com/bluz71/vim-moonfly-colors"
   },
+  ["neo-tree.nvim"] = {
+    loaded = true,
+    path = "/home/meow/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
+    url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
+  },
   nightfly = {
     loaded = true,
     path = "/home/meow/.local/share/nvim/site/pack/packer/start/nightfly",
@@ -224,6 +229,11 @@ _G.packer_plugins = {
     path = "/home/meow/.local/share/nvim/site/pack/packer/start/nordic.nvim",
     url = "https://github.com/AlexvZyl/nordic.nvim"
   },
+  ["nui.nvim"] = {
+    loaded = true,
+    path = "/home/meow/.local/share/nvim/site/pack/packer/start/nui.nvim",
+    url = "https://github.com/MunifTanjim/nui.nvim"
+  },
   ["null-ls.nvim"] = {
     loaded = true,
     path = "/home/meow/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
@@ -238,11 +248,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/meow/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
-  },
-  ["nvim-tree.lua"] = {
-    loaded = true,
-    path = "/home/meow/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
-    url = "https://github.com/nvim-tree/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
@@ -321,18 +326,18 @@ time([[Setup for markdown-preview.nvim]], false)
 time([[Config for poimandres.nvim]], true)
 try_loadstring("\27LJ\2\n<\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\15poimandres\frequire\0", "config", "poimandres.nvim")
 time([[Config for poimandres.nvim]], false)
--- Config for: monochrome.nvim
-time([[Config for monochrome.nvim]], true)
-try_loadstring("\27LJ\2\n\v\0\0\1\0\0\0\1K\0\1\0\0", "config", "monochrome.nvim")
-time([[Config for monochrome.nvim]], false)
--- Config for: auto-session
-time([[Config for auto-session]], true)
-try_loadstring("\27LJ\2\n”\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\31auto_session_suppress_dirs\1\5\0\0\a~/\15~/Projects\16~/Downloads\6/\1\0\1\14log_level\nerror\nsetup\17auto-session\frequire\0", "config", "auto-session")
-time([[Config for auto-session]], false)
 -- Config for: everforest-nvim
 time([[Config for everforest-nvim]], true)
 try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15everforest\frequire\0", "config", "everforest-nvim")
 time([[Config for everforest-nvim]], false)
+-- Config for: auto-session
+time([[Config for auto-session]], true)
+try_loadstring("\27LJ\2\n”\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\31auto_session_suppress_dirs\1\5\0\0\a~/\15~/Projects\16~/Downloads\6/\1\0\1\14log_level\nerror\nsetup\17auto-session\frequire\0", "config", "auto-session")
+time([[Config for auto-session]], false)
+-- Config for: monochrome.nvim
+time([[Config for monochrome.nvim]], true)
+try_loadstring("\27LJ\2\n\v\0\0\1\0\0\0\1K\0\1\0\0", "config", "monochrome.nvim")
+time([[Config for monochrome.nvim]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Filetype lazy-loads
