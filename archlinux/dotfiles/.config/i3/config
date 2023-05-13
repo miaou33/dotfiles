@@ -48,7 +48,8 @@ exec_always --no-startup-id i3 --force-xinerama -V >>~/.i3/i3log 2>&1
 #exec_always --no-startup-id libinput-gestures-setup start
 exec_always --no-startup-id ~/monitor_display.sh &
 exec_always --no-startup-id picom &
-exec_always --no-startup-id conky -c ~/.config/conky/conky.conkyrc & 
+#exec_always --no-startup-id conky -c ~/.config/conky/conky.conkyrc & 
+exec_always --no-startup-id .config/conky/launch.sh
 exec --no-startup-id ~/.fehbg &
 #exec_always --no-startup-id dex-autostart --autostart --environment i3
 #exec --no-startup-id dex --autostart --environment i3
@@ -124,7 +125,7 @@ bindsym $mod+Shift+$up move up
 bindsym $mod+Shift+$right move right
 
 # split / fullscreen
-bindsym $mod+o split h
+bindsym $mod+s split h
 bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
@@ -142,8 +143,8 @@ set $ws4 "4:music"
 set $ws5 "5:CONFiiG"
 set $ws6 "6:?"
 set $ws7 "7:?"
-set $ws8 "8:?" 
-set $ws9 "9:discord" 
+set $ws8 "8:?"
+set $ws9 "9:discord"
 
 workspace $ws1 output eDP-1
 workspace $ws2 output eDP-1

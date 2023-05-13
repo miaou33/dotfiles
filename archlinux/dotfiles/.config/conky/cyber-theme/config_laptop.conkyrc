@@ -87,7 +87,7 @@ ${alignc}${font Hack:size=16}${color3}${execi 300 date +"%x"}${color} ${time %A}
 ${color1}${stippled_hr}${color}
 ${font2}${color1}WEATHER${font}
 ${color3}${texeci 900 curl -s wttr.in/Tallinn?format=%l:+%C+%t+%w+%p}${color}
-${texeci 900 curl -s wttr.in/Moscow?format=%l:+%C+%t+%w+%p}
+${texeci 900 curl -s wttr.in/Paris?format=%l:+%C+%t+%w+%p}
 ${texeci 900 curl -s wttr.in/London?format=%l:+%C+%t+%w+%p}
 
 #
