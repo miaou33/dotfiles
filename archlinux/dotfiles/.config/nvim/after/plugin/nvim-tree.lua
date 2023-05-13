@@ -1,4 +1,9 @@
- require("nvim-tree").setup { -- BEGIN_DEFAULT_OPTS
+local nvimtree_status_ok, nvimtree = pcall(require, "nvim-tree")
+if not nvimtree_status_ok then
+  return
+end
+
+nvimtree.setup { -- BEGIN_DEFAULT_OPTS
       auto_reload_on_write = true,
       disable_netrw = false,
       hijack_cursor = false,

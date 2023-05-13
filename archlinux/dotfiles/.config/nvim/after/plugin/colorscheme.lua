@@ -19,7 +19,12 @@ k('n', '<leader>cb', ':lua ColorTB ()<CR>')
 --------------------------------------------------
 --					  BOO						--
 --------------------------------------------------
---require("boo-colorscheme").use({
+--local boo_colorscheme_status_ok, boo_colorscheme = pcall(require, "boo-colorscheme")
+--if not boo_colorscheme_status_ok then
+--  return
+--end
+--
+--boo_colorscheme.use({
 	--  italic = true, -- toggle italics
 	--  no_background = true,
 	--  theme = "boo"
@@ -30,7 +35,12 @@ k('n', '<leader>cb', ':lua ColorTB ()<CR>')
 --					MATERIAL					--
 --------------------------------------------------
 
-require('material').setup({
+local material_status_ok, material = pcall(require, "material")
+if not material_status_ok then
+  return
+end
+
+material.setup({
 
     styles = { -- Give comments style such as bold, italic, underline etc.
         comments = { --[[ italic = true ]] },

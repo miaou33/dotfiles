@@ -2,7 +2,10 @@
 --					KEYMAPS						--
 --------------------------------------------------
 
-local builtin = require('telescope.builtin')
+local telescope_status_ok, builtin = pcall(require, "telescope.builtin")
+if not telescope_status_ok then
+  return
+end
 
 -- help
 vim.keymap.set('n', '<leader>mt', builtin.help_tags, {})

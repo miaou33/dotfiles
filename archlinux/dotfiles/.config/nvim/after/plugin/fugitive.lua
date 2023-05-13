@@ -1,4 +1,9 @@
 
+--local fugitive_status_ok, fugitive = pcall(require, "fugitive")
+--if not fugitive_status_ok then
+--  return
+--end
+
 --------------------------------------------------
 --					 KEYMAPS					--
 --------------------------------------------------

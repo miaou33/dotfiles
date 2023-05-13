@@ -1,3 +1,8 @@
+local tabby_status_ok, tabby = pcall(require, "tabby.tabline")
+if not tabby_status_ok then
+  return
+end
+
 local theme = {
   fill = 'TabLineFill',
   -- Also you can do this: fill = { fg='#f2e9de', bg='#907aa9', style='italic' }
@@ -7,7 +12,7 @@ local theme = {
   win = 'TabLine',
   tail = 'TabLine',
 }
-require('tabby.tabline').set(function(line)
+tabby.set(function(line)
   return {
     {
       { '  ', hl = theme.head },
