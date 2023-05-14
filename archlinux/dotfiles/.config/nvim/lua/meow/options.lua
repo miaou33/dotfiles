@@ -21,7 +21,7 @@ local o = vim.opt
 o.swapfile = false
 o.backup = false
 -- undotree will have access to long running undos
-o.undodir = os.getenv("HOME") .. "/.vim/undodir"
+--o.undodir = os.getenv("HOME") .. "/.vim/undodir"
 o.undofile = true
 
 --------------------------------------------------
