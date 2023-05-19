@@ -37,6 +37,7 @@ ____________________________________________
 # BAR
 ____________________________________________
 remove polybar --> reput i3bar
+change battery full/charging
 
 ____________________________________________
 # SYSTEM MONITOR -- CONKY

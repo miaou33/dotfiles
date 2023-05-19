@@ -1,4 +1,6 @@
 
+## MOTIONS
+
 - c pour supprimer mot !!!!! C pour supprimer toute la ligne a partir du curseur !!!
 
 - [] pour trouver premiere paranthese ou accolade non fermee/ouverte
@@ -18,9 +20,6 @@
 - / to search forward ? to search BACKWARD !
 - / or ? <CR> to find last search
 
-- :%s/\<foo\>/bar/g to replace all occurrences of foo but not foobla or vlafoofsd etc
-
-- in visual mode :s/\\(.*\\)/ to create an arg with the selected part and then use it with \1 
 - in visual mode : g<C-a> to incremente all first number of each lines like :
         0
         0
@@ -32,11 +31,29 @@
         3 
         4
 
-_________________________________________________________________________________
-`std::cout << "intArray = " << intArray << std::endl;`
+## COMMANDS
+----------------------------------------------------------------------------------
 
-replace all like that:
+inserer autour d'un pattern (avant et apres)
+
+std::cout << "intArray = " << intArray << std::endl;
 `:%s/<< "\([^"]*\)" <</<< _PURPLE & _END <</g`
+--> std::cout << _PURPLE << "intArray = " << _END << intArray << std::endl;
 
-`std::cout << _PURPLE << "intArray = " << _END << intArray << std::endl;`
-_________________________________________________________________________________
+----------------------------------------------------------------------------------
+
+insert something btw two patterns
+foo(bar) , blabla(fd)
+`:%s-\(\w\+\)\(()\)-\1 \2-g`
+--> foo (bar) , blabla (fd)
+
+----------------------------------------------------------------------------------
+
+replace all occurrences of foo but not foobla or vlafoofsd etc
+`:%s/\<foo\>/bar/g`
+
+----------------------------------------------------------------------------------
+
+create an arg with the selected part and then use it with `\1`
+`:s/\\(.*\\)/`
+

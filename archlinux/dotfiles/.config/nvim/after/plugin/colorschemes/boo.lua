@@ -8,11 +8,11 @@
 --end
 --
 --boo_colorscheme.use({
-	--  italic = true, -- toggle italics
-	--  no_background = true,
-	--  theme = "boo"
-	--})
-	--
+--    italic = true, -- toggle italics
+--    no_background = true,
+--    theme = "boo"
+--  })
+--  
 --vim.cmd("colorscheme boo")
 --ColorTB("boo")
-
+--
