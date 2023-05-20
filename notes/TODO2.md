@@ -61,7 +61,7 @@ ____________________________________________
 ## NEOTREE
 
 ## LSP / CMP
-- enlever highlight rouge
+- enlever propositions lsp
 
 ## TELESCOPE
 
