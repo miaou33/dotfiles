@@ -189,5 +189,6 @@ use {"lunarvim/templeos.nvim"}
 use {'voidekh/kyotonight.vim'}
 use {'kdheepak/monochrome.nvim', config = function() end}
 use 'marko-cerovac/material.nvim'
+use 'Soares/base16.nvim'
 
 end)
