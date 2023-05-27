@@ -57,3 +57,9 @@ replace all occurrences of foo but not foobla or vlafoofsd etc
 create an arg with the selected part and then use it with `\1`
 `:s/\\(.*\\)/`
 
+----------------------------------------------------------------------------------
+
+replace all '(' without space before by ' ('
+`:%s/\([^ ]\)(/\1 (/`
+
+
