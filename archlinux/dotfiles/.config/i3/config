@@ -38,6 +38,8 @@ for_window [class="org.gnome.Nautilus"] floating enable
 for_window [class="Pix"] floating enable
 for_window [class="pix"] floating enable
 for_window [class="Lxappearance"] floating enable 
+for_window [class="Steam"] floating enable 
+for_window [class="visualboyadvance-m"] floating enable 
 
 
 #~~~~~~~~~~~~~~~~~~~~#
@@ -48,16 +50,8 @@ exec_always --no-startup-id i3 --force-xinerama -V >>~/.i3/i3log 2>&1
 #exec_always --no-startup-id libinput-gestures-setup start
 exec_always --no-startup-id ~/monitor_display.sh &
 exec_always --no-startup-id picom &
-#exec_always --no-startup-id conky -c ~/.config/conky/conky.conkyrc & 
-exec_always --no-startup-id .config/conky/launch.sh
+#exec_always --no-startup-id .config/conky/launch.sh
 exec --no-startup-id ~/.fehbg &
-#exec_always --no-startup-id dex-autostart --autostart --environment i3
-#exec --no-startup-id dex --autostart --environment i3
-
-# Lock and auto lock
-exec --no-startup-id xset s activate
-exec --no-startup-id xss-lock --transfer-sleep-lock blurlock
-#exec --no-startup-id xautolock -time 10 -locker blurlock 
 
 # Network
 exec_always --no-startup-id nm-applet
@@ -88,13 +82,14 @@ bindsym $mod+t exec --no-startup-id "polybar-msg cmd toggle"
 bindsym $mod+p exec --no-startup-id pix
 bindsym $mod+x exec --no-startup-id "AppImageLauncher Applications/pcsx2-v1.7.4380-linux-AppImage-64bit-Qt_dd519d5d146404904828ff33cd6b8a10.AppImage"
 
-
 # Screenshot
 bindsym --release Print exec scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/Screenshots && mv $f ~/Pictures/Screenshots' 
 bindsym --release Shift+Print exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/Screenshots && mv $f ~/Pictures/Screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/Screenshots/`ls -1 -t ~/Pictures/Screenshots | head -1`'
+
 # Luminosity
 bindsym XF86MonBrightnessUp exec brillo -A 5
 bindsym XF86MonBrightnessDown exec brillo -U 5
+
 # Sound
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +2%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -2%
