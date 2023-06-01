@@ -45,19 +45,19 @@ for_window [class="visualboyadvance-m"] floating enable
 #~~~~~~~~~~~~~~~~~~~~#
 #		AUTOSTART	 #
 #~~~~~~~~~~~~~~~~~~~~#
-# Display
+
+# Autostarts apps in /etc/xdg/autostart
+exec_always --no-startup-id dex --autostart --environment i3
+
 exec_always --no-startup-id i3 --force-xinerama -V >>~/.i3/i3log 2>&1
 #exec_always --no-startup-id libinput-gestures-setup start
+
+# Scripts
 exec_always --no-startup-id ~/monitor_display.sh &
-exec_always --no-startup-id picom &
-#exec_always --no-startup-id .config/conky/launch.sh
 exec --no-startup-id ~/.fehbg &
-
-# Network
-exec_always --no-startup-id nm-applet
-
-# Bar
 exec_always --no-startup-id ~/.config/polybar/launch.sh -r &
+exec_always --no-startup-id ~/notify_battery.sh
+#exec_always --no-startup-id .config/conky/launch.sh
 
 
 #~~~~~~~~~~~~~~~~~~~~#
@@ -83,23 +83,24 @@ bindsym $mod+p exec --no-startup-id pix
 bindsym $mod+x exec --no-startup-id "AppImageLauncher Applications/pcsx2-v1.7.4380-linux-AppImage-64bit-Qt_dd519d5d146404904828ff33cd6b8a10.AppImage"
 
 # Screenshot
-bindsym --release Print exec scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/Screenshots && mv $f ~/Pictures/Screenshots' 
+#bindsym --release Print exec scrot '~/Pictures/Screenshots/screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/Screenshots && mv $f ~/Pictures/Screenshots' 
+bindsym --release Print exec ~/screenshot.sh
 bindsym --release Shift+Print exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/Screenshots && mv $f ~/Pictures/Screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/Screenshots/`ls -1 -t ~/Pictures/Screenshots | head -1`'
 
 # Luminosity
-bindsym XF86MonBrightnessUp exec brillo -A 5
-bindsym XF86MonBrightnessDown exec brillo -U 5
+bindsym XF86MonBrightnessUp exec --no-startup-id brillo -A 5
+bindsym XF86MonBrightnessDown exec --no-startup-id brillo -U 5
 
 # Sound
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +2%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -2%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
-bindsym XF86AudioPlay exec playerctl play
-bindsym XF86AudioPause exec playerctl pause
-bindsym XF86AudioStop exec playerctl pause
-bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioPlay exec --no-startup-id playerctl play
+bindsym XF86AudioPause exec --no-startup-id playerctl pause
+bindsym XF86AudioStop exec --no-startup-id playerctl pause
+bindsym XF86AudioNext exec --no-startup-id playerctl next
+bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 
 
 #~~~~~~~~~~~~~~~~~~~~#
