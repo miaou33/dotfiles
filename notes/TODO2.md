@@ -1,5 +1,8 @@
 ## DONT FORGET TO SETUP / DISCOVER
 
+## MANJARO IDEAS
+-
+
 ## BOOT
 - enlever logo yoga
   
