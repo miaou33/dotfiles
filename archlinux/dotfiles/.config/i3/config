@@ -30,8 +30,6 @@ smart_gaps on
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
 smart_borders on
 
-#bindsym $mod+b layout toggle splitv tabbed
-
 set_from_resource $term_background background
 set_from_resource $term_foreground foreground
 set_from_resource $term_color0     color0
@@ -97,13 +95,6 @@ mode "$mode_gaps_outer" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
-
-for_window [class="org.gnome.Nautilus"] floating enable
-for_window [class="Pix"] floating enable
-for_window [class="Lxappearance"] floating enable 
-for_window [class="Steam"] floating enable 
-for_window [class="visualboyadvance-m"] floating enable 
-for_window [class="VirtualBox.*"] floating enable 
 
 
 #~~~~~~~~~~~~~~~~~~~~#
@@ -189,6 +180,14 @@ bindsym $mod+v split v;exec notify-send 'tile vertically'
 bindsym $mod+f fullscreen toggle
 bindsym $mod+Shift+space floating toggle 
 
+for_window [class="org.gnome.Nautilus"] floating enable
+for_window [class="Pix"] floating enable
+for_window [class="Lxappearance"] floating enable 
+for_window [class="Steam"] floating enable 
+for_window [class="visualboyadvance-m"] floating enable 
+for_window [class="VirtualBox.*"] floating enable 
+
+floating_modifier $mod
 
 #~~~~~~~~~~~~~~~~~~~~#
 #	 WORKSPACES		 #
