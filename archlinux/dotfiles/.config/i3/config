@@ -186,6 +186,8 @@ for_window [class="Lxappearance"] floating enable
 for_window [class="Steam"] floating enable 
 for_window [class="visualboyadvance-m"] floating enable 
 for_window [class="VirtualBox.*"] floating enable 
+for_window [class="Gpicview"] floating enable 
+for_window [class="Viewnior"] floating enable 
 
 floating_modifier $mod
 
@@ -206,14 +208,14 @@ set $ws8 "8:?"
 set $ws9 "9:discord"
 
 workspace $ws1 output eDP-1
-workspace $ws2 output HDMI-1 eDP-1
-workspace $ws3 output HDMI-1 eDP-1
+workspace $ws2 output eDP-1
+workspace $ws3 output eDP-1
 workspace $ws4 output eDP-1
-workspace $ws5 output HDMI-1 eDP-1
+workspace $ws5 output eDP-1
 workspace $ws6 output eDP-1
 workspace $ws7 output HDMI-1 eDP-1
-workspace $ws8 output HDMI-1 eDP-1
-workspace $ws9 output HDMI-1 eDP-1
+workspace $ws8 output eDP-1
+workspace $ws9 output eDP-1
 
 # assign [class="discord"] $ws9
 # for_window [class="discord"] move to workspace $ws9
