@@ -48,7 +48,6 @@ for_window [class="VirtualBox.*"] floating enable
 
 # Autostarts apps in /etc/xdg/autostart
 exec_always --no-startup-id dex --autostart --environment i3
-exec_always --no-startup-id i3 --force-xinerama -V >>~/.i3/i3log 2>&1
 #exec_always --no-startup-id libinput-gestures-setup start
 exec --no-startup-id xfce4-power-manager
 # Scripts
