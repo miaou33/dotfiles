@@ -5,8 +5,10 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 ## Options section
 setopt correct                                                  # Auto correct mistakes
@@ -93,7 +95,5 @@ alias ls='ls $LS_OPTIONS'
 
 export XDG_CONFIG_HOME="$HOME/.config"
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export TERMINAL=terminator
 export EDITOR=nvim

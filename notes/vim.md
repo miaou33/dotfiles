@@ -62,4 +62,7 @@ create an arg with the selected part and then use it with `\1`
 replace all '(' without space before by ' ('
 `:%s/\([^ ]\)(/\1 (/`
 
+----------------------------------------------------------------------------------
 
+delete all lignes starting with a '#'
+`:g/^#/d`

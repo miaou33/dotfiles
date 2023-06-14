@@ -1,14 +1,6 @@
 ## DONT FORGET TO SETUP / DISCOVER
 
-## MANJARO IDEAS
--
-
-## BOOT
-- enlever logo yoga
-  
 ## POLYBAR
-- couleurs
-- display on 2 screens
 
 ## THEME
 - script for changing themes
@@ -24,22 +16,15 @@
 - temp hi of border when change focus
 
 ## SYSTEM
-- problem with i3lock ("failed")
-- notifications (personnaliser couleurs : existe une commande pour tester, dunstify 'blabla' ?)
-	> battery low
+- notifications 
 	> screenshot taken
 	> sound & luminosity
 
 ## TERM
-- terminator setup
-    > icons size
-    > themes
-
 
 ____________________________________________
 # BAR
 ____________________________________________
-remove polybar --> reput i3bar
 change battery full/charging
 
 ____________________________________________
@@ -56,7 +41,7 @@ ____________________________________________
 ____________________________________________
 
 ## PLUGINS
-- lazygit? voir a l'ecole si possible de l'installer
+- lazygit? 
 - toggleterm?
 
 ## SHORTCUTS
@@ -64,7 +49,6 @@ ____________________________________________
 ## NEOTREE
 
 ## LSP / CMP
-- enlever propositions lsp
 
 ## TELESCOPE
 
