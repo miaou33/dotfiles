@@ -147,8 +147,8 @@ set $ws2 2:term
 set $ws3 3:nvim
 set $ws4 4:gpt
 set $ws5 5:CONFiiG
-set $ws6 6:theo2It
-set $ws7 7:grademe
+set $ws6 6
+set $ws7 7
 set $ws8 8
 set $ws9 9
 

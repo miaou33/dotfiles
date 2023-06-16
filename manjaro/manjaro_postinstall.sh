@@ -7,7 +7,7 @@ sudo sed -i '/shortcuts/d' /usr/bin/start_conky_maia
 yay
 
 # packages
-yay -S firefox terminator neovim nvim-packer-git exa python-pip
+yay -S firefox terminator neovim nvim-packer-git exa python-pip docker docker-buildx unzip
 
 # terminator themes
 pip install requests
