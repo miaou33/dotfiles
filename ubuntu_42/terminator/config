@@ -9,19 +9,18 @@
 [keybindings]
 [profiles]
   [[default]]
-    background_color = "#011116"
+    background_color = "#fdf6e3"
     background_darkness = 0.8
     background_type = transparent
     cursor_color = "#4afcd6"
     font = TerminessTTF Nerd Font Mono Medium 10
-    foreground_color = "#ffffff"
+    foreground_color = "#657b83"
     show_titlebar = False
     palette = "#022026:#b2302d:#00a941:#59819c:#459a86:#00599d:#5d7e19:#405555:#384451:#ff4242:#2aea5e:#8ed4fd:#61d5ba:#1298ff:#98d028:#58fbd6"
     login_shell = True
     use_custom_command = True
     custom_command = zsh
     use_system_font = False
-    use_theme_colors = True
     bold_is_bright = True
   [[Lavandula]]
     icon_bell = False
@@ -233,6 +232,35 @@
     custom_command = zsh
     use_system_font = False
     use_theme_colors = True
+    bold_is_bright = True
+  [[rose-pine-dawn]]
+    background_color = "#faf4ed"
+    background_darkness = 0.8
+    background_type = transparent
+    cursor_color = "#575279"
+    font = TerminessTTF Nerd Font Mono Medium 10
+    foreground_color = "#575279"
+    show_titlebar = False
+    palette = "#f2e9e1:#b4637a:#56949f:#ea9d34:#286983:#907aa9:#d7827e:#575279:#9893a5:#b4637a:#56949f:#ea9d34:#286983:#907aa9:#d7827e:#575279"
+    login_shell = True
+    use_custom_command = True
+    custom_command = zsh
+    use_system_font = False
+    use_theme_colors = True
+    bold_is_bright = True
+  [[Aurora]]
+    background_color = "#0f1c21"
+    background_darkness = 0.8
+    background_type = transparent
+    cursor_color = "#00485a"
+    font = TerminessTTF Nerd Font Mono Medium 10
+    foreground_color = "#80b6ad"
+    show_titlebar = False
+    palette = "#0f1c21:#046655:#04c975:#b5bd68:#308891:#94a5bc:#8abeb7:#80b6ad:#0f1c21:#046655:#04c975:#b5bd68:#308891:#94a5bc:#8abeb7:#80b6ad"
+    login_shell = True
+    use_custom_command = True
+    custom_command = zsh
+    use_system_font = False
     bold_is_bright = True
 [layouts]
   [[default]]
