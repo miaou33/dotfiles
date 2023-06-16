@@ -29,3 +29,10 @@ cd ..
 #inception
 yay -S docker docker-buildx
 gcl git@github.com:nfauconn/inception.git
+sudo systemctl start docker.service
+sudo systemctl start docker.socket
+sudo systemctl enable docker.service
+sudo systemctl enable docker.socket
+sudo groupadd docker
+sudo usermod -aG docker $USER
+echo "install ok. please delog & relog to complete"
