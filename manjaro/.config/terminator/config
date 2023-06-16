@@ -1,0 +1,37 @@
+[global_config]
+  enabled_plugins = LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler, TerminatorThemes
+  link_single_click = True
+[keybindings]
+[profiles]
+  [[default]]
+    background_type = transparent
+    font = Terminess Nerd Font Mono Medium 10
+    show_titlebar = False
+    scrollback_infinite = True
+    login_shell = True
+    custom_command = zsh
+    use_system_font = False
+    copy_on_selection = True
+  [[Aurora]]
+    background_color = "#0f1c21"
+    cursor_bg_color = "#00485a"
+    font = Terminess Nerd Font Mono Medium 12
+    foreground_color = "#80b6ad"
+    show_titlebar = False
+    scrollback_infinite = True
+    palette = "#0f1c21:#046655:#04c975:#b5bd68:#308891:#94a5bc:#8abeb7:#80b6ad:#0f1c21:#046655:#04c975:#b5bd68:#308891:#94a5bc:#8abeb7:#80b6ad"
+    login_shell = True
+    custom_command = zsh
+    use_system_font = False
+    copy_on_selection = True
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = Aurora
+      command = zsh
+[plugins]
