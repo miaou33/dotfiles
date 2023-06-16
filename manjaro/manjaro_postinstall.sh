@@ -7,12 +7,8 @@ sudo sed -i '/shortcuts/d' /usr/bin/start_conky_maia
 yay
 
 # packages
-yay -S firefox terminator neovim nvim-packer-git exa python-pip docker docker-buildx unzip
+yay -S firefox exa 
 
-# terminator themes
-pip install requests
-mkdir -p $HOME/.config/terminator/plugins
-wget https://git.io/v5Zww -O $HOME"/.config/terminator/plugins/terminator-themes.py"
 
 ssh-keygen
 cat .ssh/id_rsa.pub
