@@ -180,14 +180,16 @@ bindsym $mod+v split v;exec notify-send 'tile vertically'
 bindsym $mod+f fullscreen toggle
 bindsym $mod+Shift+space floating toggle 
 
+for_window [class="Gpicview"] floating enable 
+for_window [class="Lxappearance"] floating enable 
 for_window [class="org.gnome.Nautilus"] floating enable
 for_window [class="Pix"] floating enable
-for_window [class="Lxappearance"] floating enable 
 for_window [class="Steam"] floating enable 
-for_window [class="visualboyadvance-m"] floating enable 
-for_window [class="VirtualBox.*"] floating enable 
-for_window [class="Gpicview"] floating enable 
 for_window [class="Viewnior"] floating enable 
+for_window [class="VirtualBox.*"] floating enable 
+for_window [class="visualboyadvance-m"] floating enable 
+for_window [class="zoom*"] floating enable 
+for_window [class="Zoom*"] floating enable 
 
 floating_modifier $mod
 
