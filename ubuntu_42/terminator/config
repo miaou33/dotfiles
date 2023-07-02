@@ -262,6 +262,20 @@
     custom_command = zsh
     use_system_font = False
     bold_is_bright = True
+  [[3024 Day]]
+    background_color = "#f7f7f7"
+    background_darkness = 0.8
+    background_type = transparent
+    cursor_color = "#4a4543"
+    font = TerminessTTF Nerd Font Mono Medium 10
+    foreground_color = "#4a4543"
+    show_titlebar = False
+    palette = "#090300:#db2d20:#01a252:#fded02:#01a0e4:#a16a94:#b5e4f4:#a5a2a2:#5c5855:#e8bbd0:#3a3432:#4a4543:#807d7c:#d6d5d4:#cdab53:#f7f7f7"
+    login_shell = True
+    use_custom_command = True
+    custom_command = zsh
+    use_system_font = False
+    bold_is_bright = True
 [layouts]
   [[default]]
     [[[window0]]]
@@ -270,4 +284,5 @@
     [[[child1]]]
       type = Terminal
       parent = window0
+      profile = Aurora
 [plugins]
