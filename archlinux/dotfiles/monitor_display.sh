@@ -18,7 +18,8 @@ readonly MON1='HDMI-1'
 config_monitors() {
     xrandr --output $MON_INTERNAL --primary
     if [ "$#" -eq "2" ]; then
-        xrandr --output $MON1 --auto --right-of $MON_INTERNAL
+        #xrandr --output $MON1 --auto --right-of $MON_INTERNAL
+		xrandr --output $MON1 --mode 2048x1152 --left-of $MON_INTERNAL
 		#conky -c $HOME/.config/conky/cyber-theme/config_monitor.conf &> /dev/null &
     fi
 }
