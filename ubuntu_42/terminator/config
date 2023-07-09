@@ -13,7 +13,7 @@
     background_darkness = 0.8
     background_type = transparent
     cursor_color = "#4afcd6"
-    font = TerminessTTF Nerd Font Mono Medium 10
+    font = Terminess Nerd Font Medium 10
     foreground_color = "#657b83"
     show_titlebar = False
     palette = "#022026:#b2302d:#00a941:#59819c:#459a86:#00599d:#5d7e19:#405555:#384451:#ff4242:#2aea5e:#8ed4fd:#61d5ba:#1298ff:#98d028:#58fbd6"
@@ -28,7 +28,7 @@
     background_darkness = 0.8
     background_type = transparent
     cursor_color = "#8c91fa"
-    font = TerminessTTF Nerd Font Mono Medium 10
+    font = Terminess Nerd Font Medium 10
     foreground_color = "#736e7d"
     show_titlebar = False
     palette = "#230046:#7d1625:#337e6f:#7f6f49:#4f4a7f:#5a3f7f:#58777f:#736e7d:#372d46:#e05167:#52e0c4:#e0c386:#8e87e0:#a776e0:#9ad4e0:#8c91fa"
@@ -43,7 +43,7 @@
     background_darkness = 0.86
     background_type = transparent
     cursor_color = "#d7dee4"
-    font = TerminessTTF Nerd Font Mono Medium 10
+    font = Terminess Nerd Font Medium 10
     foreground_color = "#d9e6f2"
     show_titlebar = False
     palette = "#000000:#b87a7a:#7ab87a:#b8b87a:#7a7ab8:#b87ab8:#7ab8b8:#d9d9d9:#262626:#dbbdbd:#bddbbd:#dbdbbd:#bdbddb:#dbbddb:#bddbdb:#ffffff"
@@ -58,7 +58,7 @@
     background_darkness = 0.82
     background_type = transparent
     cursor_color = "#a0a4b2"
-    font = TerminessTTF Nerd Font Mono Medium 10
+    font = Terminess Nerd Font Medium 10
     foreground_color = "#979cac"
     show_titlebar = False
     palette = "#4F4F4F:#AF4B57:#AFD383:#E5C079:#7D90A4:#A4799D:#85A6A5:#EEEDEE:#7B7B7B:#AF4B57:#CEFFAB:#FFFECC:#B5DCFE:#FB9BFE:#DFDFFD:#FEFFFE"
@@ -73,7 +73,7 @@
     background_darkness = 0.82
     background_type = transparent
     cursor_color = "#e3ecf5"
-    font = TerminessTTF Nerd Font Mono Medium 10
+    font = Terminess Nerd Font Medium 10
     foreground_color = "#d9e6f2"
     show_titlebar = False
     palette = "#0a0a0a:#ab8f74:#74ab8f:#8fab74:#8f74ab:#ab748f:#748fab:#f2f2f2:#5d5d5d:#ff1d62:#9cc3af:#ffd00a:#af9cc3:#ff1d62:#4bb8fd:#a020f0"
@@ -88,7 +88,7 @@
     background_darkness = 0.79
     background_type = transparent
     cursor_color = "#7f7f7f"
-    font = TerminessTTF Nerd Font Mono Medium 10
+    font = Terminess Nerd Font Medium 10
     foreground_color = "#ffffff"
     show_titlebar = False
     palette = "#000000:#cdaf95:#a8ff60:#bfbb1f:#75a5b0:#ff73fd:#5a647e:#bfbfbf:#666666:#eecbad:#bcee68:#e5e500:#86bdc9:#e500e5:#8c9bc4:#e5e5e5"
@@ -103,7 +103,7 @@
     background_darkness = 0.83
     background_type = transparent
     cursor_color = "#ececec"
-    font = TerminessTTF Nerd Font Mono Medium 10
+    font = Terminess Nerd Font Medium 10
     foreground_color = "#ececec"
     show_titlebar = False
     palette = "#2c3941:#865f5b:#66907d:#b1a990:#6a8e95:#b18a73:#88b2ac:#ececec:#5d7079:#865f5b:#66907d:#b1a990:#6a8e95:#b18a73:#88b2ac:#ececec"
@@ -118,7 +118,7 @@
     background_darkness = 0.82
     background_type = transparent
     cursor_color = "#57647a"
-    font = TerminessTTF Nerd Font Mono Medium 10
+    font = Terminess Nerd Font Medium 10
     foreground_color = "#d4e7d4"
     show_titlebar = False
     palette = "#757575:#825d4d:#728c62:#ada16d:#4d7b82:#8a7267:#729494:#e0e0e0:#8a8a8a:#cf937a:#98d9aa:#fae79d:#7ac3cf:#d6b2a1:#ade0e0:#e0e0e0"
@@ -133,7 +133,7 @@
     background_darkness = 0.82
     background_type = transparent
     cursor_color = "#d2e0de"
-    font = TerminessTTF Nerd Font Mono Medium 10
+    font = Terminess Nerd Font Medium 10
     foreground_color = "#99a3a2"
     show_titlebar = False
     palette = "#000000:#a2686a:#9aa56a:#a3906a:#6b8fa3:#6a71a3:#6ba58f:#99a3a2:#666c6c:#dd5c60:#bfdf55:#deb360:#62b1df:#606edf:#64e39c:#d2e0de"
@@ -148,7 +148,7 @@
     background_darkness = 0.8
     background_type = transparent
     cursor_color = "#bbbbbb"
-    font = TerminessTTF Nerd Font Mono Medium 10
+    font = Terminess Nerd Font Medium 10
     foreground_color = "#c9c6bc"
     show_titlebar = False
     palette = "#15171c:#b24a56:#92b477:#c6735a:#7c8fa5:#a5789e:#80cdcb:#b3b8c3:#555555:#ec5f67:#89e986:#fec254:#5486c0:#bf83c1:#58c2c1:#ffffff"
@@ -163,7 +163,7 @@
     background_darkness = 0.8
     background_type = transparent
     cursor_color = "#c5c8c6"
-    font = TerminessTTF Nerd Font Mono Medium 10
+    font = Terminess Nerd Font Medium 10
     foreground_color = "#c5c8c6"
     show_titlebar = False
     palette = "#000000:#cc6666:#b5bd68:#f0c674:#81a2be:#b294bb:#8abeb7:#ffffff:#000000:#cc6666:#b5bd68:#f0c674:#81a2be:#b294bb:#8abeb7:#ffffff"
@@ -178,7 +178,7 @@
     background_darkness = 0.81
     background_type = transparent
     cursor_color = "#d5d5d5"
-    font = TerminessTTF Nerd Font Mono Medium 10
+    font = Terminess Nerd Font Medium 10
     foreground_color = "#31d07b"
     show_titlebar = False
     palette = "#2c3f58:#be2d26:#1a9172:#db8e27:#325d96:#8a5edc:#35a08f:#23d183:#336889:#dd5944:#31d07b:#e7d84b:#34a6da:#ae6bdc:#42c3ae:#d5d5d5"
@@ -193,7 +193,7 @@
     background_darkness = 0.8
     background_type = transparent
     cursor_color = "#ffffff"
-    font = TerminessTTF Nerd Font Mono Medium 10
+    font = Terminess Nerd Font Medium 10
     foreground_color = "#ffffd4"
     show_titlebar = False
     palette = "#141414:#c06d44:#afb97a:#c2a86c:#44474a:#b4be7c:#778385:#ffffd4:#262626:#de7c4c:#ccd88c:#e2c47e:#5a5e62:#d0dc8e:#8a989b:#ffffd4"
@@ -208,7 +208,7 @@
     background_darkness = 0.8
     background_type = transparent
     cursor_color = "#4afcd6"
-    font = TerminessTTF Nerd Font Mono Medium 10
+    font = Terminess Nerd Font Medium 10
     foreground_color = "#ffffff"
     show_titlebar = False
     palette = "#022026:#b2302d:#00a941:#59819c:#459a86:#00599d:#5d7e19:#405555:#384451:#ff4242:#2aea5e:#8ed4fd:#61d5ba:#1298ff:#98d028:#58fbd6"
@@ -223,7 +223,7 @@
     background_darkness = 0.8
     background_type = transparent
     cursor_color = "#D8DEE9"
-    font = Fira Code Light 8
+    font = Terminess Nerd Font Medium 8
     foreground_color = "#D8DEE9"
     show_titlebar = False
     palette = "#3B4252:#BF616A:#A3BE8C:#EBCB8B:#81A1C1:#B48EAD:#88C0D0:#E5E9F0:#4C566A:#BF616A:#A3BE8C:#EBCB8B:#81A1C1:#B48EAD:#8FBCBB:#ECEFF4"
@@ -238,7 +238,7 @@
     background_darkness = 0.8
     background_type = transparent
     cursor_color = "#575279"
-    font = TerminessTTF Nerd Font Mono Medium 10
+    font = Terminess Nerd Font Medium 10
     foreground_color = "#575279"
     show_titlebar = False
     palette = "#f2e9e1:#b4637a:#56949f:#ea9d34:#286983:#907aa9:#d7827e:#575279:#9893a5:#b4637a:#56949f:#ea9d34:#286983:#907aa9:#d7827e:#575279"
@@ -253,7 +253,7 @@
     background_darkness = 0.8
     background_type = transparent
     cursor_color = "#00485a"
-    font = TerminessTTF Nerd Font Mono Medium 10
+    font = Terminess Nerd Font Medium 14
     foreground_color = "#80b6ad"
     show_titlebar = False
     palette = "#0f1c21:#046655:#04c975:#b5bd68:#308891:#94a5bc:#8abeb7:#80b6ad:#0f1c21:#046655:#04c975:#b5bd68:#308891:#94a5bc:#8abeb7:#80b6ad"
@@ -267,10 +267,24 @@
     background_darkness = 0.8
     background_type = transparent
     cursor_color = "#4a4543"
-    font = TerminessTTF Nerd Font Mono Medium 10
+    font = Terminess Nerd Font Medium 10
     foreground_color = "#4a4543"
     show_titlebar = False
     palette = "#090300:#db2d20:#01a252:#fded02:#01a0e4:#a16a94:#b5e4f4:#a5a2a2:#5c5855:#e8bbd0:#3a3432:#4a4543:#807d7c:#d6d5d4:#cdab53:#f7f7f7"
+    login_shell = True
+    use_custom_command = True
+    custom_command = zsh
+    use_system_font = False
+    bold_is_bright = True
+  [[Solarized Light]]
+    background_color = "#eee8d5"
+    background_darkness = 0.8
+    background_type = transparent
+    cursor_color = "#002b36"
+    font = Terminess Nerd Font Medium 10
+    foreground_color = "#002b36"
+    show_titlebar = False
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
     login_shell = True
     use_custom_command = True
     custom_command = zsh
