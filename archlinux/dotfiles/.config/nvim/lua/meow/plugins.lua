@@ -147,8 +147,12 @@ use {'hrsh7th/cmp-nvim-lua'}
 use {'L3MON4D3/LuaSnip'}
 use {'rafamadriz/friendly-snippets'}
 
--- MARKDOWN PREVIEW
+-- MARKDOWN
 use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+use 'godlygeek/tabular'
+use 'elzr/vim-json'
+use 'plasticboy/vim-markdown'
+use 'vim-pandoc/vim-pandoc-syntax'
 
 --------------------------------------------------
 --					AESTHETICS					--
