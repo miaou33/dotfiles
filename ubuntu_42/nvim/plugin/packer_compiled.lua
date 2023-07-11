@@ -289,6 +289,11 @@ _G.packer_plugins = {
     path = "/mnt/nfs/homes/nfauconn/.local/share/nvim/site/pack/packer/start/tabby.nvim",
     url = "https://github.com/nanozuki/tabby.nvim"
   },
+  tabular = {
+    loaded = true,
+    path = "/mnt/nfs/homes/nfauconn/.local/share/nvim/site/pack/packer/start/tabular",
+    url = "https://github.com/godlygeek/tabular"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/mnt/nfs/homes/nfauconn/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -313,6 +318,21 @@ _G.packer_plugins = {
     loaded = true,
     path = "/mnt/nfs/homes/nfauconn/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-json"] = {
+    loaded = true,
+    path = "/mnt/nfs/homes/nfauconn/.local/share/nvim/site/pack/packer/start/vim-json",
+    url = "https://github.com/elzr/vim-json"
+  },
+  ["vim-markdown"] = {
+    loaded = true,
+    path = "/mnt/nfs/homes/nfauconn/.local/share/nvim/site/pack/packer/start/vim-markdown",
+    url = "https://github.com/plasticboy/vim-markdown"
+  },
+  ["vim-pandoc-syntax"] = {
+    loaded = true,
+    path = "/mnt/nfs/homes/nfauconn/.local/share/nvim/site/pack/packer/start/vim-pandoc-syntax",
+    url = "https://github.com/vim-pandoc/vim-pandoc-syntax"
   }
 }
 
@@ -321,6 +341,10 @@ time([[Defining packer_plugins]], false)
 time([[Setup for markdown-preview.nvim]], true)
 try_loadstring("\27LJ\2\n=\0\0\2\0\4\0\0056\0\0\0009\0\1\0005\1\3\0=\1\2\0K\0\1\0\1\2\0\0\rmarkdown\19mkdp_filetypes\6g\bvim\0", "setup", "markdown-preview.nvim")
 time([[Setup for markdown-preview.nvim]], false)
+-- Config for: monochrome.nvim
+time([[Config for monochrome.nvim]], true)
+try_loadstring("\27LJ\2\n\v\0\0\1\0\0\0\1K\0\1\0\0", "config", "monochrome.nvim")
+time([[Config for monochrome.nvim]], false)
 -- Config for: poimandres.nvim
 time([[Config for poimandres.nvim]], true)
 try_loadstring("\27LJ\2\n<\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\15poimandres\frequire\0", "config", "poimandres.nvim")
@@ -329,10 +353,6 @@ time([[Config for poimandres.nvim]], false)
 time([[Config for everforest-nvim]], true)
 try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15everforest\frequire\0", "config", "everforest-nvim")
 time([[Config for everforest-nvim]], false)
--- Config for: monochrome.nvim
-time([[Config for monochrome.nvim]], true)
-try_loadstring("\27LJ\2\n\v\0\0\1\0\0\0\1K\0\1\0\0", "config", "monochrome.nvim")
-time([[Config for monochrome.nvim]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Filetype lazy-loads
