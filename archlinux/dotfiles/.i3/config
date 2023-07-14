@@ -122,6 +122,7 @@ bindsym $mod+Shift+r restart
 
 # App launchers
 bindsym $mod+a exec --no-startup-id "rofi -modi drun,run -show drun"
+bindsym $mod+b exec --no-startup-id rofi-bluetooth &
 bindsym $mod+e exec --no-startup-id "rofimoji"
 bindsym $mod+Return exec --no-startup-id $term 
 
