@@ -21,6 +21,7 @@
 	> sound & luminosity
 
 ## TERM
+- echo -e in Makefileeeeee
 
 ____________________________________________
 # BAR
