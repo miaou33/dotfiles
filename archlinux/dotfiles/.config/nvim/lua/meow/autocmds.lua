@@ -13,3 +13,8 @@ autocmd('TextYankPost', {
     end,
 })
 
+vim.api.nvim_command('autocmd VimEnter * PackerSync')
+vim.api.nvim_command('autocmd VimEnter * MasonUpdate')
+vim.api.nvim_command('autocmd VimEnter * TSUpdateSync')
+
+
