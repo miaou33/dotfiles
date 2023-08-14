@@ -15,6 +15,6 @@ autocmd('TextYankPost', {
 
 vim.api.nvim_command('autocmd VimEnter * PackerSync')
 vim.api.nvim_command('autocmd VimEnter * MasonUpdate')
-vim.api.nvim_command('autocmd VimEnter * TSUpdateSync')
+vim.api.nvim_command('autocmd VimEnter * TSUpdate')
 
 
