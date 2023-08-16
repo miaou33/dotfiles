@@ -1,25 +1,32 @@
 #!/usr/bin/sh
 
-# The xRandR names of my monitors, including the internal laptop monitor / display
-readonly MON_INTERNAL='eDP-1'
-readonly MON1='HDMI-1'
+function configure_displays() {
 
-# The resolutiond of the given xRandR monitors / displays. NOTE: $MON1 and $MON1_FALLBACK are the same display, so only one res is needed
-# readonly MON_INTERNAL_RES='2560x1600'
-# readonly MON1_RES='1920x1080'
-
-# main_mon=''
-# sec_mon=''
-
-# Store a count of how many monitors are connected
-#mon_count=$(xrandr -q | grep -w 'connected' | wc -l)
-
-# Configure the monitors via xRandR
-config_monitors() {
-    xrandr --output $MON_INTERNAL --primary
-    if [ "$#" -eq "2" ]; then
-        #xrandr --output $MON1 --auto --right-of $MON_INTERNAL
-		xrandr --output $MON1 --mode 2048x1152 --left-of $MON_INTERNAL
-		#conky -c $HOME/.config/conky/cyber-theme/config_monitor.conf &> /dev/null &
+	sleep 2
+    if xrandr --query | grep -q "HDMI-1 connected"; then
+        xrandr --output eDP-1 --primary
+        xrandr --output HDMI-1 --mode 2048x1152 --left-of eDP-1
+        $HOME/.fehbg
+		i3 restart
+    else
+        xrandr --output eDP-1 --primary
+        xrandr --output HDMI-1 --off
+		i3 restart
     fi
 }
+
+configure_displays&
+
+#function main() {
+#	
+#	notify-send "lol"
+#    xrandr --output eDP-1 --primary
+#    if xrandr --query | grep "HDMI-1 connected"; then
+#        #xrandr --output HDMI-1 --auto --right-of eDP-1
+#		xrandr --output HDMI-1 --mode 2048x1152 --left-of eDP-1
+#		$HOME/.fehbg
+#		#conky -c $HOME/.config/conky/cyber-theme/config_monitor.conf &> /dev/null &
+#    fi
+#}
+#
+#main
