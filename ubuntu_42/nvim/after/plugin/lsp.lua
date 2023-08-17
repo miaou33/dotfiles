@@ -1,3 +1,9 @@
+local lspconfig = require 'lspconfig'
+lspconfig.clangd.setup{
+   on_attach = function(client, bufnr)
+      -- Optional: Set up your keybindings and other settings here.
+   end
+}
 
 ------------------------------------------
 --				BORDERS					--
