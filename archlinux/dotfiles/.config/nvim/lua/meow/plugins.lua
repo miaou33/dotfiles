@@ -135,11 +135,11 @@ use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 use ('nvim-treesitter/playground')
 
 -- LSP
---use { "neovim/nvim-lspconfig"}
---use { "williamboman/mason.nvim"}
---use { "williamboman/mason-lspconfig.nvim"}
---use { "jose-elias-alvarez/null-ls.nvim"}
---
+use { "neovim/nvim-lspconfig"}
+use { "williamboman/mason.nvim"}
+use { "williamboman/mason-lspconfig.nvim"}
+use { "jose-elias-alvarez/null-ls.nvim"}
+
 ---- AUTOCOMPLETION
 --use {'hrsh7th/nvim-cmp'}
 --use {'hrsh7th/cmp-buffer'}
