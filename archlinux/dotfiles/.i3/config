@@ -130,7 +130,7 @@ bindsym $mod+equal exec --no-startup-id =
 #bindsym $mod+c exec --no-startup-id ~/.local/bin/rofi-files &
 bindsym $mod+c exec --no-startup-id rofi-code
 bindsym $mod+n exec --no-startup-id nautilus
-bindsym $mod+w exec --no-startup-id firefox
+bindsym $mod+w exec --no-startup-id google-chrome-stable
 bindsym $mod+d exec --no-startup-id discord
 bindsym $mod+t exec --no-startup-id "polybar-msg cmd toggle"
 #bindsym $mod+t bar mode toggle

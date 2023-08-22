@@ -11,6 +11,7 @@ function configure_displays() {
     else
         xrandr --output eDP-1 --primary
         xrandr --output HDMI-1 --off
+        $HOME/.fehbg
 		i3 restart
     fi
 }
