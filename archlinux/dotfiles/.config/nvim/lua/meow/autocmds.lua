@@ -37,6 +37,7 @@ function run_commands()
     vim.api.nvim_command('PackerSync')
     vim.api.nvim_command('MasonUpdate')
     vim.api.nvim_command('TSUpdate')
+    vim.api.nvim_command('Copilot setup')
 
     local last_run = io.open(last_run_file, 'w')
     last_run:write(current_date)

@@ -1,7 +1,7 @@
 git config --global user.email "nfauconn@student.42.fr"
 git config --global user.name "no3"
 
-git clone git@github.com:nfauconn/CONFiiG.git
+git clone git@github.com:nfauconn/dotfiles.git CONFiiG
 
 #default apps
 rm .profile && ln -s CONFiiG/manjaro/.profile .profile

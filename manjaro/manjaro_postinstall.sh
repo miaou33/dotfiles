@@ -7,7 +7,7 @@ sudo sed -i '/shortcuts/d' /usr/bin/start_conky_maia
 yay
 
 # packages
-yay -S firefox exa 
+yay -S google-chrome exa 
 
 
 ssh-keygen

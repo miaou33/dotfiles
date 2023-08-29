@@ -1,5 +1,9 @@
+local mason_status_ok, mason = pcall(require, "mason")
+if not mason_status_ok then
+  return
+end
 
-require("mason").setup({
+mason.setup({
 	ui = {
 		border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
 		--border = "none",
@@ -13,13 +17,18 @@ require("mason").setup({
 	max_concurrent_installers = 4,
 })
 
-require("mason-lspconfig").setup({
+local mason_lspconfig_status_ok, mason_lspconfig = pcall(require, "mason-lspconfig")
+if not mason_lspconfig_status_ok then
+  return
+end
+
+mason_lspconfig.setup({
 	ensure_installed = {"clangd"},
 	automatic_installation = true,
 })
 
 --general setter for every language server
-require("mason-lspconfig").setup_handlers {
+mason_lspconfig.setup_handlers {
 	-- The first entry (without a key) will be the default handler
 	-- and will be called for each installed server that doesn't have
 	-- a dedicated handler.
@@ -32,10 +41,4 @@ require("mason-lspconfig").setup_handlers {
 --		require("clangd").setup {}
 --	end
 }
-
-local lspconfig_status_ok, lspconfig = pcall(require, "lspconfig")
-if not lspconfig_status_ok then
-	return
-end
-
 

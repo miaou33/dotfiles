@@ -79,7 +79,12 @@ use ('ThePrimeagen/harpoon')
 --					  GIT						--
 --------------------------------------------------
 use ('tpope/vim-fugitive')
-use 'lewis6991/gitsigns.nvim'
+use {
+   'lewis6991/gitsigns.nvim',
+   requires = { 'nvim-lua/plenary.nvim' },
+   config = function() require'gitsigns'.setup() end
+}
+use ('github/copilot.vim')
 
 --------------------------------------------------
 --					SESSION						--
@@ -135,20 +140,24 @@ use { "williamboman/mason.nvim"}
 use { "williamboman/mason-lspconfig.nvim"}
 use { "jose-elias-alvarez/null-ls.nvim"}
 
--- AUTOCOMPLETION
+---- AUTOCOMPLETION
 use {'hrsh7th/nvim-cmp'}
 use {'hrsh7th/cmp-buffer'}
 use {'hrsh7th/cmp-path'}
-use {'saadparwaiz1/cmp_luasnip'}
-use {'hrsh7th/cmp-nvim-lsp'}
-use {'hrsh7th/cmp-nvim-lua'}
+--use {'saadparwaiz1/cmp_luasnip'}
+--use {'hrsh7th/cmp-nvim-lsp'}
+--use {'hrsh7th/cmp-nvim-lua'}
+--
+---- Snippets
+--use {'L3MON4D3/LuaSnip'}
+--use {'rafamadriz/friendly-snippets'}
 
--- Snippets
-use {'L3MON4D3/LuaSnip'}
-use {'rafamadriz/friendly-snippets'}
-
--- MARKDOWN PREVIEW
+-- MARKDOWN
 use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+use 'godlygeek/tabular'
+use 'elzr/vim-json'
+use 'plasticboy/vim-markdown'
+use 'vim-pandoc/vim-pandoc-syntax'
 
 --------------------------------------------------
 --					AESTHETICS					--
