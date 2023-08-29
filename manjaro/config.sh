@@ -1,6 +1,6 @@
 #::::::::::::::::::::::::::::::::::::::::::::::::::::: PACKAGES
 
-yay -S bat exa neovim nvim-packer-git unzip docker docker-buildx
+yay -S bat exa neovim nvim-packer-git unzip docker docker-buildx docker-compose
 
 yay -S terminator
 pip install requests
