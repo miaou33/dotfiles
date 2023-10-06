@@ -5,6 +5,6 @@ end
 
 --vim.opt.list = true
 
-indent.setup {
-    show_end_of_line = true,
-}
+--indent.setup {
+--show_end_of_line = true,
+--}

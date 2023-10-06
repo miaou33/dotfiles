@@ -12,4 +12,4 @@ yay -S google-chrome exa
 
 ssh-keygen
 cat .ssh/id_rsa.pub
-echo "\nminimal setup ok. please add ssh key to authorized ones in github then exec config.sh" 
+echo "\n$(red)minimal setup ok. please add ssh key to authorized ones in github then exec config.sh$(reset)" 

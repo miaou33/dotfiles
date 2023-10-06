@@ -1,4 +1,23 @@
+<<<<<<< HEAD
 #::::::::::::::::::::::::::::::::::::::::::::::::::::: PACKAGES
+=======
+#!/bin/bash
+
+comment=$'\033[0;30m'
+red=$'\033[0;31m'
+green=$'\033[0;32m'
+orange=$'\033[0;33m'
+blue=$'\033[34m'
+purple=$'\033[1;35m'
+boldlightgreen=$'\033[1;36m'
+boldwhite=$'\033[1;37m'
+#eight=$'\033[1;38m' #same as boldbeige
+boldlightgrey=$'\033[1;39m'
+reset=$'\033[0m'
+
+git config --global user.email "nfauconn@student.42.fr"
+git config --global user.name "no3"
+>>>>>>> e94024a (current config)
 
 yay -S bat exa neovim nvim-packer-git unzip docker docker-buildx docker-compose vim-copilot-git
 
@@ -34,5 +53,9 @@ sudo systemctl start docker.socket
 sudo systemctl enable docker.service
 sudo systemctl enable docker.socket
 sudo usermod -aG docker $USER
+<<<<<<< HEAD
 
 echo "install ok. please delog & relog to complete"
+=======
+echo "\n$(red)install ok. please delog & relog to complete$(reset)"
+>>>>>>> e94024a (current config)
