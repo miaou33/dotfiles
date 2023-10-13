@@ -42,7 +42,7 @@ bindkey -v
 #bindkey '^[[7~' beginning-of-line                               # Home key
 
 ## Alias section
-alias cp="cp -i"                                                # Confirm before overwriting something
+#alias cp="cp -i"                                                # Confirm before overwriting something
 alias df='df -h'                                                # Human-readable sizes
 alias free='free -m'                                            # Show sizes in MB
 alias gita='git add . && git commit && git push'
