@@ -30,24 +30,24 @@ smart_gaps on
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
 smart_borders on
 
-set_from_resource $term_background background
-set_from_resource $term_foreground foreground
-set_from_resource $term_color0     color0
-set_from_resource $term_color1     color1
-set_from_resource $term_color2     color2
-set_from_resource $term_color3     color3
-set_from_resource $term_color4     color4
-set_from_resource $term_color5     color5
-set_from_resource $term_color6     color6
-set_from_resource $term_color7     color7
-set_from_resource $term_color8     color8
-set_from_resource $term_color9     color9
-set_from_resource $term_color10    color10
-set_from_resource $term_color11    color11
-set_from_resource $term_color12    color12
-set_from_resource $term_color13    color13
-set_from_resource $term_color14    color14
-set_from_resource $term_color15    color15
+#set_from_resource $term_background background
+#set_from_resource $term_foreground foreground
+#set_from_resource $term_color0     color0
+#set_from_resource $term_color1     color1
+#set_from_resource $term_color2     color2
+#set_from_resource $term_color3     color3
+#set_from_resource $term_color4     color4
+#set_from_resource $term_color5     color5
+#set_from_resource $term_color6     color6
+#set_from_resource $term_color7     color7
+#set_from_resource $term_color8     color8
+#set_from_resource $term_color9     color9
+#set_from_resource $term_color10    color10
+#set_from_resource $term_color11    color11
+#set_from_resource $term_color12    color12
+#set_from_resource $term_color13    color13
+#set_from_resource $term_color14    color14
+#set_from_resource $term_color15    color15
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
@@ -106,10 +106,9 @@ exec_always --no-startup-id dex --autostart --environment i3
 #exec_always --no-startup-id libinput-gestures-setup start
 exec --no-startup-id xfce4-power-manager
 # Scripts
-#exec_always --no-startup-id ~/monitor_display.sh &
 exec --no-startup-id ~/.fehbg &
 exec_always --no-startup-id ~/.config/polybar/launch.sh -r &
-exec_always --no-startup-id ~/notify_battery.sh
+#exec_always --no-startup-id ~/notify_battery.sh
 #exec_always --no-startup-id .config/conky/launch.sh
 
 
@@ -123,32 +122,31 @@ bindsym $mod+Shift+r restart
 # App launchers
 bindsym $mod+a exec --no-startup-id "rofi -modi drun,run -show drun"
 bindsym $mod+b exec --no-startup-id rofi-bluetooth &
-bindsym $mod+e exec --no-startup-id "rofimoji"
+#bindsym $mod+e exec --no-startup-id "rofimoji"
 bindsym $mod+Return exec --no-startup-id $term 
 
-bindsym $mod+equal exec --no-startup-id =
-#bindsym $mod+c exec --no-startup-id ~/.local/bin/rofi-files &
 bindsym $mod+c exec --no-startup-id rofi-code
-bindsym $mod+n exec --no-startup-id nautilus
+bindsym $mod+n exec --no-startup-id dolphin
 bindsym $mod+w exec --no-startup-id google-chrome-stable
 bindsym $mod+d exec --no-startup-id discord
 bindsym $mod+t exec --no-startup-id "polybar-msg cmd toggle"
 #bindsym $mod+t bar mode toggle
-bindsym $mod+p exec --no-startup-id pix
-bindsym $mod+x exec --no-startup-id "AppImageLauncher Applications/pcsx2-v1.7.4380-linux-AppImage-64bit-Qt_dd519d5d146404904828ff33cd6b8a10.AppImage"
+#bindsym $mod+p exec --no-startup-id pix
+#bindsym $mod+x exec --no-startup-id "AppImageLauncher Applications/pcsx2-v1.7.4380-linux-AppImage-64bit-Qt_dd519d5d146404904828ff33cd6b8a10.AppImage"
 
 # Screenshot
 #bindsym --release Print exec scrot '~/Pictures/Screenshots/screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/Screenshots && mv $f ~/Pictures/Screenshots' 
-bindsym --release Print exec ~/screenshot.sh
-bindsym --release Shift+Print exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/Screenshots && mv $f ~/Pictures/Screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/Screenshots/`ls -1 -t ~/Pictures/Screenshots | head -1`'
+#bindsym --release Print exec ~/screenshot.sh
+#bindsym --release Shift+Print exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/Screenshots && mv $f ~/Pictures/Screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/Screenshots/`ls -1 -t ~/Pictures/Screenshots | head -1`'
+bindsym Print exec --no-startup-id gnome-screenshot -i
 
 # Luminosity
 bindsym XF86MonBrightnessUp exec --no-startup-id brillo -A 5
 bindsym XF86MonBrightnessDown exec --no-startup-id brillo -U 5
 
 # Sound
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +2%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -2%
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
 bindsym XF86AudioPlay exec --no-startup-id playerctl play
@@ -189,16 +187,18 @@ bindsym $mod+v split v;exec notify-send 'tile vertically'
 bindsym $mod+f fullscreen toggle
 bindsym $mod+Shift+space floating toggle 
 
-for_window [class="Gpicview"] floating enable 
+#for_window [class="Gpicview"] floating enable 
 for_window [class="Lxappearance"] floating enable 
-for_window [class="org.gnome.Nautilus"] floating enable
-for_window [class="Pix"] floating enable
-for_window [class="Steam"] floating enable 
-for_window [class="Viewnior"] floating enable 
-for_window [class="VirtualBox.*"] floating enable 
-for_window [class="visualboyadvance-m"] floating enable 
-for_window [class="zoom*"] floating enable 
-for_window [class="Zoom*"] floating enable 
+for_window [class="dolphin"] floating enable
+for_window [class="gnome-screenshot"] floating enable
+for_window [class="Gnome-screenshot"] floating enable
+#for_window [class="Pix"] floating enable
+#for_window [class="Steam"] floating enable 
+#for_window [class="Viewnior"] floating enable 
+#for_window [class="VirtualBox.*"] floating enable 
+#for_window [class="visualboyadvance-m"] floating enable 
+#for_window [class="zoom*"] floating enable 
+#for_window [class="Zoom*"] floating enable 
 
 floating_modifier $mod
 
@@ -206,34 +206,34 @@ floating_modifier $mod
 #	 WORKSPACES		 #
 #~~~~~~~~~~~~~~~~~~~~#
 
-focus_follows_mouse no
+#focus_follows_mouse no
 
-set $ws1 "1:internet" 
-set $ws2 "2:term"
-set $ws3 "3:code"
-set $ws4 "4:music"
-set $ws5 "5:CONFiiG"
-set $ws6 "6:?"
-set $ws7 "7:?"
-set $ws8 "8:?"
-set $ws9 "9:discord"
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
 
 workspace $ws1 output HDMI-1 eDP-1
 workspace $ws2 output HDMI-1 eDP-1
 workspace $ws3 output HDMI-1 eDP-1
 workspace $ws4 output HDMI-1 eDP-1
 workspace $ws5 output HDMI-1 eDP-1
-workspace $ws6 output HDMI-1 eDP-1
-workspace $ws7 output HDMI-1 eDP-1
-workspace $ws8 output HDMI-1 eDP-1
+workspace $ws6 output eDP-1
+workspace $ws7 output eDP-1
+workspace $ws8 output eDP-1
 workspace $ws9 output eDP-1
 
 # assign [class="discord"] $ws9
 # for_window [class="discord"] move to workspace $ws9
 
 # switch to workspace
-bindsym $mod+Tab workspace next
-bindsym $mod+Shift+Tab workspace prev
+#bindsym $mod+Tab workspace next
+#bindsym $mod+Shift+Tab workspace prev
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
 bindsym $mod+3 workspace $ws3
@@ -303,66 +303,14 @@ mode "mode_system" {
     bindsym s exec --no-startup-id i3exit suspend, mode "default"
     bindsym u exec --no-startup-id i3exit switch_user, mode "default"
     bindsym e exec --no-startup-id i3exit logout, mode "default"
-   # bindsym h exec --no-startup-id i3exit hibernate, mode "default"
     bindsym r exec --no-startup-id i3exit reboot, mode "default"
+    bindsym Shift+h exec --no-startup-id i3exit hibernate, mode "default"
     bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
 
     # exit system mode: "Enter" or "Escape"
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-
-
-#~~~~~~~~~~~~~~~~~~~~#
-#	   RESSURECT	 #
-#~~~~~~~~~~~~~~~~~~~~#
-
-set $i3_resurrect i3-resurrect
-
-# Save workspace mode.
-mode "save" {
-  bindsym 1 exec $i3_resurrect save -w 1
-  bindsym 2 exec $i3_resurrect save -w 2
-  bindsym 3 exec $i3_resurrect save -w 3
-  bindsym 4 exec $i3_resurrect save -w 4
-  bindsym 5 exec $i3_resurrect save -w 5
-  bindsym 6 exec $i3_resurrect save -w 6
-  bindsym 7 exec $i3_resurrect save -w 7
-  bindsym 8 exec $i3_resurrect save -w 8
-  bindsym 9 exec $i3_resurrect save -w 9
-  bindsym 0 exec $i3_resurrect save -w 0
-
-  # Back to normal: Enter, Escape, or s
-  bindsym Return mode "default"
-  bindsym Escape mode "default"
-  bindsym s mode "default"
-  bindsym $mod+s mode "default"
-}
-
-bindsym $mod+$alt+s mode "save"
-
-# Restore workspace mode.
-mode "restore" {
-  bindsym 1 exec $i3_resurrect restore -w 1
-  bindsym 2 exec $i3_resurrect restore -w 2
-  bindsym 3 exec $i3_resurrect restore -w 3
-  bindsym 4 exec $i3_resurrect restore -w 4
-  bindsym 5 exec $i3_resurrect restore -w 5
-  bindsym 6 exec $i3_resurrect restore -w 6
-  bindsym 7 exec $i3_resurrect restore -w 7
-  bindsym 8 exec $i3_resurrect restore -w 8
-  bindsym 9 exec $i3_resurrect restore -w 9
-  bindsym 0 exec $i3_resurrect restore -w 0
-
-  # Back to normal: Enter, Escape, or n
-  bindsym Return mode "default"
-  bindsym Escape mode "default"
-  bindsym n mode "default"
-  bindsym $mod+n mode "default"
-}
-
-bindsym $mod+$alt+r mode "restore"
-
 
 #~~~~~~~~~~~~~~~~~~~~#
 #		BAR			 #
