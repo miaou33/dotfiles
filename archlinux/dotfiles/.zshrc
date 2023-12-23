@@ -44,8 +44,10 @@ HISTSIZE=10000
 SAVEHIST=10000
 WORDCHARS=${WORDCHARS//\/[&.;]}                                 # Don't consider certain characters part of the word
 
+## Environment section
 export TERMINAL=terminator
 export EDITOR=nvim
+export DOTFILES_DIR="$HOME/dotfiles/archlinux/dotfiles"
 
 ## Keybindings section
 bindkey -v

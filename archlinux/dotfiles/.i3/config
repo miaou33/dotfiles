@@ -126,7 +126,7 @@ bindsym $mod+b exec --no-startup-id rofi-bluetooth &
 bindsym $mod+Return exec --no-startup-id $term 
 
 bindsym $mod+c exec --no-startup-id rofi-code
-bindsym $mod+n exec --no-startup-id dolphin
+bindsym $mod+n exec --no-startup-id nautilus
 bindsym $mod+w exec --no-startup-id google-chrome-stable
 bindsym $mod+d exec --no-startup-id discord
 bindsym $mod+t exec --no-startup-id "polybar-msg cmd toggle"
@@ -189,9 +189,12 @@ bindsym $mod+Shift+space floating toggle
 
 #for_window [class="Gpicview"] floating enable 
 for_window [class="Lxappearance"] floating enable 
-for_window [class="dolphin"] floating enable
+for_window [class="org.gnome.Nautilus"] floating enable
 for_window [class="gnome-screenshot"] floating enable
 for_window [class="Gnome-screenshot"] floating enable
+for_window [class="feh"] floating enable
+for_window [class="gthumb"] floating enable
+for_window [class="Gthumb"] floating enable
 #for_window [class="Pix"] floating enable
 #for_window [class="Steam"] floating enable 
 #for_window [class="Viewnior"] floating enable 
