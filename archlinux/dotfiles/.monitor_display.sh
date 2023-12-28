@@ -7,7 +7,7 @@ function configure_displays() {
 	sleep 2
     if xrandr --query | grep -q "HDMI-1 connected"; then
         xrandr --output eDP-1 --primary
-        xrandr --output HDMI-1 --mode 2048x1152 --right-of eDP-1
+        xrandr --output HDMI-1 --auto --right-of eDP-1
         $HOME/.fehbg
 		i3 restart
     else
