@@ -20,12 +20,11 @@ font pango:Terminus 11px
 
 default_border pixel 1
 default_floating_border normal
-#default_border pixel 0
 hide_edge_borders none
-gaps inner 14
-gaps outer -2
 # Smart gaps (gaps used if only more than one container on the workspace)
 smart_gaps on
+#gaps inner 14
+#gaps outer -2
 # Smart borders (draw borders around container only if it is not the only container on this workspace) 
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
 smart_borders on
