@@ -16,23 +16,23 @@ cp -R $DOTFILES_DIR/.config/terminator/config $HOME/.config/terminator/
 
 # ::::::::::::::::::::::::::::::::::::::::::::: Dev ::
 # Docker
-sudo systemctl start docker.service
-sudo systemctl start docker.socket
 sudo systemctl enable docker.service
 sudo systemctl enable docker.socket
+sudo systemctl start docker.service
+sudo systemctl start docker.socket
 sudo groupadd docker
 sudo usermod -aG docker $USER
 
 # :::::::::::::::::::::::::::::::::::::::::: Session ::
 # Lightdm
-sudo systemctl start lightdm
 sudo systemctl enable lightdm
+sudo systemctl start lightdm
 sudo chown -R lightdm:lightdm /run/lightdm
 sudo chown -R lightdm:lightdm /var/lib/lightdm-data
 sudo chmod 700 /run/lightdm
 sudo chmod 700 /var/lib/lightdm-data
-sudo systemctl start accounts-daemon
 sudo systemctl enable accounts-daemon
+sudo systemctl start accounts-daemon
 
 # ::::::::::::::::::::::::::::::::::::::::::: Devices ::
 
@@ -43,3 +43,11 @@ sudo cp -R etc/X11/xorg.conf.d/40-libinput.conf /usr/share/X11/xorg.conf.d/
 
 #remove system beep
 sudo cp etc/modprobe.d/nobeep.conf /etc/modprobe.d/
+
+sudo systemctl enable libinput-gestures.service
+sudo systemctl start libinput-gestures.service
+
+# ::::::::::::::::::::::::::::::::::::::::::: Drivers ::
+# Bluetooth
+sudo systemctl enable bluetooth.service
+sudo systemctl start bluetooth.service
