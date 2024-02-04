@@ -52,9 +52,11 @@ k('n', '<C-u>', '<C-u>zz')
 --					 REPLACE					--
 --------------------------------------------------
 k ('v', '<leader>ra', ':s/\\(.*\\)/')
+-- (.*): select all
 -- then , use \1 to add the selected part within the replace
 
 k('v', '<leader>rh', '<Esc>:%s/\\%V/g<left><left>')
+-- %V: select only the visual selection
 -- > replace in current buffer only selected part
 --
 --		Before block with old and sold.
