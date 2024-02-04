@@ -3,14 +3,6 @@
 ## POLYBAR
 
 ## THEME
-- script for changing themes
-	> alacritty
-	> gtk
-	> bar
-	> bg
-	> picom
-	> rofi
-	> p10k if color / monochrome
 
 ## WINDOWS
 - temp hi of border when change focus
@@ -27,6 +19,7 @@ ____________________________________________
 # BAR
 ____________________________________________
 change battery full/charging
+inspi of lightdm greeter
 
 ____________________________________________
 # SYSTEM MONITOR -- CONKY
