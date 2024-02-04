@@ -50,3 +50,6 @@ yay -S lightdm lightdm-slick-greeter lightdm-gtk-greeter accountsservice
 yay -S inetutils
 yay -S libinput-gestures
 
+# ::::::::::::::::::::::::::::::::::::::::::: Drivers ::
+yay -S bluez bluez-utils rofi-bluetooth-git
+yay -S playerctl
