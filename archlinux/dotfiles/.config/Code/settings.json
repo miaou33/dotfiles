@@ -1,0 +1,285 @@
+{
+	"glassit.alpha": 220,
+	"terminal.integrated.defaultProfile.linux": "zsh",
+	"git.confirmSync": false,
+	"security.workspace.trust.untrustedFiles": "open",
+	"explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+	"extensions.ignoreRecommendations": true,
+	"editor.autoClosingOvertype": "never",
+	"editor.fontFamily": "fira-code-nerd, FiraCode Nerd Font, Consolas, 'Courier New', monospace",
+	//"editor.fontFamily": "Hack Nerd Font, Consolas, 'Courier New', monospace",
+	"editor.fontLigatures": true,
+    "terminal.integrated.tabStopWidth": 4,
+	"editor.insertSpaces": false,
+
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.color": "rgba(250, 240, 170, 1)",
+    "vim.highlightedyank.duration": 200,
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": false,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+		"before": ["u"],
+		"commands": ["undo"]
+		},
+		{
+		"before": ["c-r"],
+		"commands": ["redo"]
+		}
+	],
+    "vim.visualModeKeyBindings": [
+        {
+			"before": [">"],
+            "commands": ["editor.action.indentLines"]
+        },
+        {
+            "before": ["<"],
+            "commands": ["editor.action.outdentLines"]
+        }
+    ],
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+	},
+	"terminal.integrated.copyOnSelection": true,
+	"git.enableSmartCommit": true,
+	"github.copilot.enable": {
+		"*": true,
+		"plaintext": false,
+		"markdown": true,
+		"scminput": false
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"markdown-preview-enhanced.previewTheme": "none.css",
+	"files.autoSave": "afterDelay",
+	"git.openRepositoryInParentFolders": "always",
+	"42header.username": "nfauconn",
+	"42header.email": "nfauconn@student.42.fr",
+	"window.zoomLevel": 1,
+	//"editor.rulers": [53],
+	"editor.minimap.enabled": false,
+    "editor.detectIndentation": false,
+	"editor.autoClosingDelete": "never",
+	"editor.autoClosingBrackets": "never",
+	"editor.autoClosingQuotes":"never",
+	"editor.autoClosingComments": "never",
+    "editor.autoSurround": "never",
+	"html.autoClosingTags": false,
+	"workbench.colorCustomizations":
+	{
+		"[StrangeBrew]": {
+			"tab.inactiveForeground": "#776e6e",
+			"editor.background": "#e8e7e7",
+			"terminal.background": "#cecece",
+			"sideBar.background": "#cecece"
+		},
+		"[Monochrome Dark], [Monochrome Black], [simple dark]":
+		{
+			"editorBracketMatch.border": "#ffffff8e",
+			"editorBracketHighlight.foreground1": "#bcbcbc",
+			"editorBracketHighlight.foreground2": "#a7a7a7",
+			"editorBracketHighlight.foreground3": "#8a8a8a",
+			"editorBracketHighlight.foreground4": "#828282",
+			"editorBracketHighlight.foreground5": "#696969",
+			"editorBracketHighlight.foreground6": "#4c4c4c"
+		},
+		"[Cyberpunk 2021]":
+		{
+			"editor.background": "#03162e",
+			"editorBracketMatch.border": "#00ff9c",
+			"editorBracketHighlight.foreground1": "#ffee00",
+			"editorBracketHighlight.foreground2": "#ffee00e6",
+			"editorBracketHighlight.foreground3": "#ffee00c1",
+			"editorBracketHighlight.foreground4": "#ffee0086",
+			"editorBracketHighlight.foreground5": "#ffee006f",
+			"editorBracketHighlight.foreground6": "#ffee0045"
+		},
+		"[graygraygray]":
+		{
+			"activityBar.background": "#55494985",
+			"activityBar.foreground": "#382f2f",
+			"statusBar.background": "#679fd3"
+		}
+	},
+	"editor.tokenColorCustomizations": {
+		"[Monochrome Dark]": {
+			"textMateRules": [
+				{
+					"scope": [],
+					"settings": {
+						"foreground": "#FF0000",
+						"fontStyle": "bold"
+					}
+				}
+			]
+		},
+		"[Atom One Dark]": {
+			"textMateRules": [
+				{"scope": ["support.type.property-name.json"],
+				"settings": {"foreground":"#ABB2BF"}}]
+		},
+		"[simple dark]": {
+			"textMateRules": [
+				{
+					"scope":
+					[
+						"storage.type",
+						"keyword.control",
+						"punctuation",
+						"storage.modifier",
+						"source.cpp"
+					],
+					"settings":
+					{
+						"foreground": "#898989"
+					}
+				},
+				{
+					"scope": ["token.info-token"],
+					"settings":
+					{
+						"foreground": "#a7a7a7"
+					}
+				}
+			]	
+		},
+ 		"[Cyberpunk 2021]": 
+		{
+			"functions": 
+			{
+				"foreground": "#af87ff",
+				"fontStyle": ""
+			},
+			"comments": "#8700ff",
+			"textMateRules": [
+			{
+				"scope": ["variable.other.object"],
+				"settings":
+				{
+					"foreground": "#bc96de",
+					"fontStyle": ""
+				}
+				},
+				{
+					"scope": ["variable.other.member"],
+					"settings": 
+					{
+						"foreground": "#bc96de",
+						"fontStyle": "italic"
+					}
+				},
+				{
+					"scope":
+					[
+						"punctuation.definition.string.begin",
+						"punctuation.definition.string.end",
+						"string.quoted.double",
+						"string.quoted.double.include",
+						"meta.preprocessor.include"
+					],
+					"settings": 
+					{
+						"foreground": "#87d7ff",
+						"fontStyle": "italic"
+					}
+				},
+				{
+					"scope": 
+					[
+						"punctuation",
+						"keyword.operator",
+						"keyword.operator.comparison"
+					],
+					"settings": {
+						"foreground": "#da28eb",
+						"fontStyle": "bold"
+					}
+				},
+				{
+					"scope": 
+					[
+						"keyword.operator.logical",
+						"punctuation.terminator.statement"
+					],
+					"settings": 
+					{
+						"foreground": "#da28eb"
+					}
+				},
+				{
+					"scope": 
+					[
+						"keyword.control",
+						"storage.type",
+						"support.type",
+						"keyword.control.directive.include"
+					],
+					"settings": 
+					{
+						"foreground": "#00ff9c"
+					}
+				},
+				{
+					"scope": "constant.numeric",
+					"settings": {
+						"foreground": "#d2a4d2"
+					}
+				},
+				{
+					"scope": ["storage.modifier"],
+					"settings": {
+						"foreground": "#00ffffcf",
+						"fontStyle": "italic"
+					}
+				}
+			]
+		},
+		"[graygraygray]": 
+		{
+			"comments": "#4a4545b5"
+		}
+	},
+
+	"editor.semanticTokenColorCustomizations": {
+	"enabled": true,
+		"[simple dark]": 
+		{
+			"enabled": true,
+			"rules": 
+			{
+				"namespace": "#898989",
+				"type" : "#898989",
+				"method": "#898989"
+			}
+		},
+		"[Atom One Dark]": 
+		{
+			"enabled": true,
+			"rules": 
+			{
+			}
+		},
+		"[Cyberpunk 2021]": 
+		{
+			"enabled": true,
+				"rules": 
+				{
+					"parameter": "#D7DBE0",
+					"property": "#C3e88D",
+					"macro": {"foreground": "#00ffffcf", "fontStyle": ""}
+				}
+			}
+	},
+	"window.autoDetectColorScheme": true,
+	"workbench.preferredDarkColorTheme": "Kanagawa Dragon",
+	"workbench.preferredLightColorTheme": "StrangeBrew",
+	"workbench.colorTheme": "Kanagawa Dragon",
+}
