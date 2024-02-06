@@ -1,5 +1,5 @@
 {
-	"glassit.alpha": 220,
+	"glassit.alpha": 230,
 	"terminal.integrated.defaultProfile.linux": "zsh",
 	"git.confirmSync": false,
 	"security.workspace.trust.untrustedFiles": "open",
@@ -7,7 +7,7 @@
     "explorer.confirmDelete": false,
 	"extensions.ignoreRecommendations": true,
 	"editor.autoClosingOvertype": "never",
-	"editor.fontFamily": "fira-code-nerd, FiraCode Nerd Font, Consolas, 'Courier New', monospace",
+	//"editor.fontFamily": "fira-code-nerd, FiraCode Nerd Font, Consolas, 'Courier New', monospace",
 	//"editor.fontFamily": "Hack Nerd Font, Consolas, 'Courier New', monospace",
 	"editor.fontLigatures": true,
     "terminal.integrated.tabStopWidth": 4,
