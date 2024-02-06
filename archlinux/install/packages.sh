@@ -2,6 +2,7 @@
 
 # :::::::::::::::::::::::::::::::::::::::::: Packages ::
 git clone https://aur.archlinux.org/yay.git
+yay -S reflector
 
 # :::::::::::::::::::::::::::::::::: Terminal & Shell ::
 # Zsh
