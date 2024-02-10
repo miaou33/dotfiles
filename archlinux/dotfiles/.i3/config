@@ -47,11 +47,15 @@ smart_borders on
 # Autostarts apps in /etc/xdg/autostart
 #exec_always --no-startup-id dex --autostart --environment i3
 #exec_always --no-startup-id libinput-gestures-setup start
-exec_always --no-startup-id terminator --class=theme-selector -e "bash -c '~/.change_theme.sh; exec bash'"
-for_window [class="theme-selector"] floating enable, resize set 600 400, move position center
-exec --no-startup-id xfce4-power-manager
-# Scripts
+
+# Theme selector
+exec --no-startup-id lxappearance
+#exec_always --no-startup-id terminator --class=theme-selector -e "bash -c '~/.change_theme.sh'"
+#for_window [class="theme-selector"] floating enable, resize set 600 400, move position center
+
 exec --no-startup-id ~/.fehbg &
+
+exec --no-startup-id xfce4-power-manager
 exec_always --no-startup-id ~/.config/polybar/launch.sh -r &
 exec_always --no-startup-id picom &
 #exec_always --no-startup-id ~/notify_battery.sh
@@ -81,10 +85,10 @@ bindsym $mod+t exec --no-startup-id "polybar-msg cmd toggle"
 #bindsym $mod+x exec --no-startup-id "AppImageLauncher Applications/pcsx2-v1.7.4380-linux-AppImage-64bit-Qt_dd519d5d146404904828ff33cd6b8a10.AppImage"
 
 # Screenshot
+bindsym Print exec --no-startup-id gnome-screenshot -i
 #bindsym --release Print exec scrot '~/Pictures/Screenshots/screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/Screenshots && mv $f ~/Pictures/Screenshots' 
 #bindsym --release Print exec ~/screenshot.sh
 #bindsym --release Shift+Print exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/Screenshots && mv $f ~/Pictures/Screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/Screenshots/`ls -1 -t ~/Pictures/Screenshots | head -1`'
-bindsym Print exec --no-startup-id gnome-screenshot -i
 
 # Luminosity
 bindsym XF86MonBrightnessUp exec --no-startup-id brillo -A 5
