@@ -44,24 +44,16 @@ smart_borders on
 #		AUTOSTART	 #
 #~~~~~~~~~~~~~~~~~~~~#
 
-# Autostarts apps in /etc/xdg/autostart
-#exec_always --no-startup-id dex --autostart --environment i3
-#exec_always --no-startup-id libinput-gestures-setup start
-
-# Theme selector
+# Aesthetics
 exec --no-startup-id lxappearance
-#exec_always --no-startup-id terminator --class=theme-selector -e "bash -c '~/.change_theme.sh'"
-#for_window [class="theme-selector"] floating enable, resize set 600 400, move position center
-
 exec --no-startup-id ~/.fehbg &
-exec --no-startup-id "bluetoothctl power off"
-
-exec --no-startup-id xfce4-power-manager
 exec_always --no-startup-id ~/.config/polybar/launch.sh -r &
 exec_always --no-startup-id picom &
-#exec_always --no-startup-id ~/notify_battery.sh
-#exec_always --no-startup-id .config/conky/launch.sh
 
+# Utilities
+exec --no-startup-id "bluetoothctl power off"
+exec --no-startup-id "setxkbmap -option compose:ralt"
+exec --no-startup-id xfce4-power-manager
 
 #~~~~~~~~~~~~~~~~~~~~#
 #	  SHORTCTUS		 #
