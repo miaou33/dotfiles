@@ -54,6 +54,7 @@ exec --no-startup-id lxappearance
 #for_window [class="theme-selector"] floating enable, resize set 600 400, move position center
 
 exec --no-startup-id ~/.fehbg &
+exec --no-startup-id "bluetoothctl power off"
 
 exec --no-startup-id xfce4-power-manager
 exec_always --no-startup-id ~/.config/polybar/launch.sh -r &
