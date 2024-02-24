@@ -16,7 +16,7 @@ set $term terminator
 #	   AESTHETIC	 #
 #~~~~~~~~~~~~~~~~~~~~#
 #it probably doesnt work, but it then disable window titles so its cool
-font pango:Terminus 11px
+font pango: Terminus (TTF) bold 10
 
 default_border pixel 0
 default_floating_border normal
