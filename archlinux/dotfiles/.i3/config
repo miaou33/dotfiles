@@ -61,27 +61,42 @@ smart_borders on
 #set_from_resource $xcolor15 color15
 
 # Manual color settings.
-# red theme
-set $xforeground #c5c8c6
+# :::::::::::::::::::::::::::: RED
 set $xbackground #1d1f21
-set $xcursor #c5c8c6
+# light grey
 set $xcolor0 #282a2e
+# dark grey
 set $xcolor8 #373b41
+# dark red
 set $xcolor1 #a54242
+# light red
 set $xcolor9 #cc6666
+# green
 set $xcolor2 #8c9440
+# light green
 set $xcolor10 #b5bd68
+# orange
 set $xcolor3 #de935f
+# yellow
 set $xcolor11 #f0c674
+# blue
 set $xcolor4 #5f819d
+# light blue
 set $xcolor12 #81a2be
+# purple
 set $xcolor5 #85678f
+# light purple
 set $xcolor13 #b294bb
+# cyan
 set $xcolor6 #5e8d87
+# light cyan
 set $xcolor14 #8abeb7
+# light grey
 set $xcolor7 #707880
+# light grey
 set $xcolor15 #c5c8c6
-# blue theme
+
+# :::::::::::::::::::::::::::: BLUE
 #set $xforeground #c5c8c6
 #set $xbackground #1d1f21
 #set $xcursor #c5c8c6
@@ -187,10 +202,10 @@ bindsym $mod+$left focus left
 bindsym $mod+$down focus down
 bindsym $mod+$up focus up
 bindsym $mod+$right focus right
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+bindsym $mod+Left focus left; exec "i3-msg border pixel 4 && sleep 0.4 && i3-msg border none"  
+bindsym $mod+Down focus down; exec "i3-msg border pixel 4 && sleep 0.4 && i3-msg border none"
+bindsym $mod+Up focus up; exec "i3-msg border pixel 4 && sleep 0.4 && i3-msg border none"
+bindsym $mod+Right focus right; exec "i3-msg border pixel 4 && sleep 0.4 && i3-msg border none"
 
 # move focused window
 bindsym $mod+Shift+$left move left
