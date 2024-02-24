@@ -235,6 +235,8 @@ floating_modifier $mod
 #focus_follows_mouse no
 # Back and forth when pressing the same workspace keybind
 workspace_auto_back_and_forth yes
+# display urgent notification on windows
+force_display_urgency_hint 500 ms
 
 
 set $ws1 "1"
