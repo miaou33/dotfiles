@@ -9,7 +9,7 @@ set $down j
 set $up k
 set $right l
 
-set $term terminator
+set $term alacritty
 
 
 #~~~~~~~~~~~~~~~~~~~~#
@@ -62,7 +62,9 @@ smart_borders on
 
 # Manual color settings.
 # :::::::::::::::::::::::::::: RED
+set $xforeground #c5c8c6
 set $xbackground #1d1f21
+set $xcursor #c5c8c6
 # light grey
 set $xcolor0 #282a2e
 # dark grey
@@ -198,10 +200,10 @@ bindsym $mod+plus scratchpad show
 
 
 # change focus
-bindsym $mod+$left focus left
-bindsym $mod+$down focus down
-bindsym $mod+$up focus up
-bindsym $mod+$right focus right
+bindsym $mod+$left focus left; exec "i3-msg border pixel 4 && sleep 0.4 && i3-msg border none"  
+bindsym $mod+$down focus down; exec "i3-msg border pixel 4 && sleep 0.4 && i3-msg border none"  
+bindsym $mod+$up focus up; exec "i3-msg border pixel 4 && sleep 0.4 && i3-msg border none"  
+bindsym $mod+$right focus right; exec "i3-msg border pixel 4 && sleep 0.4 && i3-msg border none"  
 bindsym $mod+Left focus left; exec "i3-msg border pixel 4 && sleep 0.4 && i3-msg border none"  
 bindsym $mod+Down focus down; exec "i3-msg border pixel 4 && sleep 0.4 && i3-msg border none"
 bindsym $mod+Up focus up; exec "i3-msg border pixel 4 && sleep 0.4 && i3-msg border none"
