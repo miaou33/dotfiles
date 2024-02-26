@@ -5,21 +5,25 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# colors
-darkgrey="$(tput bold ; tput setaf 0)"
-white="$(tput bold ; tput setaf 7)"
-blue="$(tput bold; tput setaf 4)"
-cyan="$(tput bold; tput setaf 6)"
-nc="$(tput sgr0)"
+## colors
+#darkgrey="$(tput bold ; tput setaf 0)"
+#white="$(tput bold ; tput setaf 7)"
+#blue="$(tput bold; tput setaf 4)"
+#cyan="$(tput bold; tput setaf 6)"
+#nc="$(tput sgr0)"
+#
+#
+#PS1='[\u@\h \W]\$ '
+##if [[ $EUID -eq 0 ]]; then
+##  export PS1="\[$blue][ \[$cyan\]\H \[$darkgrey\]\w\[$darkgrey\] \[$blue\]]\\[$darkgrey\]# \[$nc\]"
+##else
+##  export PS1="\[$blue\u@\h\][ \[$cyan\]\H \[$darkgrey\]\w\[$darkgrey\] \[$blue\]]\\[$cyan\]\$ \[$nc\]"
+##fi
 
-
-PS1='[\u@\h \W]\$ '
-#if [[ $EUID -eq 0 ]]; then
-#  export PS1="\[$blue][ \[$cyan\]\H \[$darkgrey\]\w\[$darkgrey\] \[$blue\]]\\[$darkgrey\]# \[$nc\]"
-#else
-#  export PS1="\[$blue\u@\h\][ \[$cyan\]\H \[$darkgrey\]\w\[$darkgrey\] \[$blue\]]\\[$cyan\]\$ \[$nc\]"
-#fi
-
+# Use custom bash prompt (will execute .bash_prompt script)
+if [ -f ~/.bash_prompt.sh ]; then
+  . ~/.bash_prompt.sh
+fi
 
 # exports
 export EDITOR="nvim"
