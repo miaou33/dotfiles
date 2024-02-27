@@ -9,6 +9,8 @@ yay -S reflector
 yay -S zsh zsh-completions zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting zsh-history-substring-search 
 yay -S  powerline powerline-fonts zsh-theme-powerlevel10k
 
+yay -S bash-completion
+
 # Terminal emulators
 yay -S terminator python-requests
 yay -S kitty
