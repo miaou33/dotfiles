@@ -36,17 +36,19 @@ intense_magenta="\[\e[0;95m\]"
 intense_cyan="\[\e[0;96m\]"
 intense_white="\[\e[0;97m\]"
 
+bold="\[\e[1m\]"
 
 sep_color=$intense_green
-on_error="\$([[ \$? != 0 ]] && echo \"${red}✗${white}${sep_color}]─\")"
-username_host="$(if [[ ${EUID} == 0 ]]; then echo "${bright_red}root"; else echo "${magenta}\u";	fi)"
+on_error="\$([[ \$? != 0 ]] && echo \"${red}✗${sep_color}─\")"
+username_host="$(if [[ ${EUID} == 0 ]]; then echo "${red}root"; else echo "${light_purple}\u";	fi)"
+hostname="@${light_purple}\h"
 current_directory="${light_purple}\w"
 git_branch="${dark_grey}\$(git branch 2>/dev/null | grep \* | colrm 1 2)"
 symbol="${bright_magenta}\$"
 
 # Combine all parts to form the PS1
 PS1="${sep_color}┌─${on_error}"
-PS1+="${sep_color}[${username_host}"
+PS1+="${sep_color}[${bold}${username_host}${hostname}"
 PS1+="${sep_color}]─[${current_directory}"
 PS1+="${sep_color}] ${git_branch}"
 PS1+="${sep_color}\n└──╼ ${symbol} "
