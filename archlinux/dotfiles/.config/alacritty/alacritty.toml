@@ -1,17 +1,25 @@
-# Colors (Kanagawa Dragon)
-# Source https//github.com/rebelot/kanagawa.nvim
+
+shell = 'zsh'
 
 [window]
 opacity = 0.85
 
+[font]
+size = 18
+normal = { family = 'Terminus', style = 'Regular'}
+bold = { family = 'Terminus', style = 'Bold'}
+italic = { family = 'Terminus', style = 'Italic'}
+bold_italic = { family = 'Terminus', style = 'Bold Italic'}
+builtin_box_drawing = true
+
 [scrolling]
 history = 100000
 
-[font]
-#normal = { family = 'Terminus', style = 'Regular'}
-
 [selection]
 save_to_clipboard = true
+
+# Colors (Kanagawa Dragon)
+# Source https//github.com/rebelot/kanagawa.nvim
 
 [colors.primary]
 background = '#181616'
