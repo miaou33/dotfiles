@@ -1,5 +1,5 @@
 {
-	"glassit.alpha": 225,
+	"glassit.alpha": 220,
 	"terminal.integrated.defaultProfile.linux": "zsh",
 	"git.confirmSync": false,
 	"security.workspace.trust.untrustedFiles": "open",
@@ -281,5 +281,5 @@
 	"window.autoDetectColorScheme": true,
 	"workbench.preferredLightColorTheme": "StrangeBrew",
 	"workbench.preferredDarkColorTheme": "Kanagawa Dragon",
-	"workbench.colorTheme": "StrangeBrew"
+	"workbench.colorTheme": "Kanagawa Dragon"
 }
