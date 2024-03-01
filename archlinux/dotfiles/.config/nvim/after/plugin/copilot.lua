@@ -7,6 +7,6 @@ vim.keymap.set('i', '<Left>', '<Plug>(copilot-dismiss)')
 vim.keymap.set('i', '<Down>', '<Plug>(copilot-next)')
 vim.keymap.set('i', '<Up>', '<Plug>(copilot-previous)')
 
-vim.keymap.set('i', '<Tab>', '<Plug>(copilot-accept-word)')
+vim.keymap.set('i', '<C-Tab>', '<Plug>(copilot-accept-word)')
 
 
