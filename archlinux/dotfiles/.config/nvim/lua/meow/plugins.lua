@@ -153,7 +153,8 @@ use {'hrsh7th/cmp-path'}
 --use {'rafamadriz/friendly-snippets'}
 
 -- MARKDOWN
-use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+-- install without yarn or npm
+use({ "iamcco/markdown-preview.nvim", run = function() vim.fn["mkdp#util#install"]() end, })
 use 'godlygeek/tabular'
 use 'elzr/vim-json'
 use 'plasticboy/vim-markdown'
