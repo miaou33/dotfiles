@@ -5,6 +5,7 @@ export DOTFILES_DIR=$HOME/dotfiles/archlinux/dotfiles
 
 # :::::::::::::::::::::::::::::::::: Terminal & Shell ::
 # Zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 rm -rf $HOME/.zshrc
 ln -s $DOTFILES_DIR/.zshrc $HOME/.zshrc
 source $HOME/.zshrc
@@ -51,3 +52,27 @@ sudo systemctl start libinput-gestures.service
 # Bluetooth
 sudo systemctl enable bluetooth.service
 sudo systemctl start bluetooth.service
+
+
+####################################################################################
+####################################################################################
+####################################################################################
+####################################################################################
+
+## Environment section
+export DOTFILES_DIR="$HOME/.dot/archlinux/dotfiles"
+export EDITOR=nvim
+export TERMINAL=alacritty
+export XDG_CONFIG_HOME="$HOME/.config"
+
+## Keybindings section
+bindkey -v
+
+## Alias section
+alias gita='git add . && git commit && git push'
+alias gcl='git clone'
+alias vim='nvim'
+alias l='exa'
+alias la='exa -a'
+alias ll='exa -l'
+alias lla='exa -la'
