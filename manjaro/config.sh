@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 #::::::::::::::::::::::::::::::::::::::::::::::::::::: PACKAGES
-=======
 #!/bin/bash
 
 comment=$'\033[0;30m'
@@ -17,7 +15,6 @@ reset=$'\033[0m'
 
 git config --global user.email "nfauconn@student.42.fr"
 git config --global user.name "no3"
->>>>>>> e94024a (current config)
 
 yay -S bat exa neovim nvim-packer-git unzip docker docker-buildx docker-compose vim-copilot-git
 
@@ -53,9 +50,6 @@ sudo systemctl start docker.socket
 sudo systemctl enable docker.service
 sudo systemctl enable docker.socket
 sudo usermod -aG docker $USER
-<<<<<<< HEAD
 
 echo "install ok. please delog & relog to complete"
-=======
 echo "\n$(red)install ok. please delog & relog to complete$(reset)"
->>>>>>> e94024a (current config)
