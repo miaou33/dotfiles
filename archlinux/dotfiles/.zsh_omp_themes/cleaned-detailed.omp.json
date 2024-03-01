@@ -100,16 +100,18 @@
       "newline": true,
       "segments": [
         {
+		  // Debut du branchement avec ligne d'apres
           "style": "plain",
-          "template": "\u256d\u2500",
+          "template": "<p:red>\u256d\u2500</>",
           "type": "text"
         },
         {
+		  // Date
           "properties": {
             "time_format": "15:04"
           },
           "style": "plain",
-          "template": " \u2665 {{ .CurrentDate | date .Format }} |",
+          "template": " <p:red>\u2665 [{{ .CurrentDate | date .Format }}]—</>",
           "type": "time"
         },
         {
@@ -121,11 +123,13 @@
           "properties": {
 			"style": "full",
             //"folder_icon": "\uf07b ",
-            "folder_separator_icon": "  \uf061  ",
-            "home_icon": "\ueb06 "
+            //"folder_separator_icon": "  \uf061  ",
+            "folder_separator_icon": "/"
+            //"home_icon": "\ueb06 "
           },
           "style": "plain",
-          "template": " {{ .Path }} ",
+          //"template": " {{ .Path }} ",
+          "template": "<p:red>[{{ .Path }}]</>",
           "type": "path"
         }
       ],
@@ -136,11 +140,12 @@
       "newline": true,
       "segments": [
         {
+		  // Fin du branchement
           "properties": {
             "always_enabled": true
           },
           "style": "plain",
-          "template": "\u2570\u2500 ",
+          "template": "<p:red>\u2570\u2500</> ",
           "type": "status"
         }
       ],
