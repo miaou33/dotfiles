@@ -6,10 +6,10 @@ opacity = 0.85
 
 [font]
 size = 14
-normal = { family = 'Hack Nerd Font', style = 'Regular'}
-bold = { family = 'Hack Nerd Font', style = 'Bold'}
-italic = { family = 'Hack Nerd Font', style = 'Italic'}
-bold_italic = { family = 'Hack Nerd Font', style = 'Bold Italic'}
+normal = { family = 'Terminus', style = 'Regular'}
+bold = { family = 'Terminus', style = 'Bold'}
+italic = { family = 'Terminus', style = 'Italic'}
+bold_italic = { family = 'Terminus', style = 'Bold Italic'}
 builtin_box_drawing = false
 
 [scrolling]
