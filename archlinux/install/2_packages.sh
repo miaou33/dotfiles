@@ -1,9 +1,5 @@
 #!/bin/zsh
 
-# :::::::::::::::::::::::::::::::::::::::::: Packages ::
-git clone https://aur.archlinux.org/yay.git
-yay -S reflector
-
 # :::::::::::::::::::::::::::::::::: Terminal & Shell ::
 # Zsh
 yay -S zsh zsh-completions zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting zsh-history-substring-search 
@@ -24,7 +20,7 @@ yay -S visual-studio-code-bin
 yay -S nvim nvim-packer-git vim-copilot-git neovim-lspconfig unzip
 
 # Tools
-yay -S valgrind 
+yay -S valgrind gdb lldb
 
 # Docker
 yay -S docker docker-buildx docker-compose 

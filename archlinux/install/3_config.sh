@@ -37,7 +37,10 @@ sudo systemctl start accounts-daemon
 
 # ::::::::::::::::::::::::::::::::::::::::::: Devices ::
 
+# make sure user is in the input group to allow libinput-gestures to work
 sudo gpasswd -a $USER input
+libinput-gestures-setup autostart start
+libinput-gestures-setup stop desktop autostart start
 
 #devices set up (touchpad, mouse)
 sudo cp -R etc/X11/xorg.conf.d/40-libinput.conf /usr/share/X11/xorg.conf.d/ 
@@ -52,27 +55,3 @@ sudo systemctl start libinput-gestures.service
 # Bluetooth
 sudo systemctl enable bluetooth.service
 sudo systemctl start bluetooth.service
-
-
-####################################################################################
-####################################################################################
-####################################################################################
-####################################################################################
-
-## Environment section
-export DOTFILES_DIR="$HOME/.dot/archlinux/dotfiles"
-export EDITOR=nvim
-export TERMINAL=alacritty
-export XDG_CONFIG_HOME="$HOME/.config"
-
-## Keybindings section
-bindkey -v
-
-## Alias section
-alias gita='git add . && git commit && git push'
-alias gcl='git clone'
-alias vim='nvim'
-alias l='exa'
-alias la='exa -a'
-alias ll='exa -l'
-alias lla='exa -la'
