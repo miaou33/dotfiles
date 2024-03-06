@@ -1,5 +1,5 @@
 {
-	"glassit.alpha": 215,
+	"glassit.alpha": 255,
 	"terminal.integrated.defaultProfile.linux": "zsh",
 	"git.confirmSync": false,
 	"security.workspace.trust.untrustedFiles": "open",
@@ -281,5 +281,6 @@
 	"window.autoDetectColorScheme": true,
 	"workbench.preferredLightColorTheme": "StrangeBrew",
 	"workbench.preferredDarkColorTheme": "Kanagawa Dragon",
-	"workbench.colorTheme": "StrangeBrew"
+	"workbench.colorTheme": "StrangeBrew",
+	"editor.fontFamily": "'Terminess Nerd Font', 'monospace', monospace"
 }

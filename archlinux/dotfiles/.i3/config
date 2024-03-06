@@ -16,7 +16,7 @@ set $term alacritty
 #	   AESTHETIC	 #
 #~~~~~~~~~~~~~~~~~~~~#
 #it probably doesnt work, but it then disable window titles so its cool
-font pango: Terminus (TTF) bold 10
+font pango: Terminess Nerd Font 22
 
 default_border pixel 0
 default_floating_border normal
@@ -141,7 +141,7 @@ exec_always --no-startup-id picom &
 
 # Utilities
 exec --no-startup-id "bluetoothctl power off"
-exec --no-startup-id "setxkbmap -option compose:ralt"
+#exec --no-startup-id "exec setxkbmap us intl"
 exec --no-startup-id xfce4-power-manager
 
 #~~~~~~~~~~~~~~~~~~~~#
