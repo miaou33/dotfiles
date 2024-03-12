@@ -99,22 +99,24 @@ En termes de commandes, lorsque vous tapez `mount /dev/sda3 /mnt`, vous dites au
 
 Après avoir exécuté cette commande, si vous allez dans le répertoire `/mnt`, vous verrez tous les fichiers et dossiers qui résident physiquement sur la partition `/dev/sda3`.
 
-1. Monter la partition racine
+1. Monter la partition de démarrage EFI
+
+	- Monter la partition de démarrage EFI
+		```sh
+		mkdir /mnt/boot
+		mount /dev/<partition_boot> /mnt/boot
+		```
+
+2. Activer la partition swap
+	```sh
+	swapon /dev/<partition_swap>
+	```
+
+3. Monter la partition racine
 	```sh
 	mount /dev/<partition_racine> /mnt
 	```
 
-2. Monter la partition de démarrage EFI
-
-	- Monter la partition de démarrage EFI
-		```sh
-		mount --mkdir /dev/<partition_boot> /mnt/boot/EFI
-		```
-
-3. Activer la partition swap
-	```sh
-	swapon /dev/<partition_swap>
-	```
 
 ## Installation du système de base
 
@@ -224,7 +226,7 @@ pacman -S grub efibootmgr
 
 Installer le chargeur d'amorçage GRUB :
 ```sh
-grub-install --target=x86_64-efi --efi-directory=/boot/EFI --bootloader-id=GRUB
+grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 ```
 
 Générer le fichier de configuration de GRUB :
