@@ -1,5 +1,5 @@
 {
-	"glassit.alpha": 255,
+	"glassit.alpha": 225,
 	"terminal.integrated.defaultProfile.linux": "zsh",
 	"git.confirmSync": false,
 	"security.workspace.trust.untrustedFiles": "open",
@@ -72,7 +72,7 @@
 	"editor.autoClosingQuotes":"never",
 	"editor.autoClosingComments": "never",
     "editor.autoSurround": "never",
-	"html.autoClosingTags": false,
+	"html.autoClosingTags": true,
 	"workbench.colorCustomizations":
 	{
 		"[StrangeBrew]": {
@@ -282,5 +282,5 @@
 	"workbench.preferredLightColorTheme": "StrangeBrew",
 	"workbench.preferredDarkColorTheme": "Kanagawa Dragon",
 	"workbench.colorTheme": "StrangeBrew",
-	"editor.fontFamily": "'Terminess Nerd Font', 'monospace', monospace"
+	"editor.fontFamily": "'Terminus', 'monospace', monospace"
 }
