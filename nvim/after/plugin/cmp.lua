@@ -130,6 +130,6 @@ cmp.setup {
 
 -- if i want a certain color for borders: add in winhighlight "BorderFloat:BorderBG"
 -- and at end of file define BorderBG:
-vim.cmd "highlight! BorderBG guibg=NONE guifg=#00ff00"
+--vim.cmd "highlight! BorderBG guibg=NONE guifg=#00ff00"
 -- source: https://github.com/hrsh7th/nvim-cmp/issues/671#issuecomment-1189019119
 

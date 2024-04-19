@@ -6,6 +6,18 @@ lspconfig.clangd.setup{
    end
 }
 
+lspconfig.gopls.setup {
+
+}
+
+lspconfig.lua_ls.setup({
+	settings = {
+		Lua = {
+			diagnostics = { globals = { "vim" } }
+		}
+	}
+})
+
 ------------------------------------------
 --				BORDERS					--
 ------------------------------------------

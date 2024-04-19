@@ -1,14 +1,4 @@
 --------------------------------------------------
---					  INDEX						--
---------------------------------------------------
--- CONFIG 
--- FILES
--- GIT
--- SESSION
--- SYNTAX
--- THEMES
-
---------------------------------------------------
 --					  CONFIG					--
 --------------------------------------------------
 local fn = vim.fn
@@ -29,11 +19,7 @@ vim.cmd([[
   augroup end
 ]])
 
--- Use a protected call so we don't error out on first use
-local status_ok, packer = pcall(require, "packer")
-if not status_ok then
-	return
-end
+local packer = require("packer")
 
 -- Have packer use a popup window
 packer.init({
@@ -47,20 +33,18 @@ packer.init({
 return require('packer').startup(function(use)
 
 use 'wbthomason/packer.nvim'
+use 'nvim-lua/plenary.nvim'
+use 'nvim-tree/nvim-web-devicons'
+use 'MunifTanjim/nui.nvim'
 
 --------------------------------------------------
 --					FILES						--
 --------------------------------------------------
 -- TREE DISPLAYER
-vim.cmd([[ let g:neo_tree_remove_legacy_commands = 1 ]])
-use { "nvim-neo-tree/neo-tree.nvim", branch = "v2.x", requires = {
-	  "nvim-lua/plenary.nvim",
-	  "nvim-tree/nvim-web-devicons",
-	  "MunifTanjim/nui.nvim", } }
+use { "nvim-neo-tree/neo-tree.nvim" }
 
 -- FILE FINDER
-use { 'nvim-telescope/telescope.nvim', tag = '0.1.1', branch = '0.1.x', requires = {
-	{'nvim-lua/plenary.nvim'} } }
+use { 'nvim-telescope/telescope.nvim' }
 
 -- QUICK NAVIGATION
 use ('ThePrimeagen/harpoon')
@@ -69,82 +53,63 @@ use ('ThePrimeagen/harpoon')
 --					  GIT						--
 --------------------------------------------------
 use ('tpope/vim-fugitive')
-use {
-   'lewis6991/gitsigns.nvim',
-   requires = { 'nvim-lua/plenary.nvim' },
-   config = function() require'gitsigns'.setup() end
-}
-use ('github/copilot.vim')
+use { 'lewis6991/gitsigns.nvim' }
+--use ('github/copilot.vim')
 
 --------------------------------------------------
 --					SESSION						--
 --------------------------------------------------
 -- DASHBOARD
---use {
---    'goolord/alpha-nvim',
---    config = function ()
---        require'alpha'.setup(require'alpha.themes.dashboard'.config)
---    end
---}
+--use { 'goolord/alpha-nvim', }
 
 ---- PREVIOUS SESSION
---use {
---  'rmagatti/auto-session',
---  config = function()
---    require("auto-session").setup {
---      log_level = "error",
---      auto_session_suppress_dirs = { "~/", "~/Projects", "~/Downloads", "/"},
---    }
---  end
---}
---use({
---	"folke/persistence.nvim",
---	event = "BufReadPre", -- this will only start session saving when an actual file was opened
---	module = "persistence",
---	config = function()
---		require("persistence").setup()
---	end,
---})
+--use { 'rmagatti/auto-session', }
+--use { "folke/persistence.nvim", }
 
 -- UNDOTREE
 use ('mbbill/undotree')
 
 -- STATUS LINE
-use { 'nvim-lualine/lualine.nvim', requires = {
-	'nvim-tree/nvim-web-devicons', opt = true } }
+use { 'nvim-lualine/lualine.nvim' }
 
 -- SPEED UP
 use 'lewis6991/impatient.nvim'
 
 
 --------------------------------------------------
---				     SYNTAX						--
+--				   CODE							--
 --------------------------------------------------
 -- HIGHLIGHT
-use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+use ('nvim-treesitter/nvim-treesitter')
+use({ "nvim-treesitter/nvim-treesitter-textobjects", after = "nvim-treesitter" })
 use ('nvim-treesitter/playground')
 
 -- LSP
 use { "neovim/nvim-lspconfig"}
 use { "williamboman/mason.nvim"}
 use { "williamboman/mason-lspconfig.nvim"}
-use { "jose-elias-alvarez/null-ls.nvim"}
+use { "jose-elias-alvarez/null-ls.nvim" }
 
 ---- AUTOCOMPLETION
+use {'hrsh7th/cmp-nvim-lsp'}
 use {'hrsh7th/nvim-cmp'}
 use {'hrsh7th/cmp-buffer'}
 use {'hrsh7th/cmp-path'}
+
+-- SNIPPETS
+use {'rafamadriz/friendly-snippets'}
+use {'L3MON4D3/LuaSnip'}
+
+-- LANGUAGES -------------------------------------
+
+-- GO
+use 'fatih/vim-go'
+
+-- LUA
 use {'saadparwaiz1/cmp_luasnip'}
-use {'hrsh7th/cmp-nvim-lsp'}
 use {'hrsh7th/cmp-nvim-lua'}
 
--- Snippets
-use {'L3MON4D3/LuaSnip'}
-use {'rafamadriz/friendly-snippets'}
-
 -- MARKDOWN
--- install without yarn or npm
-use({ "iamcco/markdown-preview.nvim", run = function() vim.fn["mkdp#util#install"]() end, })
 use 'godlygeek/tabular'
 use 'elzr/vim-json'
 use 'plasticboy/vim-markdown'
@@ -154,12 +119,7 @@ use 'vim-pandoc/vim-pandoc-syntax'
 --					AESTHETICS					--
 --------------------------------------------------
 ---- POPUP 
---use {
---  'gelguy/wilder.nvim',
---  config = function()
---    -- config goes here
---  end,
---}
+--use { 'gelguy/wilder.nvim' }
 
 -- BLANKLINES HIGHLIGHT
 use "lukas-reineke/indent-blankline.nvim"
@@ -180,15 +140,15 @@ use {'nyoom-engineering/oxocarbon.nvim'}
 use {"bluz71/vim-nightfly-colors", as = "nightfly" }
 use {"bluz71/vim-moonfly-colors", as = "moonfly" }
 use {"EdenEast/nightfox.nvim"}
-use {'olivercederborg/poimandres.nvim', config = function() require('poimandres').setup {} end }
+use {'olivercederborg/poimandres.nvim'}
 use {'rockerBOO/boo-colorscheme-nvim'}
 use {"lunarvim/Onedarker.nvim"}
 use {'gbprod/nord.nvim'}
-use { "neanias/everforest-nvim", config = function() require("everforest").setup() end, }
+use { "neanias/everforest-nvim"}
 use {"lunarvim/templeos.nvim"}
 use {'voidekh/kyotonight.vim'}
-use {'kdheepak/monochrome.nvim', config = function() end}
-use 'marko-cerovac/material.nvim'
-use 'Soares/base16.nvim'
+use {'kdheepak/monochrome.nvim'}
+use {'marko-cerovac/material.nvim'}
+use {'Soares/base16.nvim'}
 
 end)

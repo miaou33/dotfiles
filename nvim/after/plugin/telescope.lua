@@ -2,32 +2,31 @@
 --					KEYMAPS						--
 --------------------------------------------------
 
-local telescope_status_ok, builtin = pcall(require, "telescope.builtin")
-if not telescope_status_ok then
-  return
-end
+local builtin = require("telescope.builtin")
+local k = vim.keymap.set
 
 -- help
-vim.keymap.set('n', '<leader>mt', builtin.help_tags, {})
-vim.keymap.set('n', '<leader>ma', builtin.man_pages, {})
+k('n', '<leader>mt', builtin.help_tags, {})
+k('n', '<leader>ma', builtin.man_pages, {})
 
-vim.keymap.set('n', '<leader>cc', builtin.colorscheme, {})
+k('n', '<leader>cc', builtin.colorscheme, {})
+--k('n', '<leader>kk', builtin.keymaps, {})
 
 -- working directory 
-vim.keymap.set('n', '<leader>pf', builtin.find_files, {})
-vim.keymap.set('n', '<leader>ps', builtin.live_grep, {})
-vim.keymap.set('n', '<leader>pg', builtin.git_files, {})
-vim.keymap.set('n', '<leader>pb', builtin.buffers, {})
+k('n', '<leader>pf', builtin.find_files, {})
+k('n', '<leader>pw', builtin.live_grep, {})
+k('n', '<leader>pg', builtin.git_files, {})
+--k('n', '<leader>pb', builtin.buffers, {})
 
 -- lsp through files
-vim.keymap.set('n', '<leader>gd', builtin.lsp_definitions, {})
+k('n', '<leader>fd', builtin.lsp_definitions, {})
 
 -- current buffer
---vim.keymap.set('n', '<leader>bc', builtin.git_bcommits, {})
---vim.keymap.set('n', '<leader>bs', builtin.current_buffer_fuzzy_find, {})
+k('n', '<leader>fc', builtin.git_bcommits, {})
+k('n', '<leader>fw', builtin.current_buffer_fuzzy_find, {})
 
 -- registers
-vim.keymap.set('n', '<leader>fr', builtin.registers, {})
+k('n', '<leader>fr', builtin.registers, {})
 
 --------------------------------------------------
 --					SETTINGS					--

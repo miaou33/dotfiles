@@ -1,4 +1,5 @@
 local mason = require("mason")
+local mason_lspconfig = require("mason-lspconfig")
 
 mason.setup({
 	ui = {
@@ -14,13 +15,8 @@ mason.setup({
 	max_concurrent_installers = 4,
 })
 
-local mason_lspconfig_status_ok, mason_lspconfig = pcall(require, "mason-lspconfig")
-if not mason_lspconfig_status_ok then
-  return
-end
-
 mason_lspconfig.setup({
-	ensure_installed = {"clangd"},
+	ensure_installed = {"gopls"},
 	automatic_installation = true,
 })
 
