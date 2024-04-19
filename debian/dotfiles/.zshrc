@@ -21,7 +21,7 @@ COMPLETION_WAITING_DOTS="true"
 
 plugins=(
 	colored-man-pages
-	sudo	
+	sudo
 	zsh-autosuggestions
 	zsh-syntax-highlighting
 )
@@ -31,6 +31,7 @@ source $ZSH/oh-my-zsh.sh
 ## Environment section
 export DOTFILES_DIR="$HOME/.dot/archlinux/dotfiles"
 export EDITOR=nvim
+export PATH="$PATH:/usr/local/go/bin:/opt/nvim-linux64/bin/"
 export TERMINAL=alacritty
 export XDG_CONFIG_HOME="$HOME/.config"
 
@@ -38,6 +39,7 @@ export XDG_CONFIG_HOME="$HOME/.config"
 bindkey -v
 
 ## Alias section
+alias bat='batcat'
 alias gita='git add . && git commit && git push'
 alias gcl='git clone'
 alias vim='nvim'
@@ -48,3 +50,4 @@ alias lla='exa -la'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

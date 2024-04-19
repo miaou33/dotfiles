@@ -17,7 +17,7 @@ yay -S bat eza btop
 # ::::::::::::::::::::::::::::::::::::::::::::::: Dev ::
 # Editors
 yay -S visual-studio-code-bin
-yay -S nvim nvim-packer-git vim-copilot-git neovim-lspconfig unzip
+yay -S nvim nvim-packer-git vim-copilot-git neovim-lspconfig unzip npm ripgrep
 
 # Tools
 yay -S valgrind gdb lldb

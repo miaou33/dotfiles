@@ -84,8 +84,8 @@ use {
    requires = { 'nvim-lua/plenary.nvim' },
    config = function() require'gitsigns'.setup() end
 }
-use ('github/copilot.vim')
-
+--use ('github/copilot.vim')
+                   
 --------------------------------------------------
 --					SESSION						--
 --------------------------------------------------
@@ -144,13 +144,13 @@ use { "jose-elias-alvarez/null-ls.nvim"}
 use {'hrsh7th/nvim-cmp'}
 use {'hrsh7th/cmp-buffer'}
 use {'hrsh7th/cmp-path'}
---use {'saadparwaiz1/cmp_luasnip'}
---use {'hrsh7th/cmp-nvim-lsp'}
---use {'hrsh7th/cmp-nvim-lua'}
+use {'saadparwaiz1/cmp_luasnip'}
+use {'hrsh7th/cmp-nvim-lsp'}
+use {'hrsh7th/cmp-nvim-lua'}
 --
 ---- Snippets
---use {'L3MON4D3/LuaSnip'}
---use {'rafamadriz/friendly-snippets'}
+use {'L3MON4D3/LuaSnip'}
+use {'rafamadriz/friendly-snippets'}
 
 -- MARKDOWN
 -- install without yarn or npm
@@ -159,6 +159,7 @@ use 'godlygeek/tabular'
 use 'elzr/vim-json'
 use 'plasticboy/vim-markdown'
 use 'vim-pandoc/vim-pandoc-syntax'
+use 'tadmccorkle/markdown.nvim'
 
 --------------------------------------------------
 --					AESTHETICS					--
