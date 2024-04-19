@@ -1,7 +1,4 @@
-local tabby_status_ok, tabby = pcall(require, "tabby.tabline")
-if not tabby_status_ok then
-  return
-end
+local tabby = require("tabby.tabline")
 
 local theme = {
   fill = 'TabLineFill',
