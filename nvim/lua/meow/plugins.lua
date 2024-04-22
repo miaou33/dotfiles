@@ -110,6 +110,13 @@ use {'saadparwaiz1/cmp_luasnip'}
 use {'hrsh7th/cmp-nvim-lua'}
 
 -- MARKDOWN
+use({ "iamcco/markdown-preview.nvim",
+	run = "cd app && npm install",
+	setup = function()
+		vim.g.mkdp_filetypes = { "markdown" }
+	end,
+	ft = { "markdown" },
+})
 use 'godlygeek/tabular'
 use 'elzr/vim-json'
 use 'plasticboy/vim-markdown'
