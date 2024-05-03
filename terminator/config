@@ -11,91 +11,19 @@
   [[default]]
     background_darkness = 0.8
     background_type = transparent
-    font = Terminess Nerd Font Medium 14
+    font = Terminess Nerd Font Medium 10
     show_titlebar = False
     scrollbar_position = hidden
     scrollback_infinite = True
     custom_command = zsh
     use_system_font = False
     use_theme_colors = True
-    copy_on_selection = True
-  [[Aurora]]
-    background_color = "#0f1c21"
-    background_darkness = 0.8
-    background_type = transparent
-    cursor_bg_color = "#00485a"
-    font = Terminess Nerd Font Medium 14
-    foreground_color = "#80b6ad"
-    show_titlebar = False
-    scrollbar_position = hidden
-    scrollback_infinite = True
-    palette = "#0f1c21:#046655:#04c975:#b5bd68:#308891:#94a5bc:#8abeb7:#80b6ad:#0f1c21:#046655:#04c975:#b5bd68:#308891:#94a5bc:#8abeb7:#80b6ad"
-    use_custom_command = True
-    custom_command = zsh
-    use_system_font = False
-    use_theme_colors = True
-    copy_on_selection = True
-  [[N0tch2k]]
-    background_color = "#222222"
-    background_darkness = 0.8
-    background_type = transparent
-    cursor_bg_color = "#aa9175"
-    font = Terminess Nerd Font Medium 14
-    foreground_color = "#a0a0a0"
-    show_titlebar = False
-    scrollbar_position = hidden
-    scrollback_infinite = True
-    palette = "#383838:#a95551:#666666:#a98051:#657d3e:#767676:#c9c9c9:#d0b8a3:#474747:#a97775:#8c8c8c:#a99175:#98bd5e:#a3a3a3:#dcdcdc:#d8c8bb"
-    custom_command = zsh
-    use_system_font = False
-    copy_on_selection = True
-  [[Ocean dark]]
-    background_color = "#1c1f27"
-    background_darkness = 0.8
-    background_type = transparent
-    cursor_bg_color = "#a0a4b2"
-    font = Terminess Nerd Font Medium 14
-    foreground_color = "#979cac"
-    show_titlebar = False
-    scrollbar_position = hidden
-    scrollback_infinite = True
-    palette = "#4f4f4f:#af4b57:#afd383:#e5c079:#7d90a4:#a4799d:#85a6a5:#eeedee:#7b7b7b:#af4b57:#ceffab:#fffecc:#b5dcfe:#fb9bfe:#dfdffd:#fefffe"
-    custom_command = zsh
-    use_system_font = False
-    copy_on_selection = True
-  [[Ollie]]
-    background_color = "#222125"
-    background_darkness = 0.8
-    background_type = transparent
-    cursor_bg_color = "#5b6ea7"
-    font = Terminess Nerd Font Medium 14
-    foreground_color = "#8a8dae"
-    show_titlebar = False
-    scrollbar_position = hidden
-    scrollback_infinite = True
-    palette = "#000000:#ac2e31:#31ac61:#ac4300:#2d57ac:#b08528:#1fa6ac:#8a8eac:#5b3725:#ff3d48:#3bff99:#ff5e1e:#4488ff:#ffc21d:#1ffaff:#5b6ea7"
-    custom_command = zsh
-    use_system_font = False
-    copy_on_selection = True
-  [[Zenburn]]
-    background_color = "#3f3f3f"
-    background_darkness = 0.8
-    background_type = transparent
-    cursor_bg_color = "#73635a"
-    font = Terminess Nerd Font Medium 14
-    foreground_color = "#dcdccc"
-    show_titlebar = False
-    scrollbar_position = hidden
-    scrollback_infinite = True
-    palette = "#4d4d4d:#705050:#60b48a:#f0dfaf:#506070:#dc8cc3:#8cd0d3:#dcdccc:#709080:#dca3a3:#c3bf9f:#e0cf9f:#94bff3:#ec93d3:#93e0e3:#ffffff"
-    custom_command = zsh
-    use_system_font = False
     copy_on_selection = True
   [[Twilight]]
     background_darkness = 0.8
     background_type = transparent
     cursor_bg_color = "#ffffff"
-    font = Terminess Nerd Font Medium 14
+    font = Terminess Nerd Font Medium 10
     show_titlebar = False
     scrollbar_position = hidden
     scrollback_infinite = True
@@ -103,7 +31,20 @@
     custom_command = zsh
     use_system_font = False
     copy_on_selection = True
-  [[Lavandula]]
+  [[Hemisu light]]
+    background_color = "#EFEFEF"
+    background_darkness = 0.8
+    cursor_bg_color = "#FF0054"
+    font = Terminess Nerd Font Medium 10
+    foreground_color = "#444444"
+    show_titlebar = False
+    scrollbar_position = hidden
+    scrollback_infinite = True
+    palette = "#777777:#ff0055:#739100:#503d15:#538091:#5b345e:#538091:#999999:#999999:#d65e76:#9cc700:#947555:#9db3cd:#a184a4:#85b2aa:#bababa"
+    custom_command = zsh
+    use_system_font = False
+    use_theme_colors = True
+    copy_on_selection = True
 [layouts]
   [[default]]
     [[[window0]]]

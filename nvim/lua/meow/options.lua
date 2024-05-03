@@ -49,7 +49,7 @@ o.wrap = false
 --			 SIGN & NBR COLUMN					--
 --------------------------------------------------
 o.nu = true
-o.relativenumber = true
+-- o.relativenumber = true
 -- always show signcolumn
 o.signcolumn = "yes"
 

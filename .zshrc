@@ -10,14 +10,12 @@ export ZSH="$HOME/.oh-my-zsh"
 
 #eval "$(oh-my-posh --init --shell zsh --config ~/.zsh_omp_themes/cleaned-detailed.omp.json)"
 ZSH_THEME="powerlevel10k/powerlevel10k"
-
-# ZSH_THEME="robbyrussell"
 # CASE_SENSITIVE="true"
 HYPHEN_INSENSITIVE="true"
 # DISABLE_MAGIC_FUNCTIONS="true"
 # ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="mm/dd/yyyy"
 
 plugins=(
 	colored-man-pages
@@ -34,6 +32,13 @@ export EDITOR=nvim
 export PATH="$PATH:/usr/local/go/bin:/opt/nvim-linux64/bin/"
 export TERMINAL=alacritty
 export XDG_CONFIG_HOME="$HOME/.config"
+export HISTFILESIZE=1000000000
+export HISTSIZE=1000000000
+export S5_E2E_CONFIG=$HOME/end2end/s3-dev.yml
+export S5_E2E_SSO_TOKENPATH=$HOME/end2end/.token.json
+export S5_E2E_S3_IS_LOCAL=true
+export AWS_PROFILE=s5
+export EMAIL="noemi.fauconnier@astran.io"
 
 ## Keybindings section
 bindkey -v

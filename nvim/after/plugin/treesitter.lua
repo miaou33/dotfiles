@@ -5,9 +5,6 @@ treesitter.setup {
 
   ensure_installed = {  "bash",
 			"go",
-			"lua",
-			"vim",
-			"vimdoc",
 		},
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
