@@ -1,5 +1,5 @@
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-#					DEFINES							#
+#			DEFINES			    #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 # Keys
 set $mod Mod4
@@ -25,20 +25,21 @@ set $ws9 "9"
 set $ws10 "10"
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-#					AUTOSTART					 	#
+#			AUTOSTART		    #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 exec		--no-startup-id lxappearance
-exec		--no-startup-id ~/.fehbg &
 exec_always	--no-startup-id ~/.config/polybar/launch.sh -r &
+#exec		--no-startup-id ~/.fehbg &
+exec		--no-startup-id ~/.monitor_display.sh &
 exec_always	--no-startup-id picom &
 exec		--no-startup-id "bluetoothctl power off"
 exec		--no-startup-id xfce4-power-manager
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-#					APPS SHORTCUTS					#
+#		   APPS SHORTCUTS		    #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 # Application launchers
-bindsym $mod+Return exec --no-startup-id $term
+bindsym $mod+Return	exec --no-startup-id $term
 bindsym $mod+a		exec --no-startup-id "rofi -modi drun,run -show drun"
 bindsym $mod+b		exec --no-startup-id rofi-bluetooth
 bindsym $mod+c		exec --no-startup-id rofi-code
@@ -49,22 +50,22 @@ bindsym $mod+t		exec --no-startup-id "polybar-msg cmd toggle"
 bindsym Print		exec --no-startup-id gnome-screenshot -i
 
 # Luminosity
-bindsym XF86MonBrightnessUp		exec --no-startup-id brillo -A 5
+bindsym XF86MonBrightnessUp	exec --no-startup-id brillo -A 5
 bindsym XF86MonBrightnessDown	exec --no-startup-id brillo -U 5
 
 # Sound
 bindsym XF86AudioRaiseVolume	exec --no-startup-id pactl set-sink-volume	@DEFAULT_SINK@ +5%
 bindsym XF86AudioLowerVolume	exec --no-startup-id pactl set-sink-volume	@DEFAULT_SINK@ -5%
-bindsym XF86AudioMute			exec --no-startup-id pactl set-sink-mute	@DEFAULT_SINK@ toggle
-bindsym XF86AudioMicMute		exec --no-startup-id pactl set-source-mute	@DEFAULT_SOURCE@ toggle
-bindsym XF86AudioPlay			exec --no-startup-id playerctl play
-bindsym XF86AudioPause			exec --no-startup-id playerctl pause
-bindsym XF86AudioStop			exec --no-startup-id playerctl pause
-bindsym XF86AudioNext			exec --no-startup-id playerctl next
-bindsym XF86AudioPrev			exec --no-startup-id playerctl previous
+bindsym XF86AudioMute		exec --no-startup-id pactl set-sink-mute	@DEFAULT_SINK@ toggle
+bindsym XF86AudioMicMute	exec --no-startup-id pactl set-source-mute	@DEFAULT_SOURCE@ toggle
+bindsym XF86AudioPlay		exec --no-startup-id playerctl play
+bindsym XF86AudioPause		exec --no-startup-id playerctl pause
+bindsym XF86AudioStop		exec --no-startup-id playerctl pause
+bindsym XF86AudioNext		exec --no-startup-id playerctl next
+bindsym XF86AudioPrev		exec --no-startup-id playerctl previous
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-#						SYSTEM						#
+#			SYSTEM			    #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 # Reload and restart i3
 bindsym $mod+Shift+c reload
@@ -73,27 +74,28 @@ bindsym $mod+Shift+r restart
 # System mode
 bindsym $mod+Shift+e mode "mode_system"
 	mode "mode_system" {
-		bindsym l			exec --no-startup-id i3exit lock, mode "default"
-		bindsym s			exec --no-startup-id i3exit suspend, mode "default"
-		bindsym u			exec --no-startup-id i3exit switch_user, mode "default"
-		bindsym e			exec --no-startup-id i3exit logout, mode "default"
-		bindsym r			exec --no-startup-id i3exit reboot, mode "default"
-		bindsym Shift+h		exec --no-startup-id i3exit hibernate, mode "default"
-		bindsym Shift+s		exec --no-startup-id i3exit shutdown, mode "default"
+		bindsym l		exec --no-startup-id i3exit lock,		mode "default"
+		bindsym s		exec --no-startup-id i3exit suspend,		mode "default"
+		bindsym u		exec --no-startup-id i3exit switch_user,	mode "default"
+		bindsym e		exec --no-startup-id i3exit logout,		mode "default"
+		bindsym r		exec --no-startup-id i3exit reboot,		mode "default"
+		bindsym Shift+h		exec --no-startup-id i3exit hibernate,		mode "default"
+		bindsym Shift+s		exec --no-startup-id i3exit shutdown,		mode "default"
 		bindsym Escape		mode "default"
 	}
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-#				   AESTHETICS					 #
+#		AESTHETICS			 #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 font pango: Terminess Nerd Font 22
 
 smart_borders			on
 default_border			pixel 0
-default_floating_border pixel 0
-smart_gaps				on
-gaps					inner 12
-gaps					outer 0
+default_floating_border		pixel 0
+
+smart_gaps			on
+gaps				inner 12
+gaps				outer 0
 
 set_from_resource $fg color5 #f0f0f0
 set_from_resource $bg color4 #000000
@@ -107,30 +109,30 @@ client.placeholder      $bg     $bg     $fg  $bg       $be
 client.background       $bg
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-#					WINDOWS						#
+#		     WINDOWS			#
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 # Quit
 bindsym $mod+Shift+q	kill
 
 # Hide / show
-bindsym $mod+minus		move scratchpad
-bindsym $mod+plus		scratchpad show
+bindsym $mod+minus	move scratchpad
+bindsym $mod+plus	scratchpad show
 
 # Window modes
 bindsym $mod+o		split h; exec --no-startup-id notify-send 'tile horizontally'
 bindsym $mod+v		split v; exec --no-startup-id notify-send 'tile vertically'
-bindsym $mod+f		fullscreen toggle
-bindsym $mod+space	floating toggle 
+bindsym $mod+f		fullscreen	toggle
+bindsym $mod+space	floating	toggle 
 
 # Change focus
 bindsym $mod+$left	focus left;		exec "i3-msg border pixel 3 && sleep 0.4 && i3-msg border none"  
 bindsym $mod+$down	focus down;		exec "i3-msg border pixel 3 && sleep 0.4 && i3-msg border none"  
 bindsym $mod+$up	focus up;		exec "i3-msg border pixel 3 && sleep 0.4 && i3-msg border none"  
-bindsym $mod+$right focus right;	exec "i3-msg border pixel 3 && sleep 0.4 && i3-msg border none"  
+bindsym $mod+$right	focus right;		exec "i3-msg border pixel 3 && sleep 0.4 && i3-msg border none"  
 bindsym $mod+Left	focus left;		exec "i3-msg border pixel 3 && sleep 0.4 && i3-msg border none"  
 bindsym $mod+Down	focus down;		exec "i3-msg border pixel 3 && sleep 0.4 && i3-msg border none"
 bindsym $mod+Up		focus up;		exec "i3-msg border pixel 3 && sleep 0.4 && i3-msg border none"
-bindsym $mod+Right	focus right;	exec "i3-msg border pixel 3 && sleep 0.4 && i3-msg border none"
+bindsym $mod+Right	focus right;		exec "i3-msg border pixel 3 && sleep 0.4 && i3-msg border none"
 
 # Move focused window
 bindsym $mod+Shift+$left	move left
@@ -143,14 +145,14 @@ bindsym $mod+Shift+Up		move up
 bindsym $mod+Shift+Right	move right
 
 # Floating
-for_window [window_role="pop-up"]		floating enable
+for_window [window_role="pop-up"]	floating enable
 for_window [window_role="task_dialog"]	floating enable
-for_window [class="feh"]				floating enable
+for_window [class="feh"]		floating enable
 for_window [class="gnome-screenshot"]	floating enable
 for_window [class="Gnome-screenshot"]	floating enable
-for_window [class="gthumb"]				floating enable
-for_window [class="Gthumb"]				floating enable
-for_window [class="Lxappearance"]		floating enable 
+for_window [class="gthumb"]		floating enable
+for_window [class="Gthumb"]		floating enable
+for_window [class="Lxappearance"]	floating enable 
 for_window [class="org.gnome.Nautilus"]	floating enable
 
 # Floating move with mouse
@@ -162,11 +164,11 @@ bindsym $mod+m				mode "move" focus floating
 		bindsym $mod+Tab	focus right
 		bindsym $left		move left
 		bindsym $down		move down
-		bindsym $up			move up
+		bindsym $up		move up
 		bindsym $right		move right
 		bindsym Left		move left
 		bindsym Down		move down
-		bindsym Up			move up
+		bindsym Up		move up
 		bindsym Right		move right
 		bindsym Escape		mode "default"
 	}
@@ -175,22 +177,22 @@ bindsym $mod+m				mode "move" focus floating
 bindsym $mod+r				mode "resize"
 	mode "resize" {
 		bindsym $right		resize shrink	width 5 px or 5 ppt
-		bindsym $up			resize grow		height 5 px or 5 ppt
+		bindsym $up		resize grow	height 5 px or 5 ppt
 		bindsym $down		resize shrink	height 5 px or 5 ppt
-		bindsym $left		resize grow		width 5 px or 5 ppt
+		bindsym $left		resize grow	width 5 px or 5 ppt
 		bindsym Right		resize shrink	width 5 px or 5 ppt
-		bindsym Up			resize grow		height 5 px or 5 ppt
+		bindsym Up		resize grow	height 5 px or 5 ppt
 		bindsym Down		resize shrink	height 5 px or 5 ppt
-		bindsym Left		resize grow		width 5 px or 5 ppt
+		bindsym Left		resize grow	width 5 px or 5 ppt
 		bindsym Escape		mode "default"
 	}
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-#					WORKSPACES					#
+#		WORKSPACES			#
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-focus_follows_mouse				no
+focus_follows_mouse		no
 workspace_auto_back_and_forth	yes
-force_display_urgency_hint		500 ms
+force_display_urgency_hint	500 ms
 
 assign [class="^discord$"] $ws9
 
